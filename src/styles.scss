@@ -1,0 +1,70 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+*{@apply font-ubuntu;scroll-behavior: smooth;}
+
+body{@apply bg-white;}
+/* .h1,h1 {@apply text-20 md:text-22 lg:text-24 xl:text-28 2xl:text-36 font-bold text-white font-play_display;} */
+.h2,h2{@apply text-22 lg:text-28 xl:text-36 2xl:text-42 font-bold;}
+.h3,h3{@apply text-18 lg:text-22 xl:text-26 2xl:text-30 font-bold;}
+.h4,h4{@apply text-18 lg:text-20 2xl:text-24 font-medium;}
+.h5,h5{@apply text-18 lg:text-20 2xl:text-22 font-medium;}
+.text16{@apply text-14 2xl:text-16;}
+.text18{@apply text-14 lg:text-16 2xl:text-18;}
+.wrapper{@apply w-full max-w-screen-xl mx-auto px-5;}
+.anim{@apply transition-all duration-300;}
+.btn_primary{@apply inline-block py-1.5 xl:py-2.5 px-2 xl:px-3.5 rounded text-14 lg:text-16 font-semibold text-white bg-yellow-500 hover:text-dark anim;}
+
+.h_link{@apply text-14 lg:text-16 2xl:text-18 text-dark/80 hover:text-dark/40 anim;}
+code{@apply text-red-700 bg-gray-50;}
+.code_g{@apply text-16 md:text-18 xl:text-20 2xl:text-22;}
+.code_name{@apply text-red-700;}
+.code{@apply text-blue-700;}
+h3.titel{@apply text-20 lg:text-24 xl:text-30 2xl:text-36;}
+
+.hidden_scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.hidden_scroll::-webkit-scrollbar
+{
+	width: 3px;
+  height: 0;
+	background-color: #F5F5F5;
+}
+
+.hidden_scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+@tailwind utilities;
+
+
+
+/* <div class="code_g">
+	<span class="code_name"><span class="code">&lt;</span>p<span class="code">&gt;</span></span>
+		My first paragraph.
+	<span class="code_name"><span class="code">&lt;</span>/p<span class="code">&gt;</span></span>
+</div> */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

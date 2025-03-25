@@ -1,0 +1,261 @@
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5">
+      <h3 class="titel font-medium">HTML Introduction</h3>
+      <p class="text16">HTML is the core markup language used to create and structure web pages.</p>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">What is HTML?</h3>
+        <ul class="space-y-1.5 list-disc list-inside">
+          <li class="text16">HTML stands for HyperText Markup Language.</li>
+          <li class="text16">It is the standard markup language for creating web pages.</li>
+          <li class="text16">HTML defines the structure of a web page.</li>
+          <li class="text16">It consists of a series of elements.</li>
+          <li class="text16">HTML elements instruct the browser on how to display content.</li>
+          <li class="text16">These elements label content like headings, paragraphs, links, and more.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="py-6 border-b border-dark/20">
+      <div class="space-y-3 p-6 bg-yellow-600/20">
+        <h4>Example</h4>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div >
+            <span  style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+            </span>Page Title <span style="color:#905">
+              <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+            </span>My First Heading <span style="color:#905">
+              <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+            </span>My first paragraph. <span style="color:#905">
+              <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Example Explained</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
+        <li>The <code>&lt;html&gt;</code> element is the root element of an HTML page</li>
+        <li>The <code>&lt;head&gt;</code> element contains meta information about the HTML page</li>
+        <li>The <code>&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+        <li>The <code>&lt;body&gt;</code> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+        <li>The <code>&lt;h1&gt;</code> element defines a large heading</li>
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph</li>
+      </ul>               
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">What is an HTML Element?</h3>
+      <p class="text16">An HTML element consists of a start tag, some content, and an end tag:</p>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>tagname<span class="code">&gt;</span></span>
+        Content goes here...
+        <span class="code_name"><span class="code">&lt;</span>/tagname<span class="code">&gt;</span></span>
+      </div>
+      <p class="text16">The HTML <b>element</b> is everything from the start tag to the end tag:</p>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>h1<span class="code">&gt;</span></span>
+          My First Heading
+        <span class="code_name"><span class="code">&lt;</span>/h1<span class="code">&gt;</span></span>
+      </div>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>p<span class="code">&gt;</span></span>
+          My first paragraph.
+        <span class="code_name"><span class="code">&lt;</span>/p<span class="code">&gt;</span></span>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border border-gray-300 px-4 py-2 text-left">Start tag</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Element content</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">End tag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;h1&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">My First Heading</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/h1&gt;</code></td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;p&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">My First Paragraph</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/p&gt;</code></td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;p&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">Paragraph</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/p&gt;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> Some HTML elements, such as the <code>&lt;br&gt;</code> tag, do not contain any content. These are called <b>empty elements</b>, and they do not require an end tag!</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Web Browsers</h3>
+      <p class="text16">Web browsers like <b>Chrome, Edge, Firefox, and Safari</b> are designed to read and interpret HTML documents, displaying them correctly on the screen.</p>
+      <p class="text16">Browsers do not show HTML tags; instead, they use them to structure and render the content properly.</p>
+      <img src="assets/images/browser.png" alt="browser"/>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Page Structure</h3>
+      <p class="text16">Below is a visualization of an HTML page structure:</p>
+      <div class="w-full px-2 pl-3 border border-dark/15 text-dark bg-gray-50">
+        <span class="block py-2"><span>&lt;</span>html<span class="code">&gt;</span></span>
+          <div class="w-full px-2 pl-5 border border-dark/15 mb-5">
+            <span class="block py-2"><span>&lt;</span>head<span class="code">&gt;</span></span>
+            <div class="w-full px-2 pl-3 border border-dark/15 mb-2.5">
+              <span class="text16">
+                <span class="inline-block py-2"><span>&lt;</span>titel<span class="code">&gt;</span></span>
+                  Page titel
+                <span class="inline-block py-2"><span>&lt;</span>/titel<span class="code">&gt;</span></span>
+              </span>
+            </div>
+            <span class="block py-2"><span>&lt;</span>/head<span class="code">&gt;</span></span>
+          </div>
+          <div class="w-full px-2 pl-5 border border-dark/15">
+            <span class="block py-2"><span>&lt;</span>body<span class="code">&gt;</span></span>
+              <div class="w-full px-2 py-3.5 pl-7 border border-dark/15 bg-white">
+                <div class="w-full px-2 pl-3 border border-dark/15 mb-2.5">
+                  <span class="text16">
+                    <span class="inline-block py-2"><span>&lt;</span>h1<span class="code">&gt;</span></span>
+                      This is a heading
+                    <span class="inline-block py-2"><span>&lt;</span>/h1<span class="code">&gt;</span></span>
+                  </span>
+                </div>
+                <div class="w-full px-2 pl-3 border border-dark/15 mb-2.5">
+                  <span class="text16">
+                    <span class="inline-block py-2"><span>&lt;</span>p<span class="code">&gt;</span></span>
+                    This is a paragraph.
+                    <span class="inline-block py-2"><span>&lt;</span>/p<span class="code">&gt;</span></span>
+                  </span>
+                </div>
+                <div class="w-full px-2 pl-3 border border-dark/15 mb-2.5">
+                  <span class="text16">
+                    <span class="inline-block py-2"><span>&lt;</span>p<span class="code">&gt;</span></span>
+                      This is another paragraph.
+                    <span class="inline-block py-2"><span>&lt;</span>/p<span class="code">&gt;</span></span>
+                  </span>
+                </div>
+              </div>
+            <span class="block py-2"><span>&lt;</span>/body<span class="code">&gt;</span></span>
+          </div>
+        <span class="block py-2"><span>&lt;</span>/html<span class="code">&gt;</span></span>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> The content within the <code>&lt;body&gt;</code> section is displayed in the web browser, while the text inside the <code>&lt;titel&gt;</code> element appears in the browser’s title bar or tab.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML History</h3>
+      <p class="text16">Since the inception of the World Wide Web, multiple versions of HTML have been developed and improved over time.</p>
+      <div class="w-full overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border border-gray-300 px-4 py-2 text-left">Year</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1989</td>
+              <td class="border border-gray-300 px-4 py-2">Tim Berners-Lee invented www</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1991</td>
+              <td class="border border-gray-300 px-4 py-2">Tim Berners-Lee invented HTML</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1993</td>
+              <td class="border border-gray-300 px-4 py-2">Dave Raggett drafted HTML+</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1995</td>
+              <td class="border border-gray-300 px-4 py-2">HTML Working Group defined HTML 2.0</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1997</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: HTML 3.2</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">1999</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: HTML 4.01</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2000</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: XHTML 1.0</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2008</td>
+              <td class="border border-gray-300 px-4 py-2">WHATWG HTML5 First Public Draft</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2012</td>
+              <td class="border border-gray-300 px-4 py-2">WHATWG HTML5 Living Standard</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2014</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: HTML5</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2016</td>
+              <td class="border border-gray-300 px-4 py-2">Candidate Recommendation: HTML 5.1</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2017</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: HTML5.1 2nd Edition</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2">2017</td>
+              <td class="border border-gray-300 px-4 py-2">Recommendation: HTML5.2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p>This tutorial follows the latest HTML5 standard.</p>
+      </div>
+    </div>
+</div>

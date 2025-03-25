@@ -1,0 +1,165 @@
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5">
+      <h3 class="titel font-medium">HTML Elements</h3>
+      <p class="text16">An HTML element is defined by a start tag, some content, and an end tag.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Element?</h3>
+      <p class="text16">The HTML <b>element</b> is everything from the start tag to the end tag:</p>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>tagname<span class="code">&gt;</span></span>
+        Content goes here...
+        <span class="code_name"><span class="code">&lt;</span>/tagname<span class="code">&gt;</span></span>
+      </div>
+      <p class="text16">Examples of some HTML elements:</p>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>h1<span class="code">&gt;</span></span>
+          My First Heading
+        <span class="code_name"><span class="code">&lt;</span>/h1<span class="code">&gt;</span></span>
+      </div>
+      <div class="code_g">
+        <span class="code_name"><span class="code">&lt;</span>p<span class="code">&gt;</span></span>
+          My first paragraph.
+        <span class="code_name"><span class="code">&lt;</span>/p<span class="code">&gt;</span></span>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="border border-gray-300 px-4 py-2 text-left">Start tag</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">Element content</th>
+              <th class="border border-gray-300 px-4 py-2 text-left">End tag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;h1&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">My First Heading</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/h1&gt;</code></td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;p&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">My First Paragraph</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/p&gt;</code></td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;p&gt;</code></td>
+              <td class="border border-gray-300 px-4 py-2">Paragraph</td>
+              <td class="border border-gray-300 px-4 py-2"><code>&lt;/p&gt;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Nested HTML Elements</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>HTML elements can be nested (this means that elements can contain other elements).</li>
+        <li>All HTML documents consist of nested HTML elements.</li>
+        <li>The following example contains four HTML elements ( <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>):</li>
+      </ul>       
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div >
+            <span  style="color:slategray">&lt;!DOCTYPE html&gt;</span><br><span style="color:#905"><span style="color:#999">&lt;</span>html<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br><br><span style="color:#905"><span style="color:#999">&lt;</span>h1<span style="color:#999">&gt;</span></span>My First Heading<span style="color:#905"><span style="color:#999">&lt;</span>/h1<span style="color:#999">&gt;</span></span><br><br>
+          <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>My first paragraph.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span><br><br><span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/html<span style="color:#999">&gt;</span></span> </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Example Explained</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>The <code>&lt;html&gt;</code> element is the root element and it defines the whole HTML document.</li>
+        <li>It has a start tag <code>&lt;html&gt;</code> and an end tag <code>&lt;/html&gt;</code> </li>
+        <li>Then, inside the <code>&lt;html&gt;</code> element there is a <code>&lt;body&gt;</code> element:</li>
+      </ul>       
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br><br>
+             <span style="color:#905"><span style="color:#999">&lt;</span>h1<span style="color:#999">&gt;</span></span>My First Heading<span style="color:#905"><span style="color:#999">&lt;</span>/h1<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>My first paragraph.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span><br><br>
+            <span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>      
+      </div>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>The <code>&lt;html&gt;</code> element defines the document's body.</li>
+        <li>It has a start tag <code>&lt;body&gt;</code> and an end tag <code>&lt;/body&gt;</code> </li>
+        <li>Then, inside the <code>&lt;body&gt;</code> element there are two other elements <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> Tag.</li>
+      </ul>  
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+            <span style="color:#905"><span style="color:#999">&lt;</span>h1<span style="color:#999">&gt;</span></span>My First Heading<span style="color:#905"><span style="color:#999">&lt;</span>/h1<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>My first paragraph.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span>
+        </div>      
+      </div>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>The <code>&lt;h1&gt;</code> element defines a heading.</li>
+        <li>It has a start tag <code>&lt;h1&gt;</code> and an end tag <code>&lt;/h1&gt;</code> </li>
+      </ul>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>h1<span style="color:#999">&gt;</span></span>My First Heading<span style="color:#905"><span style="color:#999">&lt;</span>/h1<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>      
+      </div>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph.</li>
+        <li>It has a start tag <code>&lt;p&gt;</code> and an end tag <code>&lt;/p&gt;</code> </li>
+      </ul>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>My First Paragraph<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>      
+      </div>
+    </div>             
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Never Skip the End Tag</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>Some HTML elements may still display correctly <b>even if you forget the end tag.</b></li>
+        <li>However, it is <b>best practice</b> to always include the <b>closing tag</b> to ensure proper rendering and avoid unexpected behavior.</li>
+      </ul>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>html<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br><br>
+             <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>This is a paragraph<br>
+             <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>This is a paragraph<br>
+            <br><span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/html<span style="color:#999">&gt;</span></span> 
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>Do not rely on browsers to fix missing end tags! If you forget to close an element, it may cause <b>unexpected behavior</b> and <b>errors</b> in your webpage.</li>
+        <li>To ensure proper formatting and consistency, always <b>use closing tags</b>.</li>
+      </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Empty HTML Elements</h3>
+      <p class="text16">HTML elements with no content are called empty elements.</p>
+      <p class="text16">The <code>&lt;br&gt;</code> tag defines a line break, and is an empty element without a closing tag:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:#999">&gt;</span></span>This is a <span style="color:#905"><span style="color:#999">&lt;</span>br<span style="color:#999">&gt;</span></span> paragraph with a line break.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span> 
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML is Not Case Sensitive</h3>
+      <p class="text16">HTML tags are not case sensitive <code>&lt;SPAN&gt;</code> means the same as <code>&lt;span&gt;</code>.</p>
+      <p class="text16">The HTML standard does not require tags to be in <b>lowercase</b>, but ITC <b>recommends</b> using lowercase for better readability.</p>
+    </div>
+  </div>

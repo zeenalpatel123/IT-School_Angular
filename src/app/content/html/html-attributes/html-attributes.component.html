@@ -1,0 +1,220 @@
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5">
+      <h3 class="titel font-medium">HTML Attributes</h3>
+      <p class="text16">HTML attributes provide additional information about HTML elements.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Attributes</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>All HTML elements can have attributes.</li>
+        <li>Attributes provide <b>extra information</b> about an element.</li>
+        <li>They are always placed <b>inside the start tag.</b></li>
+        <li>Attributes are typically written in <b>name/value pairs</b>, such as: name="value". </li>
+      </ul> 
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The href Attribute</h3>
+      <p>The <code>&lt;a&gt;</code> tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>a<span style="color:green"> href<span style="color:#005cc5">="https://www.google.com"</span></span><span style="color:#999">&gt;</span></span>Visit Google<span style="color:#905"><span style="color:#999">&lt;</span>/a<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The src Attribute</h3>
+      <p>The <code>&lt;a&gt;</code>  tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>img<span style="color:green"> src<span style="color:#005cc5">="doll_img.jpg"</span></span><span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <!-- ==============  -->
+      <div class="space-y-2.5 list-disc">
+        <p>There are two ways to specify the URL in the src attribute:</p>
+        <p><b>1. Absolute URL</b> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/doll_img.jpg".</p>
+        <p><b>Notes:</b>External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+        <p><b>2. Relative URL</b>- Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="doll_img.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/doll_img.jpg".</p>
+        <p><b>Tip:</b>It is almost always best to use relative URLs. They will not break if you change domain.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The width and height Attributes</h3>
+      <p>The <code>&lt;img&gt;</code> tag should also contain the <span style="color:#BF1C40"> widht</span> and <span style="color:#BF1C40"> height</span> attributes, which specify the width and height of the image (in pixels):</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>img<span style="color:green"> src<span style="color:#005cc5">="doll_img.jpg"</span> </span> <span span style="color:green">widht= <span style="color:#005cc5">"500"</span></span> <span span style="color:green">height= <span style="color:#005cc5">"600"</span></span><span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The alt Attribute</h3>
+      <p>The required <span style="color:#BF1C40"> alt </span> attribute for the <code>&lt;img&gt;</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <span style="color:#BF1C40"> src </span> attribute, or if the user uses a screen reader.</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>img<span style="color:green"> src<span style="color:#005cc5">="doll_img.jpg"</span> </span> <span span style="color:green">alt= <span style="color:#005cc5">"Beautiful Doll "</span></span><span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p>See what happens if we try to display an image that does not exist:</p>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>img<span style="color:green"> src<span style="color:#005cc5">="doll_img.jpg"</span> </span> <span span style="color:green">alt= <span style="color:#005cc5">"Beautiful Doll "</span></span><span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The style Attribute</h3>
+      <p>The <span style="color:#905">style</span> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:green"> style<span style="color:#005cc5">="color:red;"</span></span><span style="color:#999">&gt;</span></span>This is a red paragraph.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The lang Attribute</h3>
+      <p class="text16">You should always include the <code>lang</code> attribute inside the <code>&lt;html&gt;</code> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+      <p class="text16">The following example specifies English as the language:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:slategray">&lt;!DOCTYPE html&gt;</span><br><span style="color:#905"><span style="color:#999">&lt;</span>html<span style="color:green"> lang<span style="color:#005cc5">="en"</span></span><span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br>...<br><span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/html<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <p class="text16">Country codes can also be added to the language code in the <code>lang</code> attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
+      <p class="text16">The following example specifies English as the language and United States as the country</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:slategray">&lt;!DOCTYPE html&gt;</span><br><span style="color:#905"><span style="color:#999">&lt;</span>html<span style="color:green"> lang<span style="color:#005cc5">="en-US"</span></span><span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br>...<br><span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/html<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">The title Attribute</h3>
+      <p class="text16">The <code>title</code> attribute defines some extra information about an element.</p>
+      <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:green"> title<span style="color:#005cc5">="I'm a tooltip"</span></span><span style="color:#999">&gt;</span></span>This is a paragraph.<span style="color:#905"><span style="color:#999">&lt;</span>/p<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">We Suggest: Always Use Lowercase Attributes</h3>
+      <p class="text16">The HTML standard does not require lowercase attribute names.</p>
+      <p class="text16">The title attribute (and all other attributes) can be written with uppercase or lowercase like <b>title</b> or <b>TITLE</b>.</p>
+      <p>However, ITC <b>recommends</b> lowercase attributes in HTML, and <b>demands</b> lowercase attributes for stricter document types like XHTML.</p>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> At W3Schools we always use lowercase attribute names.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">We Suggest: Always Quote Attribute Values</h3>
+      <p class="text16">The HTML standard does not require quotes around attribute values.</p>
+      <p class="text16">However, ITC recommends quotes in HTML, and demands quotes for stricter document types like XHTML.</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Good:</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>a<span style="color:green"> href<span style="color:#005cc5">="https://www.google.com/html/"</span></span><span style="color:#999">&gt;</span></span>Visit our Google<span style="color:#905"><span style="color:#999">&lt;</span>/a<span style="color:#999">&gt;</span></span> </div>
+          </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Bad:</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>a<span style="color:green"> href<span style="color:#005cc5">=https://www.google.com/html/</span></span><span style="color:#999">&gt;</span></span>Visit our Google<span style="color:#905"><span style="color:#999">&lt;</span>/a<span style="color:#999">&gt;</span></span> 
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <p class="text16 pl-2">Sometimes you have to use quotes. This example will not display the title attribute correctly, because it contains a space:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:green">
+            title<span style="color:#005cc5">=Description </span>of IT-School</span><span style="color:#999">&gt;</span></span> 
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b>  At IT-Schools we always use quotes around attribute values.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Single or Double Quotes?</h3>
+      <p class="text16">Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+      <p class="text16">In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:green"> title<span style="color:#005cc5">='Robart "ShotGun" Nelson'</span></span><span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <p>Or vice versa:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>p<span style="color:green"> title<span style="color:#005cc5">="Robart 'ShotGun' Nelson"</span></span><span style="color:#999">&gt;</span></span> </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Chapter Summary</h3>
+      <ul class="space-y-1.5 list-disc pl-5">
+        <li>Every HTML element can include attributes to give extra information.</li>
+        <li>The <code>href</code> <b>attribute</b> in the <code>&lt;a&gt;</code> tag sets the web address the link should open.</li>
+        <li>The <code>src</code> <b>attribute</b> in the <code>&lt;img&gt;</code> tag shows the location of the image file.</li>
+        <li>The <code>width</code> and <code>height</code> attributes of <code>&lt;img&gt;</code> define the image size in pixels.</li>
+        <li>The <code>alt</code> attribute in <code>&lt;img&gt;</code> provides a <b>backup text</b> if the image can’t be displayed.</li>
+        <li>The <code>style</code> <b>attribute</b> is used to apply custom styles like text color, fonts, sizes, and more.</li>
+        <li>The <code>lang </code> <b>attribute</b> in the <code>&lt;html&gt;</code> tag declares the language used in the web page.</li>
+        <li>The <code>title</code> <B>attribute</B> adds a <B>tooltip</B> or hint that appears when hovering over an element.</li>
+      </ul>               
+    </div>
+
+  <!-- HTML Attributes End -->
+</div>
