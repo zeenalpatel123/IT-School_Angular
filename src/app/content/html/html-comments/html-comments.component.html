@@ -1,1 +1,116 @@
-<p>html-comments works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5">
+        <h3 class="titel font-medium">HTML Comments</h3>
+        <p class="text16">HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">HTML Comment Tag</h3>
+        <p>You can add comments to your HTML source by using the following syntax:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!-- Write your comments here --&gt;</span>
+                </div>
+            </div>
+        </div>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+        <div class="p-3.5 bg-yellow-700/20">
+            <p>
+                <b>Note:</b>  Comments are not displayed by the browser, but they can help document your HTML source code.
+            </p>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Add Comments</h3>
+        <p>With comments you can place notifications and reminders in your HTML code:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!-- This is a comment --&gt;</span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:slategray">&lt;!-- Remember to add more information here --&gt;</span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Hide Content</h3>
+        <p>Comments can be used to hide content.</p>
+        <p>This can be helpful if you hide content temporarily:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="commentcolor" style="color:slategray">&lt;!-- &lt;p&gt;This is another paragraph &lt;/p&gt; --&gt;</span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph too. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>You can also hide more than one line. Everything between the <code>&lt;!--</code> and the <code>--&gt;</code>
+            will be hidden from the display.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span class="commentcolor" style="color:slategray">&lt;!-- <br>&lt;p&gt;Look at this cool image:&lt;/p&gt; <br> &lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt; <br>--&gt; </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph too. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Hide Inline Content</h3>
+        <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p>Hide a part of a paragraph:</p>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This <span class="commentcolor" style="color:slategray">&lt;!-- great text --&gt;</span> is a paragraph. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>
