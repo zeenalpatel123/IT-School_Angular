@@ -331,6 +331,194 @@
             <a href="" class="btn_primary">Try Now</a>
         </div>
       </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Style Table Borders</h3>
+        <p class="text16">If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:</p>
+        <table class="border-collapse border border-white" style="width:30%;">
+          <tbody>
+          <tr>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div><span style="color:#905"> table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5">
+                  <span style="color:#999">:</span> 1px solid white<span style="color:#999">;</span></span><br>
+                 &nbsp;
+                border-collapse<span style="color:#005cc5"><span style="color:#999">:</span> collapse<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span><br>th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp; background-color<span style="color:#005cc5"><span style="color:#999">:</span> #96D4D4<span style="color:#999">;</span></span><br>
+                 </span><span style="color:#999">&#125;</span> </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Round Table Borders</h3>
+        <p class="text16">With the <code>border-radius</code> property, the borders get rounded corners:</p>
+        <table class="border-separate border border-black rounded-md" style="width:30%;">
+          <tbody>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div>
+                <span style="color:#905">
+                table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid 
+                 black<span style="color:#999">;</span></span><br>
+                 &nbsp;
+                border-radius<span style="color:#005cc5"><span style="color:#999">:</span> 10px<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
+              </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <p class="text16">Skip the border around the table by leaving out <code>table</code> from the css selector:</p>
+        <table class="border-separate" style="width:30%;">
+          <tbody>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div>
+                <span style="color:#905">
+                th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid 
+                 black<span style="color:#999">;</span></span><br>
+                 &nbsp;
+                border-radius<span style="color:#005cc5"><span style="color:#999">:</span> 10px<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
+              </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Dotted Table Borders</h3>
+        <p class="text16">With the <code>border-style</code> property, you can set the appearance of the border.</p>
+        <table class="border-collapse border border-dotted" style="width:30%;">
+          <tbody>
+          <tr>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <p class="text16">The following values are allowed:</p>
+        <ul class="pl-5 list-disc">
+          <li><code>dotted</code></li>
+          <li><code>dashed</code></li>
+          <li><code>solid</code></li>
+          <li><code>double</code></li>
+          <li><code>groove</code></li>
+          <li><code>ridge</code></li>
+          <li><code>inset</code></li>
+          <li><code>outset</code></li>
+          <li><code>none</code></li>
+          <li><code>hidden</code></li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div><span style="color:#905">
+                &nbsp;th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;
+                border-style<span style="color:#005cc5"><span style="color:#999">:</span> dotted<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span></div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Border Color</h3>
+        <p class="text16">With the <code>border-color</code> property, you can set the color of the border.</p>
+        <table class="border-collapse" style="width:30%;">
+          <tbody>
+          <tr>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          </tr>
+          <tr>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          <td class="border border-black">&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div><span style="color:#905">
+                &nbsp;th, td <span style="color:#999">&#123;</span><span class="csspropertycolor" style="color:#d73a49"><br>&nbsp;
+                border-color<span style="color:#005cc5"><span style="color:#999">:</span> #000000<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
+              </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
     </div>
 </div>
 
