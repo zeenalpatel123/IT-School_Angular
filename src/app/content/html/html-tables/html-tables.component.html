@@ -254,6 +254,84 @@
         </div>
         <p class="text16">By default, the text in &nbsp; <code>&lt;th&gt;</code> elements are bold and centered, but you can change that with CSS.</p>
     </div>
+    <div class="w-full mt-10">
+      <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">HTML Table Borders</h2>
+      <p class="text16 mt-2.5">HTML tables can have borders of different styles and shapes.</p>
+
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">How To Add a Border</h3>
+        <p class="text16">To add a border, use the CSS &nbsp; <code>border</code> property on &nbsp; <code>table</code>, nbsp; <code>th</code>, and <code>td</code> elements.</p>
+        <table class="border-separate border border-gray-300" style="width:30%;">
+          <tbody>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div>
+              <span style="color:#905">
+              table, th, td
+              <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>
+              &nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid black<span style="color:#999">;</span></span><br>
+              </span><span style="color:#999"><span style="color: #999;">&#125;</span></span> </span>
+            </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Collapsed Table Borders</h3>
+        <p class="text16">To avoid having double borders like in the example above, set the CSS &nbsp; <code>border-collapse</code> property to &nbsp; <code>collapse</code>.</p>
+        <p class="text16">This will make the borders collapse into a single border:</p>
+        <table class="border-collapse border border-gray-300" style="width:30%;">
+          <tbody>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <p class="text16">Let the first row be table header cells:</p>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+              <div><span style="color:#905">
+                table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid black<span style="color:#999">;</span></span><br>
+                 &nbsp;
+                border-collapse<span style="color:#005cc5"><span style="color:#999">:</span> collapse<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
+              </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+      </div>
+    </div>
 </div>
 
 <!-- git config --global user.email "you@example.com"
