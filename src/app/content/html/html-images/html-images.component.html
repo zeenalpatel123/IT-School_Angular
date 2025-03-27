@@ -50,16 +50,108 @@
                 <h3>Example</h3>
                 <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
                     <div class="w3-code notranslate htmlHigh">
-                        <span class="tagnamecolor" style="color:#905">
-                         <span class="tagcolor" style="color:#999">&lt;</span>img <span class="attributecolor" style="color:green"> src <span class="attributevaluecolor" style="color:#005cc5">="img_chania.jpg"</span> alt <span class="attributevaluecolor" style="color:#005cc5">="Flowers in Chania"</span>
+                        <span style="color:#905">
+                         <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_chania.jpg"</span> alt <span style="color:#005cc5">="Flowers in Chania"</span>
                          </span>
-                         <span class="tagcolor" style="color:#999">&gt;</span>
+                         <span style="color:#999">&gt;</span>
                         </span>
                         <br>
                     </div>
                 </div>
                 <a href="" class="btn_primary">Try Now</a>
             </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">HTML Images Syntax</h3>
+            <p>The HTML <code>&lt;img&gt;</code> tag is used to embed an image in a web page.</p>
+            <p>Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.</p>
+            <p>The <code>&lt;img&gt;</code> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+            <p>The <code>&lt;img&gt;</code> tag has two required attributes:</p>
+            <ul class="space-y-1.5 list-disc pl-5">
+                <li>src - Specifies the path to the image</li>
+                <li>alt - Specifies an alternate text for the image</li>
+            </ul>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Syntax</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">=" <i>url</i>" </span> alt <span style="color:#005cc5">=" <em>alternatetext</em>" </span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">The src Attribute</h3>
+            <p>The required <code>src</code> attribute specifies the path (URL) to the image.</p>
+            <p><b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <code>alt</code> text are shown if the browser cannot find the image.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_chania.jpg"</span> alt <span style="color:#005cc5">="Flowers in Chania"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">The alt Attribute</h3>
+            <p>The required <code>alt</code> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+            <p>The value of the <code>alt</code> attribute should describe the image:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_chania.jpg"</span> alt <span style="color:#005cc5">="Flowers in Chania"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                     </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p>If a browser cannot find an image, it will display the value of the <code>alt</code> attribute:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="wrongname.gif"</span> alt <span style="color:#005cc5">="Flowers in Chania"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <div class="p-3.5 bg-yellow-700/20"><p><b>Note:</b>  A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p></div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Image Size - Width and Height</h3>
+            <p>You can use the <code>style</code> attribute to specify the width and height of an image.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_girl.jpg"</span> alt <span style="color:#005cc5">="Girl in a jacket"</span> style <span style="color:#005cc5">="width:500px;height:600px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p>Alternatively, you can use the <code>width</code> and <code>height</code> attributes:</p>
         </div>
     </div>
 </div>
