@@ -1,1 +1,80 @@
-<p>html-favicon works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5">
+        <h3 class="titel font-medium">HTML Favicon</h3>
+        <p class="text16">A favicon is a small image displayed next to the page title in the browser tab.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">How To Add a Favicon in HTML</h3>
+        <p>You can use any image you like as your favicon. You can also create your own favicon on sites like https://www.favicon.cc.</p>
+        <div class="p-3.5 bg-yellow-700/20">
+            <p><b>Note:</b>  A favicon is a small image, so it should be a simple image with high contrast.</p>
+        </div>
+        <p>A favicon image is displayed to the left of the page title in the browser tab, like this:</p>
+        <img src="assets/images/05.png" alt="browser"/>
+        <p>To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".</p>
+        <p>Next, add a <code>&lt;link&gt;</code> element to your "index.html" file, after the <code>&lt;title&gt;</code> element, like this:</p>
+        <div class="p-6 bg-yellow-600/20">
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>My Page Title <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>link <span class="attributecolor" style="color:green"> rel <span class="attributevaluecolor" style="color:#005cc5">="icon"</span> type <span class="attributevaluecolor" style="color:#005cc5">="image/x-icon"</span> href <span class="attributevaluecolor" style="color:#005cc5">="/images/favicon.ico"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>This is a Heading <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p>Now, save the "index.html" file and reload it in your browser. Your browser tab should now display your favicon image to the left of the page title.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Chapter Summary</h3>
+        <ul class="space-y-1.5 list-disc pl-5">
+          <li> Use the HTML <code>&lt;link&gt;</code> element to insert a favicon</li>
+        </ul>
+    </div>
+</div>
+
