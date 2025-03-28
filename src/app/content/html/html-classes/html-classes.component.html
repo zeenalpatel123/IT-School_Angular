@@ -1,1 +1,428 @@
-<p>html-classes works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML class Attribute</h3>
+        <p class="text16">The HTML <code>class</code> attribute is used to specify a class for an HTML element.</p>
+        <p>Multiple HTML elements can share the same class.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The class Attribute</h3>
+        <p>The <code>class</code> attribute is commonly used to link an element to a CSS class for styling. It can also be targeted by JavaScript to access and modify elements with that specific class name.</p>
+        <p>In the example below, three <code>&lt;div&gt;</code> elements share the class name "city". Each of them will receive the same styling defined by the .city class in the <code>&lt;head&gt;</code> section of the document.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <br> .city <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp;&nbsp;background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> tomato <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> white <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; border <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 2px solid black <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; margin <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 20px <span style="color:#999">;</span>
+                        </span>
+                        <br> &nbsp; padding <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 20px <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>London is the capital of England. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Tokyo is the capital of Japan. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>In the example below, two <code>&lt;span&gt;</code> elements are assigned the class name "note". They will both be styled the same way, based on the .note class defined in the <code>&lt;head&gt;</code> section.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <br>.note <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br> &nbsp; font-size <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 120% <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> red <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>My <span style="color:#905">
+                      <span style="color:#999">&lt;</span>span <span style="color:green"> class <span style="color:#005cc5">="note"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Important <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/span <span style="color:#999">&gt;</span>
+                    </span> Heading <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is some <span style="color:#905">
+                      <span style="color:#999">&lt;</span>span <span style="color:green"> class <span style="color:#005cc5">="note"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>important <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/span <span style="color:#999">&gt;</span>
+                    </span> text. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The Syntax For Class</h3>
+        <p>To define a class in CSS, start with a dot (.) followed by the class name, then write the desired CSS properties inside curly braces {{'{}'}}.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <br>.city <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp; background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> tomato <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> white <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; padding <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 10px <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>London is the capital of England. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Tokyo is the capital of Japan. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Multiple Classes</h3>
+        <p>HTML elements can belong to more than one class.</p>
+        <p>To define multiple classes, separate the class names with a space, e.g. &lt;div class="city main"&gt;. The element will be styled according to all the classes specified.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city main"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>    
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Different Elements Can Share Same Class</h3>
+        <p>Different HTML elements can point to the same class name.</p>
+        <p>In the following example, both <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> point to the "city" class and will share the same style:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Use of the class Attribute in JavaScript</h3>
+        <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.</p>
+        <p>JavaScript can access elements with a specific class name with the <code>getElementsByClassName()</code> method:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+                    </span>
+                    <span class="jscolor" style="color:black">
+                      <br>
+                      <span class="jskeywordcolor" style="color:#005cc5">function</span> myFunction() &#123; <br>&nbsp; <span class="jskeywordcolor" style="color:#005cc5">var</span> x = <strong>document. <span class="jspropertycolor" style="color:black">getElementsByClassName</span>( <span class="jsstringcolor" style="color:green">"city"</span>) </strong>; <br>&nbsp; <span class="jskeywordcolor" style="color:#005cc5">for</span> ( <span class="jskeywordcolor" style="color:#005cc5">var</span> i = <span class="jsnumbercolor" style="color:#905">0</span>; i &lt; x. <span class="jspropertycolor" style="color:black">length</span>; <span class="jsnumbercolor" style="color:#905"></span> i++) &#123; <br>&nbsp;&nbsp;&nbsp; x[i]. <span class="jspropertycolor" style="color:black">style</span>. <span class="jspropertycolor" style="color:black">display</span> = <span class="jsstringcolor" style="color:green">"none"</span>; <br>&nbsp; &#125; <br>&#125; <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Chapter Summary</h3>
+        <ul class="space-y-1.5 list-disc pl-5">
+          <li>The HTML <code>class</code> attribute specifies one or more class names for an element</li>
+          <li>Classes are used by CSS and JavaScript to select and access specific elements</li>
+          <li>The <code>class</code> attribute can be used on any HTML element</li>
+          <li>The class name is case sensitive</li>
+          <li>Different HTML elements can point to the same class name</li>
+          <li>JavaScript can access elements with a specific class name with the <code>getElementsByClassName()</code> method</li>
+        </ul>               
+    </div>
+</div>

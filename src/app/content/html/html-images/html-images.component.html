@@ -1,4 +1,4 @@
-<div class="w-full py-10 px-5">
+<div class="w-full py-10 px-5 space-y-10">
     <div>
         <div class="border-b border-dashed border-slate-500 mb-2.5">
             <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">1. Images</h2>
@@ -87,7 +87,7 @@
         <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
             <h3 class="font-normal">The src Attribute</h3>
             <p>The required <code>src</code> attribute specifies the path (URL) to the image.</p>
-            <p><b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <code>alt</code> text are shown if the browser cannot find the image.</p>
+            <p><b>Note:</b> &nbsp; When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the <code>alt</code> text are shown if the browser cannot find the image.</p>
             <div class="p-6 bg-yellow-600/20 space-y-3.5">
                 <h3>Example</h3>
                 <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
@@ -133,7 +133,7 @@
                 </div>
                 <a href="" class="btn_primary">Try Now</a>
             </div>
-            <div class="p-3.5 bg-yellow-700/20"><p><b>Note:</b>  A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p></div>
+            <div class="p-3.5 bg-yellow-700/20"><p><b>Note:</b> &nbsp; A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p></div>
         </div>
         <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
             <h3 class="font-normal">Image Size - Width and Height</h3>
@@ -143,7 +143,7 @@
                 <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
                     <div>
                         <span style="color:#905">
-                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_girl.jpg"</span> alt <span style="color:#005cc5">="Girl in a jacket"</span> style <span style="color:#005cc5">="width:500px;height:600px;"</span>
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="background.jpg"</span> alt <span style="color:#005cc5">="Girl in a jacket"</span> style <span style="color:#005cc5">="width:500px;height:600px;"</span>
                            </span>
                            <span style="color:#999">&gt;</span>
                         </span>
@@ -152,6 +152,504 @@
                 <a href="" class="btn_primary">Try Now</a>
             </div>
             <p>Alternatively, you can use the <code>width</code> and <code>height</code> attributes:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="background.jpg"</span> alt <span style="color:#005cc5">="Girl in a jacket"</span> width <span style="color:#005cc5">="500"</span> height <span style="color:#005cc5">="600"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p>The <code>width</code> and <code>height</code> attributes always define the width and height of the image in pixels.</p>
+            <div class="p-3.5 bg-yellow-700/20">
+                <p> <b>Note: </b> &nbsp; Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads.</p>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Width and Height, or Style?</h3>
+            <p>The <code>width</code>, <code>height</code>, and <code>style</code> attributes are all valid in HTML.</p>
+            <p>However, we suggest using the <code>style</code> attribute. It prevents styles sheets from changing the size of images:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                           <br>img <span style="color:#999">&#123;</span>
+                           <span style="color:#d73a49">
+                              <br>&nbsp;&nbsp;width <span style="color:#005cc5">
+                                 <span style="color:#999">:</span> 100% <span style="color:#999">;</span>
+                              </span>
+                              <br>
+                           </span>
+                           <span style="color:#999">&#125;</span>
+                           <br>
+                        </span>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="html5.gif"</span> alt <span style="color:#005cc5">="HTML5 Icon"</span> width <span style="color:#005cc5">="128"</span> height <span style="color:#005cc5">="128"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="html5.gif"</span> alt <span style="color:#005cc5">="HTML5 Icon"</span> style <span style="color:#005cc5">="width:128px;height:128px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Images in Another Folder</h3>
+            <p>If you have your images in a sub-folder, you must include the folder name in the <code>src</code> attribute:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="/images/html5.gif"</span> alt <span style="color:#005cc5">="HTML5 Icon"</span> style <span style="color:#005cc5">="width:128px;height:128px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                     </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Images on Another Server/Website</h3>
+            <p>Some web sites point to an image on another server.</p>
+            <p>To point to an image on another server, you must specify an absolute (full) URL in the <code>src</code> attribute:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="https://www.google.com/images/google_img.jpg"</span> alt <span style="color:#005cc5">="IT Schools.com"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p><b>Notes on external images:</b> &nbsp; External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed.</p>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Animated Images</h3>
+            <p>HTML allows animated GIFs:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="programming.gif"</span> alt <span style="color:#005cc5">="Computer Man"</span> style <span style="color:#005cc5">="width:48px;height:48px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Image as a Link</h3>
+            <p>To use an image as a link, put the <code>&lt;img&gt;</code> tag inside the <code>&lt;a&gt;</code> tag:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="default.asp"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="smiley.gif"</span> alt <span style="color:#005cc5">="HTML tutorial"</span> style <span style="color:#005cc5">="width:42px;height:42px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Image Floating</h3>
+            <p>Use the CSS <code>float</code> property to let the image float to the right or to the left of a text:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="smiley.gif"</span> alt <span style="color:#005cc5">="Smiley face"</span> style <span style="color:#005cc5">="float:right;width:42px;height:42px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> The image will float to the right of the text. <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <br>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="smiley.gif"</span> alt <span style="color:#005cc5">="Smiley face"</span> style <span style="color:#005cc5">="float:left;width:42px;height:42px;"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> The image will float to the left of the text. <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                        </span>
+                     </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">2. Background Images</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5">
+            <h3 class="titel font-medium">Background Image on an HTML element</h3>
+            <p class="text16">A background image can be specified for almost any HTML element.</p>
+            <p>To add a background image on an HTML element, use the HTML <code>style</code> attribute and the CSS <code>background-image</code> property:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>p <span style="color:green"> style <span style="color:#005cc5">="background-image: url('background.jpg');"</span>
+                           </span>
+                           <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p>You can also specify the background image in the <code>&lt;style&gt;</code> element, in the <code>&lt;head&gt;</code> section:</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                           <br>p <span style="color:#999">&#123;</span>
+                           <span style="color:#d73a49">
+                              <br>&nbsp; background-image <span style="color:#005cc5">
+                                 <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                              </span>
+                              <br>
+                           </span>
+                           <span style="color:#999">&#125;</span>
+                           <br>
+                        </span>
+                        <span style="color:#905">
+                           <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Background Image on a Page</h3>
+            <p>To apply a background image to the whole webpage, you should set the background image on the <code>&lt;body&gt;</code> element.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                          <br>body <span style="color:#999">&#123;</span>
+                          <span style="color:#d73a49">
+                            <br>&nbsp; background-image <span style="color:#005cc5">
+                              <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                            </span>
+                            <br>
+                          </span>
+                          <span style="color:#999">&#125;</span>
+                          <br>
+                        </span>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Background Repeat</h3>
+            <p>When a background image is smaller than the element it's applied to, it will automatically repeat both horizontally and vertically to fill the entire area.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                          <br>body <span style="color:#999">&#123;</span>
+                          <span style="color:#d73a49">
+                            <br>&nbsp; background-image <span style="color:#005cc5">
+                              <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                            </span>
+                            <br>
+                          </span>
+                          <span style="color:#999">&#125;</span>
+                          <br>
+                        </span>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <p>To prevent the background image from repeating, use the <code>background-repeat</code> property and set its value to <code>no-repeat</code>.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                          <br>body <span style="color:#999">&#123;</span>
+                          <span style="color:#d73a49">
+                            <br>&nbsp; background-image <span style="color:#005cc5">
+                              <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-repeat <span style="color:#005cc5">
+                              <span style="color:#999">:</span> no-repeat <span style="color:#999">;</span>
+                            </span>
+                            <br>
+                          </span>
+                          <span style="color:#999">&#125;</span>
+                          <br>
+                        </span>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Background Cover</h3>
+            <p>To make the background image stretch and cover the entire element, set the <code>background-size</code> property to <code>cover</code>.</p>
+            <p>Additionally, to ensure the background image stays fixed and covers the whole element, set the <code>background-attachment</code> property to <code>fixed</code>.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                          <br>body <span style="color:#999">&#123;</span>
+                          <span style="color:#d73a49">
+                            <br>&nbsp; background-image <span style="color:#005cc5">
+                              <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-repeat <span style="color:#005cc5">
+                              <span style="color:#999">:</span> no-repeat <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-attachment <span style="color:#005cc5">
+                              <span style="color:#999">:</span> fixed <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-size <span style="color:#005cc5">
+                              <span style="color:#999">:</span> cover <span style="color:#999">;</span>
+                            </span>
+                            <br>
+                          </span>
+                          <span style="color:#999">&#125;</span>
+                          <br>
+                        </span>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Background Stretch</h3>
+            <p>To make the background image stretch and fit the full width and height of the element, you can set the <code>background-size</code> property to <code>100% 100%</code>.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                        </span>
+                        <span style="color:#905">
+                          <br>body <span style="color:#999">&#123;</span>
+                          <span style="color:#d73a49">
+                            <br>&nbsp; background-image <span style="color:#005cc5">
+                              <span style="color:#999">:</span> url('background.jpg') <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-repeat <span style="color:#005cc5">
+                              <span style="color:#999">:</span> no-repeat <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-attachment <span style="color:#005cc5">
+                              <span style="color:#999">:</span> fixed <span style="color:#999">;</span>
+                            </span>
+                            <br>&nbsp; background-size <span style="color:#005cc5">
+                              <span style="color:#999">:</span> 100% 100% <span style="color:#999">;</span>
+                            </span>
+                            <br>
+                          </span>
+                          <span style="color:#999">&#125;</span>
+                          <br>
+                        </span>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">3. <code>&lt;picture&gt;</code> Element</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">HTML <code>&lt;picture&gt;</code> Element</h3>
+           <p> The HTML <code>&lt;picture&gt;</code> element enables you to show different images based on the device type or screen size.</p>
+            <p>The HTML <code>&lt;picture&gt;</code> element provides developers with greater control when defining multiple image sources for different scenarios.</p>
+            <p>The <code>&lt;picture&gt;</code> element contains one or more <code>&lt;source&gt;</code> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>picture <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>source <span style="color:green"> media <span style="color:#005cc5">="(min-width: 650px)"</span> srcset <span style="color:#005cc5">="img_food.jpg"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>source <span style="color:green"> media <span style="color:#005cc5">="(min-width: 465px)"</span> srcset <span style="color:#005cc5">="img_car.jpg"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_girl.jpg"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/picture <span style="color:#999">&gt;</span>
+                        </span>
+                      </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+            <div class="p-3.5 bg-yellow-700/20">
+                <p><b>Note:</b> &nbsp; Always include an <code>&lt;img&gt;</code> tag as the final child inside the <code>&lt;picture&gt;</code> element. It acts as a fallback for browsers that don't support the <code>&lt;picture&gt;</code> element or when no <code>&lt;source&gt;</code> conditions are met.</p>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">When to use the Picture Element</h3>
+            <p>The <code>&lt;picture&gt;</code> element serves two primary purposes:</p>
+            <p class="text-18">1. Bandwidth</p>
+            <p>On smaller screens or devices, loading a large image isn't necessary. The browser selects the first <code>&lt;source&gt;</code> element that matches the conditions and skips the rest.</p>
+            <p class="text-18">2. Format Support</p>
+            <p>Not all browsers or devices support every image format. With the <code>&lt;picture&gt;</code> element, you can provide multiple image formats, and the browser will load the first one it supports while skipping the rest.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>picture <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>source <span style="color:green"> srcset <span style="color:#005cc5">="img_avatar.png"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>source <span style="color:green"> srcset <span style="color:#005cc5">="img_girl.jpg"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="img_beatles.gif"</span> alt <span style="color:#005cc5">="Beatles"</span> style <span style="color:#005cc5">="width:auto;"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/picture <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
         </div>
     </div>
 </div>

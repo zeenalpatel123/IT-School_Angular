@@ -1,1 +1,152 @@
-<p>html-iframes works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Iframes</h3>
+        <p class="text16">An HTML iframe is used to display a web page within a web page.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <iframe class="w-full" width="100" height="500" src="https://www.youtube.com/embed/djZSSnKnwTA?si=b5SFEflhg5GSg2Zq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">HTML Iframe Syntax</h3>
+        <P>The HTML <code>&lt;iframe&gt;</code> tag specifies an inline frame.</P>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Syntax</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">=" <i>url</i>" </span> title <span style="color:#005cc5">=" <em>description</em>" </span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p><b>Tip:</b> It's recommended to always add a title attribute to an <code>&lt;iframe&gt;</code>. This helps screen readers describe the iframe's content for improved accessibility.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Iframe - Set Height and Width</h3>
+        <p>Set the <code>height</code> and <code>width</code> attributes to define the dimensions of the <code>&lt;iframe&gt;</code>.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">="demo_iframe.htm"</span> height <span style="color:#005cc5">="200"</span> width <span style="color:#005cc5">="300"</span> title <span style="color:#005cc5">="Iframe Example"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+
+        </div>
+        <p>Or you can add the <code>style</code> attribute and use the CSS <code>height</code> and <code>width</code> properties:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">="demo_iframe.htm"</span> style <span style="color:#005cc5">="height:200px;width:300px;"</span> title <span style="color:#005cc5">="Iframe Example"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Iframe - Remove the Border</h3>
+        <p>By default, an iframe has a border around it.</p>
+        <p>To eliminate the border, apply the <code>style</code> attribute with the <code>border</code> property set to <code>none</code> using CSS.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">="demo_iframe.htm"</span> style <span style="color:#005cc5">="border:none;"</span> title <span style="color:#005cc5">="Iframe Example"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">="demo_iframe.htm"</span> style <span style="color:#005cc5">="border:2px solid red;"</span> title <span style="color:#005cc5">="Iframe Example"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Iframe - Target for a Link</h3>
+        <p>An iframe can be used as the target frame for a link.</p>
+        <p>The <code>target</code> attribute in the link should match the <code>name</code> attribute of the <code>&lt;iframe&gt;</code> it’s intended to load content into.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> src <span style="color:#005cc5">="demo_iframe.htm"</span> name <span style="color:#005cc5">="iframe_a"</span> title <span style="color:#005cc5">="Iframe Example"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="https://www.w3schools.com"</span> target <span style="color:#005cc5">="iframe_a"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>W3Schools.com <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Chapter Summary</h3>
+        <ul class="space-y-1.5 list-disc pl-5">
+          <li>The HTML <code>&lt;iframe&gt;</code> element is used to define an inline frame within a webpage.</li>
+          <li>The <code>src</code> attribute specifies the web page URL that will be embedded inside the <code>&lt;iframe&gt;</code>.</li>
+          <li>Always add a <code>title</code> attribute to improve accessibility for screen reader users.</li>
+          <li>The <code>height</code> and <code>width</code> attributes are used to set the dimensions of an <code>&lt;iframe&gt;</code>.</li>
+          <li>Apply border: none; in the style to remove the border surrounding the <code>&lt;iframe&gt;</code>.</li>
+        </ul>               
+      </div>
+</div>

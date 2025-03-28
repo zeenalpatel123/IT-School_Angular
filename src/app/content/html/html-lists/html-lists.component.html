@@ -1,1 +1,818 @@
-<p>html-lists works!</p>
+<div class="w-full py-10 px-5 space-y-10">
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">1. Lists</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5">
+            <h3 class="titel font-medium">HTML Lists</h3>
+            <p class="text16">HTML lists allow web developers to group a set of related items in lists.</p>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <div class="flex items-center">
+                          <div class="w-1/2">
+                            <p><b>An unordered HTML list:</b></p>
+                            <ul class="list-disc pl-5">
+                              <li>Item</li>
+                              <li>Item</li>
+                              <li>Item</li>
+                              <li>Item</li>
+                            </ul>
+                          </div>
+                          <div class="w-1/2">
+                            <p><b>An ordered HTML list:</b></p>
+                            <ol class="list-decimal pl-5">
+                              <li>First item</li>
+                              <li>Second item</li>
+                              <li>Third item</li>
+                              <li>Fourth item</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Unordered HTML List</h3>
+            <p>An unordered list is created using the <code>&lt;ul&gt;</code> tag, and each item within the list is defined using the <code>&lt;li&gt;</code> tag.</p>
+            <p>By default, list items in an unordered list are displayed with bullet points (small black dots).</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                      </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Ordered HTML List</h3>
+            <p>An ordered list is defined using the <code>&lt;ol&gt;</code> tag, and each item in the list is added with the <code>&lt;li&gt;</code> tag.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                      </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">HTML Description Lists</h3>
+            <p>HTML also supports description lists.</p>
+            <p>A description list is a list of terms, with a description of each term.</p>
+            <p>The <code>&lt;dl &gt;</code> tag is used to create a description list, where <code>&lt;dt&gt;</code> defines the term or name, and <code>&lt;dd&gt;</code> provides the description for that term.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dl <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dt <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dt <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dd <span style="color:#999">&gt;</span>
+                        </span>- black hot drink <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dd <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dt <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dt <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dd <span style="color:#999">&gt;</span>
+                        </span>- white cold drink <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dd <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dl <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">2. Unordered Lists</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Unordered HTML List</h3>
+            <p class="text16">The HTML <code>&lt;ul&gt;</code> tag defines an unordered (bulleted) list.</p>
+            <p>To create an unordered list, use the <code>&lt;ul&gt;</code> tag, and add each list item with the <code>&lt;li&gt;</code> tag.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Unordered HTML List - Choose List Item Marker</h3>
+            <p>The <code>list-style-type</code> property in CSS specifies the appearance of the list item markers. It accepts various values, such as:</p>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Value</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">disc</td>
+                    <td class="border border-gray-300 px-4 py-2">Sets the list item marker to a bullet (default)</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">circle</td>
+                    <td class="border border-gray-300 px-4 py-2">Sets the list item marker to a circle</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">square</td>
+                    <td class="border border-gray-300 px-4 py-2">Sets the list item marker to a square</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">none</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will not be marked</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Disc</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:green"> style <span style="color:#005cc5">="list-style-type:disc;"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Circle</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:green"> style <span style="color:#005cc5">="list-style-type:circle;"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Square</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:green"> style <span style="color:#005cc5">="list-style-type:square;"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">No List Marker</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:green"> style <span style="color:#005cc5">="list-style-type:none;"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Nested HTML Lists</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <br> &nbsp; &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ul <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Black tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Green tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Chapter Summary</h3>
+            <ul class="space-y-1.5 list-disc pl-5">
+              <li>Use the HTML <code>&lt;ul&gt;</code> element to define an unordered list</li>
+              <li>Use the CSS <code>list-style-type</code> property to define the list item marker</li>
+              <li>Use the HTML <code>&lt;li&gt;</code> element to define a list item</li>
+              <li>Lists can be nested</li>
+              <li>List items can contain other HTML elements</li>
+              <li>Use the CSS property <code>float:left to</code> display a list horizontally</li>
+            </ul>               
+        </div>
+    </div>
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">2. Ordered Lists</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Ordered HTML List</h3>
+            <p class="text16">The HTML <code>&lt;ol&gt;</code> tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+            <p>An ordered list starts with the <code>&lt;ol&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                      </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Ordered HTML List - The Type Attribute</h3>
+            <p>The type attribute of the <code>&lt;ol&gt;</code> tag, defines the type of the list item marker:</p>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Type</th>
+                    <th class="border border-gray-300 px-4 py-2 text-left">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">type="1"</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will be numbered with numbers (default)</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">type="A"</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will be numbered with uppercase letters</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">type="a"</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will be numbered with lowercase letters</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">type="I"</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will be numbered with uppercase roman numbers</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2">type="i"</td>
+                    <td class="border border-gray-300 px-4 py-2">The list items will be numbered with lowercase roman numbers</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Numbers</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:green"> type <span style="color:#005cc5">="1"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Uppercase Letters</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:green"> type <span style="color:#005cc5">="A"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Lowercase Letters</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:green"> type <span style="color:#005cc5">="a"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Roman Numbers - Uppercase</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:green"> type <span style="color:#005cc5">="I"</span>
+                          </span>
+                          <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Roman Numbers - Lowercase</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                            <span style="color:#999">&lt;</span>ol <span style="color:green"> type <span style="color:#005cc5">="i"</span>
+                            </span>
+                            <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                        </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Control List Counting</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                            <span style="color:#999">&lt;</span>ol <span class="attributecolor" style="color:green"> type <span class="attributevaluecolor" style="color:#005cc5">="i"</span>
+                            </span>
+                            <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                            <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                            <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">Nested HTML Lists</h3>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Tea <br> &nbsp; &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>ol <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;&nbsp; &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Black tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Green tea <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>&nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/ol <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Chapter Summary</h3>
+            <ul class="space-y-1.5 list-disc pl-5">
+              <li>Use the HTML <code>&lt;ol&gt;</code> element to define an ordered list</li>
+              <li>Use the HTML <code>type</code> attribute to define the numbering type</li>
+              <li>Use the HTML <code>&lt;li&gt;</code> element to define a list item</li>
+              <li>Lists can be nested</li>
+              <li>List items can contain other HTML elements</li>
+            </ul>               
+        </div>
+    </div>
+    <div>
+        <div class="border-b border-dashed border-slate-500 mb-2.5">
+            <h2 class="text-52 text-black font-bold mb-5 bg-red-200 inline-block p-1.5">4. Other Lists</h2>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="titel font-medium">HTML Description Lists</h3>
+            <p class="text16">A description list is a list of terms, with a description of each term.</p>
+            <p>An ordered list starts with the <code>&lt;ol&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.</p>
+            <p>The <code>&lt;dl&gt;</code> element represents a description list, where each term is defined using the <code>&lt;dt&gt;</code> tag, and its corresponding description is provided with the <code>&lt;dd&gt;</code> tag.</p>
+            <div class="p-6 bg-yellow-600/20 space-y-3.5">
+                <h3>Example</h3>
+                <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                    <div>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dl <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dt <span style="color:#999">&gt;</span>
+                        </span>Coffee <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dt <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dd <span style="color:#999">&gt;</span>
+                        </span>- black hot drink <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dd <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dt <span style="color:#999">&gt;</span>
+                        </span>Milk <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dt <span style="color:#999">&gt;</span>
+                        </span>
+                        <br> &nbsp; <span style="color:#905">
+                          <span style="color:#999">&lt;</span>dd <span style="color:#999">&gt;</span>
+                        </span>- white cold drink <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dd <span style="color:#999">&gt;</span>
+                        </span>
+                        <br>
+                        <span style="color:#905">
+                          <span style="color:#999">&lt;</span>/dl <span style="color:#999">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <a href="" class="btn_primary">Try Now</a>
+            </div>
+        </div>
+        <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+            <h3 class="font-normal">Chapter Summary</h3>
+            <ul class="space-y-1.5 list-disc pl-5">
+              <li>Use the HTML <code>&lt;dl&gt;</code> element to define a description list</li>
+              <li>Use the HTML <code>&lt;dl&gt;</code> element to define the description term</li>
+              <li>Use the HTML <code>&lt;dd&gt;</code> element to describe the term in a description list</li>
+            </ul>               
+        </div>
+    </div>
+</div>

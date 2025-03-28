@@ -1,1 +1,104 @@
-<p>html-file-paths works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML File Paths</h3>
+        <p class="text16">A file path describes the location of a file in a web site's folder structure.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">File Path Examples </h3>
+        <table class="w-full border-collapse border border-gray-300">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="border border-gray-300 px-4 py-2 text-left">Path</th>
+                <th class="border border-gray-300 px-4 py-2 text-left">description</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-gray-100">
+                <td class="border border-gray-300 px-4 py-2">&lt;img src="picture.jpg"&gt;</td>
+                <td class="border border-gray-300 px-4 py-2">The "picture.jpg" file is located in the same folder as the current page</td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="border border-gray-300 px-4 py-2 whitespace-nowrap">&lt;img src="images/picture.jpg"&gt;</td>
+                <td class="border border-gray-300 px-4 py-2">The "picture.jpg" file is located in the images folder in the current folder</td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="border border-gray-300 px-4 py-2">&lt;img src="/images/picture.jpg&gt;</td>
+                <td class="border border-gray-300 px-4 py-2">The "picture.jpg" file is located in the images folder at the root of the current web</td>
+              </tr>
+              <tr class="hover:bg-gray-100">
+                <td class="border border-gray-300 px-4 py-2">&lt;img src="../picture.jpg"&gt;</td>
+                <td class="border border-gray-300 px-4 py-2">The "picture.jpg" file is located in the folder one level up from the current folder</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">HTML File Paths</h3>
+        <p>A file path describes the location of a file in a web site's folder structure.</p>
+        <p>File paths are used when linking to external files, like:</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Web pages</li>
+            <li>Images</li>
+            <li>Style sheets</li>
+            <li>JavaScripts</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Absolute File Paths</h3>
+        <p>An absolute file path is the full URL to a file:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="https://www.w3schools.com/images/picture.jpg"</span> alt <span style="color:#005cc5">="Mountain"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Relative File Paths</h3>
+        <p>A relative file path points to a file relative to the current page.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="/images/picture.jpg"</span> alt <span style="color:#005cc5">="Mountain"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p>In the following example, the file path points to a file in the images folder located in the current folder:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="images/picture.jpg"</span> alt <span style="color:#005cc5">="Mountain"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p>In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="../images/picture.jpg"</span> alt <span style="color:#005cc5">="Mountain"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

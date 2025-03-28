@@ -1,1 +1,293 @@
-<p>html-id works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML id Attribute</h3>
+        <p class="text16">The HTML <code>id</code> attribute is used to specify a unique id for an HTML element.</p>
+        <p>You cannot have more than one element with the same id in an HTML document.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The id Attribute</h3>
+        <p>The <code>id</code> attribute assigns a unique identifier to an HTML element. This value must be distinct across the entire HTML document.</p>
+        <p>The <code>id</code> attribute is used to reference a specific style rule in a CSS stylesheet. It can also be accessed with JavaScript to select and manipulate the element with that exact id.</p>
+        <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {{'{}'}}.</p>
+        <p>In the example below, an <code>&lt;h1&gt;</code> element is assigned the id <code>"myHeader"</code>. It will be styled based on the <code>#myHeader</code> CSS rule defined in the <code>&lt;head&gt;</code> section of the HTML document.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <br>#myHeader <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp; background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> lightblue <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> black <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; padding <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 40px <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; text-align <span style="color:#005cc5">
+                          <span style="color:#999">:</span> center <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:green"> id <span style="color:#005cc5">="myHeader"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>My Header <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-3.5 bg-yellow-700/20">
+            <p><b>Note:</b> &nbsp; The id name is case sensitive!</p>
+            <p><b>Note:</b> &nbsp; The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</p>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Difference Between Class and ID</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <br>
+                      <span style="color:slategray">/* Style the element with the id "myHeader" */</span>
+                      <br>
+                      <strong>#myHeader</strong>
+                      <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp; background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> lightblue <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> black <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;padding <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 40px <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;text-align <span style="color:#005cc5">
+                          <span style="color:#999">:</span> center <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                      <br>
+                      <span style="color:slategray">/* Style all elements with the class name "city" */</span>
+                      <br>
+                      <strong>.city </strong>
+                      <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp; background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> tomato <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> white <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp;&nbsp;padding <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 10px <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                      <br>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:slategray">&lt;!-- An element with a unique id --&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:green"> id <span style="color:#005cc5">="myHeader"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>My Cities <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:slategray">&lt;!-- Multiple elements with same class --&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>London is the capital of England. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> class <span style="color:#005cc5">="city"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Tokyo is the capital of Japan. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">HTML Bookmarks with ID and Links</h3>
+        <p>HTML bookmarks enable users to navigate directly to a particular section of a webpage.</p>
+        <p>Bookmarks are especially helpful for navigating long web pages with lots of content.</p>
+        <p>To use a bookmark, you need to define the target location first, then create a link that points to it.</p>
+        <h3>Example</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> id <span style="color:#005cc5">="C4"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Chapter 4 <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:green"> id <span style="color:#005cc5">="C4"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Chapter 4 <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="html_demo.html#C4"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Jump to Chapter 4 <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Using the id Attribute in JavaScript</h3>
+        <p>JavaScript can also use the id attribute to target and perform actions on a specific HTML element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+                    </span>
+                    <span class="jscolor" style="color:black">
+                      <br>
+                      <span style="color:#005cc5">function</span> displayResult() &#123; <br>&nbsp;&nbsp;document. <span style="color:black">getElementById</span>( <span style="color:green">"myHeader"</span>). <span style="color:black">innerHTML</span> = <span style="color:green">"Have a nice day!"</span>; <br> &#125; <br>
+                      <span style="color:#905"></span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Chapter Summary</h3>
+        <ul class="space-y-1.5 list-disc pl-5">
+          <li>The <code>id</code> attribute assigns a unique identifier to an HTML element within a webpage.</li>
+          <li>The <code>id</code> value must be unique throughout the entire HTML document to ensure it identifies only one element.</li>
+          <li>The <code>id</code> attribute is used by CSS and JavaScript to style/select a specific element</li>
+          <li>The <code>id</code> attribute value is case-sensitive, meaning uppercase and lowercase letters are treated as different characters.</li>
+          <li>The <code>id</code> attribute can also be used to create bookmarks in HTML, allowing users to jump to specific sections of a page.</li>
+          <li>JavaScript can access an element with a specific id with the <code>getElementById()</code> method</li>
+        </ul>               
+      </div>
+</div>
