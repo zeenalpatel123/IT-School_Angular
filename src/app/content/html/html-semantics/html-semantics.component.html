@@ -1,1 +1,316 @@
-<p>html-semantics works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Semantic Elements</h3>
+        <p class="text16">Semantic elements = elements with a meaning.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">What are Semantic Elements?</h3>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+        <p>Examples of non-semantic elements: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> - Tells nothing about its content.</p>
+        <p>Examples of semantic elements: <code>&lt;img&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code> - Clearly defines its content.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Semantic Elements in HTML</h3>
+        <p>Many web sites contain HTML code like: &lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt; to indicate navigation, header, and footer.</p>
+        <p>In HTML there are several semantic elements that can be used to define different parts of a web page:  </p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li><code>&lt;article&gt;</code></li>
+            <li><code>&lt;aside&gt;</code></li>
+            <li><code>&lt;details&gt;</code></li>
+            <li><code>&lt;figcaption&gt;</code></li>
+            <li><code>&lt;figure&gt;</code></li>
+            <li><code>&lt;footer&gt;</code></li>
+            <li><code>&lt;header&gt;</code></li>
+            <li><code>&lt;main&gt;</code></li>
+            <li><code>&lt;mark&gt;</code></li>
+            <li><code>&lt;nav&gt;</code></li>
+            <li><code>&lt;section&gt;</code></li>
+            <li><code>&lt;summary&gt;</code></li>
+            <li><code>&lt;time&gt;</code></li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML <code>&lt;section&gt;</code> Element</h3>
+        <p>The <code>&lt;section&gt;</code> element defines a section in a document.</p>
+        <p>According to itschool's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+        <p>Examples of where a <code>&lt;section&gt;</code> element can be used:</p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>Chapters</li>
+            <li>Introduction</li>
+            <li>News items</li>
+            <li>Contact information</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>section <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>WWF <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/section <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>section <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>WWF's Panda symbol <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/section <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML <code>&lt;article&gt;</code> Element</h3>
+        <p>The <code>&lt;article&gt;</code> element specifies independent, self-contained content.</p>
+        <p>Examples of where the <code>&lt;article&gt;</code> element can be used:</p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>Forum posts</li>
+            <li>Blog posts</li>
+            <li>User comments</li>
+            <li>Product cards</li>
+            <li>Newspaper articles</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Google Chrome <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today! <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Mozilla Firefox <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Microsoft Edge <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/article <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Nesting  <code>&lt;article&gt;</code> in <code>&lt;section&gt;</code> or Vice Versa?</h3>
+        <p>The <code>&lt;header&gt;</code> element represents a container for introductory content or a set of navigational links.</p>
+        <p>A <code>&lt;header&gt;</code> element typically contains:</p>
+        <p>Can we use the definitions to decide how to nest those elements? No, we cannot!</p>
+        <p>So, you will find HTML pages with <code>&lt;section&gt;</code> elements containing <code>&lt;article&gt;</code> elements, and <code>&lt;article&gt;</code> elements containing <code>&lt;section&gt;</code> elements.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML   <code>&lt;header&gt;</code>   Element</h3>
+        <p>The <code>&lt;header&gt;</code> element represents a container for introductory content or a set of navigational links.</p>
+        <p>A <code>&lt;header&gt;</code> element typically contains:</p>
+        <ul>
+            <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+            <li>logo or icon</li>
+            <li>authorship information</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>article <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>header <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>What Does WWF Do? <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>WWF's mission: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/header <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>WWF's mission is to stop the degradation of our planet's natural environment, <br>&nbsp; and build a future in which humans live in harmony with nature. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/article <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML   <code>&lt;footer&gt;</code>   Element</h3>
+        <p>The <code>&lt;footer&gt;</code> element defines a footer for a document or section.</p>
+        <p>A <code>&lt;footer&gt;</code> element typically contains:</p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>authorship information</li>
+            <li>copyright information</li>
+            <li>contact information</li>
+            <li>sitemap</li>
+            <li>back to top links</li>
+            <li>related documents</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>footer <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Author: Hege Refsnes <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="{{'mailto:hege@example.com'}}"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>{{'hege@example.com '}}<span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/footer <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML   <code>&lt;nav&gt;</code>   Element</h3>
+        <p>The <code>&lt;nav&gt;</code> element defines a set of navigation links.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>nav <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>HTML <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span> | <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="/css/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>CSS <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span> | <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="/js/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>JavaScript <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span> | <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="/jquery/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>jQuery <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/nav <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>

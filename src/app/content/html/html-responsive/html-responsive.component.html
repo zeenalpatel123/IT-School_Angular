@@ -1,1 +1,391 @@
-<p>html-responsive works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Responsive Web Design</h3>
+        <p class="text16">Responsive web design is about creating web pages that look good on all devices!</p>
+        <p>A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+        <img src="assets/images/mockup_responsive.jpg" class="w-full max-w-full" alt="mockup"/>
+        <h3>What is Responsive Web Design</h3>
+        <p>Mobile-first design is about creating a website layout that is optimized for smaller screens first, then progressively enhancing it for larger devices like tablets and desktops.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Setting The Viewport</h3>
+      <p>To create a responsive website, add the following <code>&lt;code&gt;</code> tag to all your web pages:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>meta <span style="color:green"> name <span style="color:#005cc5">="viewport"</span> content <span style="color:#005cc5">="width=device-width, initial-scale=1.0"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Responsive Images</h3>
+      <p>Responsive images are images that scale nicely to fit any browser size</p>
+      <h4 class="text-20">Using the width Property</h4>
+      <p>If the CSS width property is set to 100%, the image will be responsive and scale up and down:</p>
+      <img src="assets/images/flower.jpg" class="w-full max-w-full" alt="flower"/>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="nature.jpg"</span>
+                    <strong>style <span style="color:#005cc5">="width:100%;"</span>
+                    </strong>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <p>Notice that in the example above, the text may overflow its container. A better solution, in many cases, is to use the overflow property to control how the content behaves.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Using the max-width Property</h3>
+      <p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</p>
+      <img src="assets/images/nature.jpg" class="max-w-lg" alt="nature"/>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="nature.jpg"</span> style <span style="color:#005cc5">=" <strong>max-width:100%;</strong>height:auto;" </span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Show Different Images Depending on Browser Width</h3>
+      <p>The HTML <code>&lt;picture&gt;</code> element allows you to define different images for different browser window sizes.</p>
+      <p>Resize the browser window to see how the image below changes depending on the width:</p>
+      <img src="assets/images/mountain.jpg" alt="mountain"/>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>picture <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>source <span style="color:green"> srcset <span style="color:#005cc5">="mountain.jpg"</span> media <span style="color:#005cc5">="(max-width: 600px)"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>source <span style="color:green"> srcset <span style="color:#005cc5">="mountain.jpg"</span> media <span style="color:#005cc5">="(max-width: 1500px)"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>source <span style="color:green"> srcset <span style="color:#005cc5">="mountain.jpg"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="mountain.jpg"</span> alt <span style="color:#005cc5">="mountain"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/picture <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Responsive Text Size</h3>
+      <p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
+      <img src="assets/images/itschool.jpg" alt="itschool"/>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>h1 <span style="color:green"> style <span style="color:#005cc5">=" <strong>font-size:10vw</strong>" </span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>IT School <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p>Viewport height refers to the height of the browser window. 1vh = 1% of viewport height. So, if the viewport is 80cm tall, 1vh equals 0.8cm.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Media Queries</h3>
+      <p>In addition to adjusting layouts, it's also common to use media queries to change navigation menus on responsive web pages.</p>
+      <p>With media queries, you can apply specific CSS rules depending on the device’s screen width, height, or orientation.</p>
+      <div class="flex">
+        <div class="w-3/12 p-3 bg-yellow-200">
+          <div>Left Menu <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="w-6/12 p-3 bg-purple-200">
+          <div>Main <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="w-3/12 p-3 bg-red-300">
+          <div>Right <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>style <span style="color:#999">&gt;</span>
+                </span>
+                <span style="color:#905">
+                  <br>.left, .right <span style="color:#999">&#123;</span>
+                  <span style="color:#d73a49">
+                    <br>&nbsp; float <span style="color:#005cc5">
+                      <span style="color:#999">:</span> left <span style="color:#999">;</span>
+                    </span>
+                    <br>&nbsp; width <span style="color:#005cc5">
+                      <span style="color:#999">:</span> 20% <span style="color:#999">;</span>
+                    </span>
+                    <span style="color:slategray">/* The width is 20%, by default */</span>
+                    <br>
+                  </span>
+                  <span style="color:#999">&#125;</span>
+                  <br>
+                  <br>.main <span style="color:#999">&#123;</span>
+                  <span style="color:#d73a49">
+                    <br>&nbsp; float <span style="color:#005cc5">
+                      <span style="color:#999">:</span> left <span style="color:#999">;</span>
+                    </span>
+                    <br>&nbsp; width <span style="color:#005cc5">
+                      <span style="color:#999">:</span> 60% <span style="color:#999">;</span>
+                    </span>
+                    <span style="color:slategray">/* The width is 60%, by default */</span>
+                    <br>
+                  </span>
+                  <span style="color:#999">&#125;</span>
+                  <br>
+                  <br>
+                  <span style="color:slategray">/* Use a media query to add a breakpoint at 800px: */</span>
+                  <br>{{'@media screen and (max-width: 800px)'}} <span style="color:#999">&#123;</span>
+                  <span style="color:#905">
+                    <br>&nbsp; .left, .main, .right <span style="color:#999">
+                      <span style="color:#999">&#123;</span>
+                    </span>
+                    <span style="color:#d73a49">
+                      <br>&nbsp;&nbsp;&nbsp; width <span style="color:#005cc5">
+                        <span style="color:#999">:</span> 100% <span style="color:#999">;</span>
+                      </span>
+                      <span style="color:slategray">/* The width is 100%, when the viewport is 800px or smaller */</span>
+                      <br>&nbsp; </span>
+                    <span style="color:#999">
+                      <span style="color:#999">&#125;</span>
+                    </span>
+                    <br>
+                  </span>
+                  <span style="color:#999">&#125;</span>
+                  <br>
+                </span>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/style <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Responsive Web Page - Full Example</h3>
+      <p>A responsive web page should look good on large desktop screens and on small mobile phones.</p>
+      <div>
+        <div class="bg-black/10 p-2" style="margin-bottom:8px;height:60px;"></div>
+        <div class="flex space-x-2">
+          <div class="w-1/3 bg-black/10" style="height:170px;"></div>
+          <div class="w-1/3 bg-black/10" style="height:170px;"></div>
+          <div class="w-1/3 bg-black/10" style="height:170px;"></div>
+        </div>
+        <div class="bg-black/10 p-2" style="margin-top:8px;height:31px;"></div>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Responsive Web Design - Frameworks</h3>
+      <p>All popular CSS Frameworks offer responsive design.</p>
+      <p>They are free, and easy to use.</p>
+      <h4 class="text-20">W3.CSS</h4>
+      <p>tailwind.CSS is a modern CSS framework with support for desktop, tablet, and mobile design by default.</p>
+      <p>tailwind.CSS is lightweight and optimized for speed, making it a great alternative to heavier CSS frameworks.</p>
+      <p>Tailwind CSS is built to work seamlessly without relying on jQuery or any other JavaScript frameworks.</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+            <div>
+                <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>html <span style="color:green"> lang <span style="color:#005cc5">="en"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                </span>Tailwind Example <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>meta <span style="color:green"> charset <span style="color:#005cc5">="utf-8"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>meta <span style="color:green"> name <span style="color:#005cc5">="viewport"</span> content <span style="color:#005cc5">="width=device-width, initial-scale=1"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>script <span style="color:green"> href <span style="color:#005cc5">="https://cdn.tailwindcss.com"</span> rel <span style="color:#005cc5">="stylesheet"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span class="jscolor" style="color:black"></span>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="p-5 bg-primary text-white text-center"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                </span>My First Tailwind Page <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                </span>Resize this responsive page to see the effect! <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="mt-5"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="flex"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="w-1/4"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>h3 <span style="color:#999">&gt;</span>
+                </span>Column 1 <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/h3 <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                </span>Lorem ipsum... <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="w-1/4"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>h3 <span style="color:#999">&gt;</span>
+                </span>Column 2 <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/h3 <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                </span>Lorem ipsum... <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>div <span style="color:green"> class <span style="color:#005cc5">="w-1/4"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>h3 <span style="color:#999">&gt;</span>
+                </span>Column 3 <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/h3 <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                </span>Lorem ipsum... <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+</div>

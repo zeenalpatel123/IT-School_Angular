@@ -1,718 +1,1786 @@
 <div class="w-full py-10 px-5">
-    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
-        <h3 class="titel font-medium">HTML Tables</h3>
-        <p class="text16">CSS stands for Cascading Style Sheets.</p>
-        <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+    <h3 class="titel font-medium">HTML Tables</h3>
+    <p class="text16">CSS stands for Cascading Style Sheets.</p>
+    <p>
+      HTML tables allow web developers to arrange data into rows and columns.
+    </p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-normal">Shades of Gray</h3>
+    <p>
+      Shades of gray are often defined using equal values for all three
+      parameters:
+    </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div class="bg-white">
+          <table class="w-full">
+            <tbody>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
     </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-normal">Define an HTML Table</h3>
+    <p>A table in HTML consists of table cells inside rows and columns.</p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <p class="text16">A simple HTML table:</p>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color: #905">
+            <span>&lt;</span>table <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>th
+            <span style="color: #999">&gt;</span> </span
+          >Company
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/th
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>th
+            <span style="color: #999">&gt;</span> </span
+          >Contact
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/th
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>th
+            <span style="color: #999">&gt;</span> </span
+          >Country
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/th
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp; &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Alfreds Futterkiste
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Maria Anders
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Germany
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Centro comercial Moctezuma
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Francisco Chang
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Mexico
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/table
+            <span style="color: #999">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-normal">Table Cells</h3>
+    <p class="text16">
+      Each table cell is defined by a <code>&lt;</code
+      ><span style="color: #905">td</span><code>&gt;</code> and a
+      <code>&lt;</code><span style="color: #905">/td</span
+      ><code>&gt;</code> tag.
+    </p>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p><b>Note:</b> &nbsp; <code>&lt;td&gt;</code> stands for table data.</p>
+    </div>
+    <p class="text16">
+      Everything between &nbsp; <code>&lt;td&gt;</code> and &nbsp;
+      <code>&lt;/td&gt;</code> is the content of a table cell.
+    </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>table
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp; &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Emil
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Tobias
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>td
+            <span style="color: #999">&gt;</span> </span
+          >Linus
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/td
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          &nbsp;
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/tr
+            <span style="color: #999">&gt;</span>
+          </span>
+          <br />
+          <span style="color: #905">
+            <span style="color: #999">&lt;</span>/table
+            <span style="color: #999">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p>
+        <b>Note:</b> A table cell can contain all sorts of HTML elements: text,
+        images, lists, links, other tables, etc
+      </p>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-normal">Table Cells</h3>
+    <p class="text16">
+      Each table cell is defined by a <code>&lt;</code
+      ><span style="color: #905">tr</span><code>&gt;</code> and ends with a
+      <code>&lt;</code><span style="color: #905">/tr</span
+      ><code>&gt;</code> tag.
+    </p>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p><b>Note:</b> &nbsp; <code>&lt;tr&gt;</code> stands for table data.</p>
+    </div>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>table<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp; &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Emil<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Tobias<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Linus<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp; &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >16<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >14<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >10<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br /><span style="color: #905"
+            ><span style="color: #999">&lt;</span>/table<span
+              style="color: #999"
+              >&gt;</span
+            ></span
+          >
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <p class="text16">
+      You can have as many rows as you like in a table; just make sure that the
+      number of cells are the same in each row.
+    </p>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p>
+        <b>Note:</b> There are times when a row can have less or more cells than
+        another. You will learn about that in a later chapter.
+      </p>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-normal">Table Headers</h3>
+    <p class="text16">
+      Sometimes you want your cells to be table header cells. In those cases use
+      the
+      <th>tag instead of the</th>
+      <td>tag:</td>
+    </p>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p>
+        <b>Note:</b> &nbsp; <code>&lt;th&gt;</code> stands for table header.
+      </p>
+    </div>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <p class="text16">Let the first row be table header cells:</p>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>table<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp; &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>th<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Person 1<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>th<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Person 2<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+              >&gt;</span
+            ></span
+          >
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>th<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Person 3<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp; &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Emil<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Tobias<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >Linus<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />&nbsp; &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >16<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >14<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >
+          <br />&nbsp;&nbsp;&nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>td<span style="color: #999"
+              >&gt;</span
+            ></span
+          >10<span style="color: #905"
+            ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br />
+          &nbsp;
+          <span style="color: #905"
+            ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+              >&gt;</span
+            ></span
+          ><br /><span style="color: #905"
+            ><span style="color: #999">&lt;</span>/table<span
+              style="color: #999"
+              >&gt;</span
+            ></span
+          >
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <p class="text16">
+      By default, the text in &nbsp; <code>&lt;th&gt;</code> elements are bold
+      and centered, but you can change that with CSS.
+    </p>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Borders
+    </h2>
+    <p class="text16 mt-2.5">
+      HTML tables can have borders of different styles and shapes.
+    </p>
     <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Shades of Gray</h3>
-        <p>Shades of gray are often defined using equal values for all three parameters:</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-          <h3>Example</h3>
-          <div class="p-6 border-l-2 border-yellow-600 bg-white">
-            <div class="bg-white">
-                <table class="w-full">
-                  <tbody>
-                  <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                  </tr>
-                  <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                  </tr>
-                  <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                  </tr>
-                  <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                  </tr>
-                  <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                  </tr>
-                  <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                  </tr>
-                  <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                  </tr>
-                </tbody>
-                </table>
-            </div>
-          </div>
-          <a href="" class="btn_primary">Try Now</a>
-        </div>
-    </div>
-    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Define an HTML Table</h3>
-        <p>A table in HTML consists of table cells inside rows and columns.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-          <h3>Example</h3>
-          <p class="text16">A simple HTML table:</p>
-          <div class="p-6 border-l-2 border-yellow-600 bg-white">
-            <div>
-                <span style="color:#905">
-                  <span>&lt;</span>table <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
-                </span>Company <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
-                </span>Contact <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
-                </span>Country <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp; &nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Alfreds Futterkiste <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Maria Anders <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Germany <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Centro comercial Moctezuma <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Francisco Chang <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                </span>Mexico <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                </span>
-                <br> &nbsp; <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
-                </span>
-                <br>
-                <span style="color:#905">
-                  <span style="color:#999">&lt;</span>/table <span style="color:#999">&gt;</span>
-                </span>
-            </div>
-          </div>
-          <a href="" class="btn_primary">Try Now</a>
-        </div>
-    </div>
-    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Table Cells</h3>
-        <p class="text16">Each table cell is defined by a <code>&lt;</code><span style="color: #905;">td</span><code>&gt;</code> and a <code>&lt;</code><span style="color: #905;">/td</span><code>&gt;</code> tag.</p>
-        <div class="p-3.5 bg-yellow-700/20">
-            <p>
-                <b>Note:</b> &nbsp; <code>&lt;td&gt;</code> stands for table data. 
-            </p>
-        </div>
-        <p class="text16">Everything between &nbsp; <code>&lt;td&gt;</code> and &nbsp; <code>&lt;/td&gt;</code> is the content of a table cell.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-                <div>
-                    <span style="color:#905">
-                    <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
-                    </span>
-                    <br>&nbsp; <span style="color:#905">
-                    <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
-                    </span>
-                    <br>&nbsp; &nbsp; <span style="color:#905">
-                    <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                    </span>Emil <span style="color:#905">
-                    <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                    </span>
-                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
-                    <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                    </span>Tobias <span style="color:#905">
-                    <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                    </span>
-                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
-                    <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
-                    </span>Linus <span style="color:#905">
-                    <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
-                    </span>
-                    <br> &nbsp; <span style="color:#905">
-                    <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
-                    </span>
-                    <br>
-                    <span style="color:#905">
-                    <span style="color:#999">&lt;</span>/table <span style="color:#999">&gt;</span>
-                    </span>
-                </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-        <div class="p-3.5 bg-yellow-700/20">
-            <p>
-                <b>Note:</b> A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc
-            </p>
-        </div>
-    </div>
-    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Table Cells</h3>
-        <p class="text16">Each table cell is defined by a <code>&lt;</code><span style="color: #905;">tr</span><code>&gt;</code> and ends with a <code>&lt;</code><span style="color: #905;">/tr</span><code>&gt;</code> tag.</p>
-        <div class="p-3.5 bg-yellow-700/20">
-            <p>
-                <b>Note:</b> &nbsp; <code>&lt;tr&gt;</code> stands for table data. 
-            </p>
-        </div>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-                <div>
-                    <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:#999">&gt;</span></span><br>&nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Emil<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Tobias<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Linus<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>16<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>14<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>10<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span>
-                </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-        <p class="text16">You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.</p>
-        <div class="p-3.5 bg-yellow-700/20">
-            <p>
-                <b>Note:</b> There are times when a row can have less or more cells than another. You will learn about that in a later chapter.
-            </p>
-        </div>
-    </div>
-    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Table Headers</h3>
-        <p class="text16">Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:</p>
-        <div class="p-3.5 bg-yellow-700/20">
-            <p>
-                <b>Note:</b> &nbsp; <code>&lt;th&gt;</code> stands for table header. 
-            </p>
-        </div>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-                <div>
-                    <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:#999">&gt;</span></span><br>&nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Person 1<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Person 2<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Person 
-                      3<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Emil<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Tobias<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Linus<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>16<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>14<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>10<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                    &nbsp;
-                    <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span>
-                </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-        <p class="text16">By default, the text in &nbsp; <code>&lt;th&gt;</code> elements are bold and centered, but you can change that with CSS.</p>
-    </div>
-    <div class="w-full mt-10">
-      <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">HTML Table Borders</h2>
-      <p class="text16 mt-2.5">HTML tables can have borders of different styles and shapes.</p>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">How To Add a Border</h3>
-        <p class="text16">To add a border, use the CSS &nbsp; <code>border</code> property on &nbsp; <code>table</code>, nbsp; <code>th</code>, and <code>td</code> elements.</p>
-        <table class="border-separate border border-gray-300" style="width:30%;">
-          <tbody>
+      <h3 class="font-normal">How To Add a Border</h3>
+      <p class="text16">
+        To add a border, use the CSS &nbsp; <code>border</code> property on
+        &nbsp; <code>table</code>, nbsp; <code>th</code>, and
+        <code>td</code> elements.
+      </p>
+      <table class="border-separate border border-gray-300" style="width: 30%">
+        <tbody>
           <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
           <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
           <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-              <span style="color:#905">
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
               table, th, td
-              <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>
-              &nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid black<span style="color:#999">;</span></span><br>
-              </span><span style="color:#999"><span style="color: #999;">&#125;</span></span> </span>
-            </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+              <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />
+                &nbsp;&nbsp;border<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 1px solid black<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /> </span
+              ><span style="color: #999"
+                ><span style="color: #999">&#125;</span></span
+              >
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Collapsed Table Borders</h3>
-        <p class="text16">To avoid having double borders like in the example above, set the CSS &nbsp; <code>border-collapse</code> property to &nbsp; <code>collapse</code>.</p>
-        <p class="text16">This will make the borders collapse into a single border:</p>
-        <table class="border-collapse border border-gray-300" style="width:30%;">
-          <tbody>
-          <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div><span style="color:#905">
-                table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid black<span style="color:#999">;</span></span><br>
-                 &nbsp;
-                border-collapse<span style="color:#005cc5"><span style="color:#999">:</span> collapse<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Style Table Borders</h3>
-        <p class="text16">If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:</p>
-        <table class="border-collapse border border-white" style="width:30%;">
-          <tbody>
-          <tr>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          <td class="bg-gray-400">&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div><span style="color:#905"> table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5">
-                  <span style="color:#999">:</span> 1px solid white<span style="color:#999">;</span></span><br>
-                 &nbsp;
-                border-collapse<span style="color:#005cc5"><span style="color:#999">:</span> collapse<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span><br>th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp; background-color<span style="color:#005cc5"><span style="color:#999">:</span> #96D4D4<span style="color:#999">;</span></span><br>
-                 </span><span style="color:#999">&#125;</span> </span>
-                </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Round Table Borders</h3>
-        <p class="text16">With the <code>border-radius</code> property, the borders get rounded corners:</p>
-        <table class="border-separate border border-black rounded-md" style="width:30%;">
-          <tbody>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905">
-                table, th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid 
-                 black<span style="color:#999">;</span></span><br>
-                 &nbsp;
-                border-radius<span style="color:#005cc5"><span style="color:#999">:</span> 10px<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <p class="text16">Skip the border around the table by leaving out <code>table</code> from the css selector:</p>
-        <table class="border-separate" style="width:30%;">
-          <tbody>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          <td class="border border-black rounded-md">&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905">
-                th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;border<span style="color:#005cc5"><span style="color:#999">:</span> 1px solid 
-                 black<span style="color:#999">;</span></span><br>
-                 &nbsp;
-                border-radius<span style="color:#005cc5"><span style="color:#999">:</span> 10px<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Dotted Table Borders</h3>
-        <p class="text16">With the <code>border-style</code> property, you can set the appearance of the border.</p>
-        <table class="border-collapse border border-dotted" style="width:30%;">
-          <tbody>
-          <tr>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          <td class="border border-black border-dashed">&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <p class="text16">The following values are allowed:</p>
-        <ul class="pl-5 list-disc">
-          <li><code>dotted</code></li>
-          <li><code>dashed</code></li>
-          <li><code>solid</code></li>
-          <li><code>double</code></li>
-          <li><code>groove</code></li>
-          <li><code>ridge</code></li>
-          <li><code>inset</code></li>
-          <li><code>outset</code></li>
-          <li><code>none</code></li>
-          <li><code>hidden</code></li>
-        </ul>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div><span style="color:#905">
-                &nbsp;th, td <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;
-                border-style<span style="color:#005cc5"><span style="color:#999">:</span> dotted<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span></div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Border Color</h3>
-        <p class="text16">With the <code>border-color</code> property, you can set the color of the border.</p>
-        <table class="border-collapse" style="width:30%;">
-          <tbody>
-          <tr>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          </tr>
-          <tr>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          <td class="border border-black">&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Let the first row be table header cells:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div><span style="color:#905">
-                &nbsp;th, td <span style="color:#999">&#123;</span><span class="csspropertycolor" style="color:#d73a49"><br>&nbsp;
-                border-color<span style="color:#005cc5"><span style="color:#999">:</span> #000000<span style="color:#999">;</span></span><br></span><span style="color:#999">&#125;</span> </span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
     </div>
-    <div class="w-full mt-10">
-      <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">HTML Table Sizes</h2>
-      <p class="text16 mt-2.5">HTML tables can have different sizes for each column, row or the entire table.</p>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">HTML Table Width</h3>
-        <p class="text16">To set the width of a table, add the <code>style</code> attribute to the <code>&lt;table&gt;</code> element.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Set the width of the table to 100%</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:green"> style<span style="color:#005cc5">="width:100%"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Firstname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Lastname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-        <div class="p-3.5 bg-yellow-700/20">
-          <p>
-              <b>Note:</b> Using a percentage as the size unit for a width means how wide will this element be compared to its parent element, which in this case is the &nbsp; <code>&lt;body&gt;</code>&nbsp; element. 
-          </p>
-        </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">HTML Table Column Width</h3>
-        <table style="width:30%;">
-          <tbody><tr>
-          <td>&nbsp;</td>
-          <td style="width:60%;background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
-          <td>&nbsp;</td>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Collapsed Table Borders</h3>
+      <p class="text16">
+        To avoid having double borders like in the example above, set the CSS
+        &nbsp; <code>border-collapse</code> property to &nbsp;
+        <code>collapse</code>.
+      </p>
+      <p class="text16">
+        This will make the borders collapse into a single border:
+      </p>
+      <table class="border-collapse border border-gray-300" style="width: 30%">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
           <tr>
-          <td>&nbsp;</td>
-          <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
           <tr>
-          <td>&nbsp;</td>
-          <td style="background-color:rgba(150, 212, 212,0.3)">&nbsp;</td>
-          <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
           </tr>
-          </tbody>
-        </table>
-        <p class="text16">To set the size of a specific column, add the <code>style</code> attribute on a <code>&lt;th&gt;</code> or <code>&lt;th&gt;</code> element.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Set the width of the first column to 70%:</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:green"> style<span style="color:#005cc5">="width:100%"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:green"> style<span style="color:#005cc5">="width:70%"</span></span><span style="color:#999">&gt;</span></span>Firstname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Lastname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              table, th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp;&nbsp;border<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 1px solid black<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br />
+                &nbsp; border-collapse<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> collapse<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal"> HTML Table Row Height</h3> 
-        <table style="width:30%;">
-          <tbody><tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          <tr style="height:100px;background-color:rgba(150, 212, 212,0.3)">
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          </tr>
-          </tbody>
-        </table>
-        <p class="text16">To set the height of a specific row, add the <code>style</code> attribute on a table row element.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <p class="text16">Set the height of the second row to 200 pixels</p>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:green"> style<span style="color:#005cc5">="width:100%"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Firstname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Lastname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:green"> style<span style="color:#005cc5">="height:200px"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;
-                <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span> <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>
-                &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span>
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
     </div>
-    <div class="w-full mt-10">
-      <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">HTML Table Headers</h2>
-      <p class="text16 mt-2.5">HTML tables can have headers for each column or row, or for many columns/rows.</p>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">HTML Table Headers</h3>
-        <p class="text16">Table headers are defined with <code>th</code> elements. Each <code>th</code> element represents a table cell.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Firstname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Lastname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span> 
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Style Table Borders</h3>
+      <p class="text16">
+        If you set a background color of each cell, and give the border a white
+        color (the same as the document background), you get the impression of
+        an invisible border:
+      </p>
+      <table class="border-collapse border border-white" style="width: 30%">
+        <tbody>
+          <tr>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+            <td class="bg-gray-400">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              table, th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp;&nbsp;border<span style="color: #005cc5">
+                  <span style="color: #999">:</span> 1px solid white<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br />
+                &nbsp; border-collapse<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> collapse<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span><br />th, td
+              <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp; background-color<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> #96D4D4<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /> </span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
         </div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Vertical Table Headers</h3>
-        <p class="text16">To use the first column as table headers, define the first cell in each row as a <code>th</code> element.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Firstname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp; &nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Lastname<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span> 
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Round Table Borders</h3>
+      <p class="text16">
+        With the <code>border-radius</code> property, the borders get rounded
+        corners:
+      </p>
+      <table
+        class="border-separate border border-black rounded-md"
+        style="width: 30%"
+      >
+        <tbody>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              table, th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp;&nbsp;border<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 1px solid black<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br />
+                &nbsp; border-radius<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 10px<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
         </div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Align Table Headers</h3>
-        <p class="text16">By default, table headers are bold and centered.</p>
-        <table class="table3" style="width:50%;">
-            <tbody><tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
-            </tr>
-            <tr>
-              <td>Lucay</td>
-              <td>rina</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Roy</td>
-              <td>Robart</td>
-              <td>22</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="text16">To left-align the table headers, use the CSS <code>text-align</code> property.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div><span style="color:#905">
-                th <span style="color:#999">&#123;</span><span style="color:#d73a49"><br>&nbsp;&nbsp;text-align<span style="color:#005cc5"><span style="color:#999">:</span> left<span style="color:#999">;</span></span><br>
-                </span><span style="color:#999">&#125;</span>
-                 </span>
-                </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <p class="text16">
+        Skip the border around the table by leaving out <code>table</code> from
+        the css selector:
+      </p>
+      <table class="border-separate" style="width: 30%">
+        <tbody>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+            <td class="border border-black rounded-md">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp;&nbsp;border<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 1px solid black<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br />
+                &nbsp; border-radius<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> 10px<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
         </div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Header for Multiple Columns</h3>
-        <p class="text16">You can have a header that spans over two or more columns.</p>
-        <table class="table3" style="width:50%;">
-          <tbody><tr>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Dotted Table Borders</h3>
+      <p class="text16">
+        With the <code>border-style</code> property, you can set the appearance
+        of the border.
+      </p>
+      <table class="border-collapse border border-dotted" style="width: 30%">
+        <tbody>
+          <tr>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black border-dashed">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black border-dashed">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+            <td class="border border-black border-dashed">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text16">The following values are allowed:</p>
+      <ul class="pl-5 list-disc">
+        <li><code>dotted</code></li>
+        <li><code>dashed</code></li>
+        <li><code>solid</code></li>
+        <li><code>double</code></li>
+        <li><code>groove</code></li>
+        <li><code>ridge</code></li>
+        <li><code>inset</code></li>
+        <li><code>outset</code></li>
+        <li><code>none</code></li>
+        <li><code>hidden</code></li>
+      </ul>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              &nbsp;th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp; border-style<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> dotted<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Border Color</h3>
+      <p class="text16">
+        With the <code>border-color</code> property, you can set the color of
+        the border.
+      </p>
+      <table class="border-collapse" style="width: 30%">
+        <tbody>
+          <tr>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+            <td class="border border-black">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Let the first row be table header cells:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              &nbsp;th, td <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp; border-color<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> #000000<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /></span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Sizes
+    </h2>
+    <p class="text16 mt-2.5">
+      HTML tables can have different sizes for each column, row or the entire
+      table.
+    </p>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table Width</h3>
+      <p class="text16">
+        To set the width of a table, add the <code>style</code> attribute to the
+        <code>&lt;table&gt;</code> element.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Set the width of the table to 100%</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="width:100%"</span></span
+              ><span style="color: #999">&gt;</span></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Firstname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Lastname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp; &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p>
+          <b>Note:</b> Using a percentage as the size unit for a width means how
+          wide will this element be compared to its parent element, which in
+          this case is the &nbsp; <code>&lt;body&gt;</code>&nbsp; element.
+        </p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table Column Width</h3>
+      <table style="width: 30%">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td style="width: 60%; background-color: rgba(150, 212, 212, 0.3)">
+              &nbsp;
+            </td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td style="background-color: rgba(150, 212, 212, 0.3)">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td style="background-color: rgba(150, 212, 212, 0.3)">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text16">
+        To set the size of a specific column, add the
+        <code>style</code> attribute on a <code>&lt;th&gt;</code> or
+        <code>&lt;th&gt;</code> element.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Set the width of the first column to 70%:</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="width:100%"</span></span
+              ><span style="color: #999">&gt;</span></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="width:70%"</span></span
+              ><span style="color: #999">&gt;</span></span
+            >Firstname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Lastname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp; &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table Row Height</h3>
+      <table style="width: 30%">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr style="height: 100px; background-color: rgba(150, 212, 212, 0.3)">
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text16">
+        To set the height of a specific row, add the
+        <code>style</code> attribute on a table row element.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <p class="text16">Set the height of the second row to 200 pixels</p>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="width:100%"</span></span
+              ><span style="color: #999">&gt;</span></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Firstname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Lastname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="height:200px"</span></span
+              ><span style="color: #999">&gt;</span></span
+            ><br />&nbsp; &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >
+            <br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Headers
+    </h2>
+    <p class="text16 mt-2.5">
+      HTML tables can have headers for each column or row, or for many
+      columns/rows.
+    </p>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table Headers</h3>
+      <p class="text16">
+        Table headers are defined with <code>th</code> elements. Each
+        <code>th</code> element represents a table cell.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Firstname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Lastname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Vertical Table Headers</h3>
+      <p class="text16">
+        To use the first column as table headers, define the first cell in each
+        row as a <code>th</code> element.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Firstname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp; &nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Lastname<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Align Table Headers</h3>
+      <p class="text16">By default, table headers are bold and centered.</p>
+      <table class="table3" style="width: 50%">
+        <tbody>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Lucay</td>
+            <td>rina</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>Roy</td>
+            <td>Robart</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text16">
+        To left-align the table headers, use the CSS
+        <code>text-align</code> property.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              th <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />&nbsp;&nbsp;text-align<span style="color: #005cc5"
+                  ><span style="color: #999">:</span> left<span
+                    style="color: #999"
+                    >;</span
+                  ></span
+                ><br /> </span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Header for Multiple Columns</h3>
+      <p class="text16">
+        You can have a header that spans over two or more columns.
+      </p>
+      <table class="table3" style="width: 50%">
+        <tbody>
+          <tr>
             <th colspan="2">Name</th>
             <th>Age</th>
           </tr>
@@ -727,54 +1795,1262 @@
             <td>94</td>
           </tr>
         </tbody>
-        </table>
-        <p class="text16">To do this, use the <code>colspan</code> attribute on the <code>&#123;th&#125;</code> element</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span class="attributecolor" style="color:green"> colspan<span class="attributevaluecolor" style="color:#005cc5">="2"</span></span><span style="color:#999">&gt;</span></span>Name<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Age<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jill<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Smith<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Eve<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
-                <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>Jackson<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>94<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span> 
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
+      </table>
+      <p class="text16">
+        To do this, use the <code>colspan</code> attribute on the
+        <code>&#123;th&#125;</code> element
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span
+                class="attributecolor"
+                style="color: green"
+              >
+                colspan<span style="color: #005cc5"
+                  >="2"</span
+                ></span
+              ><span style="color: #999">&gt;</span></span
+            >Name<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Age<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jill<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Smith<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Eve<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Jackson<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >94<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br /><span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
         </div>
-      </div>
-      <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
-        <h3 class="font-normal">Table Caption</h3>
-        <p class="text16">You can add a caption that serves as a heading for the entire table.</p>
-        <table class="table3" style="width:50%;">
-            <caption>Monthly savings</caption>
-            <tbody><tr>
-              <th>Year</th>
-              <th>Savings</th>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>$100</td>
-            </tr>
-            <tr>
-              <td>2024</td>
-              <td>$50</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="text16">To add a caption to a table, use the <code>&lt;caption&gt;</code> tag.</p>
-        <div class="p-6 bg-yellow-600/20 space-y-3.5">
-            <h3>Example</h3>
-            <div class="p-6 border-l-2 border-yellow-600 bg-white">
-              <div>
-                <span style="color:#905"><span style="color:#999">&lt;</span>table<span style="color:green"> style<span style="color:#005cc5">="width:100%"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>caption<span style="color:#999">&gt;</span></span>Monthly savings<span style="color:#905"><span style="color:#999">&lt;</span>/caption<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Month<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>th<span style="color:#999">&gt;</span></span>Savings<span style="color:#905"><span style="color:#999">&lt;</span>/th<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>January<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>$100<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>tr<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>February<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>td<span style="color:#999">&gt;</span></span>$50<span style="color:#905"><span style="color:#999">&lt;</span>/td<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/tr<span style="color:#999">&gt;</span></span><br>
-                <span style="color:#905"><span style="color:#999">&lt;</span>/table<span style="color:#999">&gt;</span></span> 
-              </div>
-            </div>
-            <a href="" class="btn_primary">Try Now</a>
-        </div>
-        <div class="p-3.5 bg-yellow-700/20"><p><b>Note:</b> The &nbsp; <code>&lt;caption&gt;</code>&nbsp; tag should be inserted immediately after the  &nbsp;<code>&lt;table&gt;</code>&nbsp; tag. </p></div>
+        <a href="" class="btn_primary">Try Now</a>
       </div>
     </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Table Caption</h3>
+      <p class="text16">
+        You can add a caption that serves as a heading for the entire table.
+      </p>
+      <table class="table3" style="width: 50%">
+        <caption>
+          Monthly savings
+        </caption>
+        <tbody>
+          <tr>
+            <th>Year</th>
+            <th>Savings</th>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>$50</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text16">
+        To add a caption to a table, use the <code>&lt;caption&gt;</code> tag.
+      </p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>table<span
+                style="color: green"
+              >
+                style<span style="color: #005cc5">="width:100%"</span></span
+              ><span style="color: #999">&gt;</span></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>caption<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >Monthly savings<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/caption<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Month<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>th<span style="color: #999"
+                >&gt;</span
+              ></span
+            >Savings<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/th<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >January<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >$100<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >February<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;&nbsp;&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>td<span style="color: #999"
+                >&gt;</span
+              ></span
+            >$50<span style="color: #905"
+              ><span style="color: #999">&lt;</span>/td<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />&nbsp;
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/tr<span style="color: #999"
+                >&gt;</span
+              ></span
+            ><br />
+            <span style="color: #905"
+              ><span style="color: #999">&lt;</span>/table<span
+                style="color: #999"
+                >&gt;</span
+              ></span
+            >
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p>
+          <b>Note:</b> The &nbsp; <code>&lt;caption&gt;</code>&nbsp; tag should
+          be inserted immediately after the
+          &nbsp;<code>&lt;table&gt;</code>&nbsp; tag.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Padding & Spacing
+    </h2>
+    <p class="text16 mt-2.5">
+      HTML tables can adjust the padding inside the cells, and also the space
+      between the cells.
+    </p>
+    <div class="mt-3" style="overflow: auto">
+      <table
+        class="table2 border-separate border-spacing-0.5 border border-black mt-3"
+      >
+        <caption class="mb-2.5">
+          With Padding
+        </caption>
+        <tbody>
+          <tr>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+          </tr>
+          <tr>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+          </tr>
+          <tr>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+            <td class="p-0 border border-black">IT School</td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        class="table3 border-separate border-spacing-3 border border-black mt-3"
+      >
+        <caption class="mb-2.5">
+          With Spacing
+        </caption>
+        <tbody>
+          <tr>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+          </tr>
+          <tr>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+          </tr>
+          <tr>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+            <td class="p-2.5 border border-black">IT School</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Cell Padding</h3>
+      <p>Cell spacing is the space between individual table cells.</p>
+      <p>By default the padding is set to 0.</p>
+      <p>To add padding on table cells, use the CSS padding property:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color: #905">
+              th, td
+              <span style="color: #999">&#123;</span
+              ><span style="color: #d73a49"
+                ><br />
+                &nbsp;&nbsp;padding<span
+                  style="color: #005cc5"
+                  ><span style="color: #999">:</span>
+                  15px<span style="color: #999"
+                    >;</span
+                  ></span
+                ><br /> </span
+              ><span style="color: #999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <p>To add padding only below the content, use the <code>padding-bottom</code> property.</p>
+      <p>Add padding to the other sides with the <code>padding-bottom</code>, <code>padding-left</code>, and <code>padding-right</code> properties:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> th, td <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br> &nbsp;&nbsp;padding-top <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 10px <span style="color:#999">;</span>
+                </span>
+                <br> &nbsp;&nbsp;padding-bottom <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 20px <span style="color:#999">;</span>
+                </span>
+                <br> &nbsp;&nbsp;padding-left <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 30px <span style="color:#999">;</span>
+                </span>
+                <br> &nbsp;&nbsp;padding-right <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 40px <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Cell Spacing</h3>
+      <p>Cell spacing is the space between each cell.</p>
+      <p>By default the space is set to 2 pixels.</p>
+      <p>To change the space between table cells, use the CSS border-spacing property on the table element:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> table <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br> &nbsp;&nbsp;border-spacing <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 30px <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Colspan & Rowspan
+    </h2>
+    <p class="text16 mt-2.5">
+      HTML tables can have cells that span over multiple rows and/or columns.
+    </p>
+    <div class="mt-3" style="overflow:auto;">
+      <table style="width:30%;float:left;">
+        <tbody>
+          <tr>
+            <th colspan="2">NAME</th>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table1" style="width:30%;float:left;margin-left:5%;">
+        <tbody>
+          <tr>
+            <th rowspan="3">APRIL</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table1" style="width:30%;float:right;">
+        <tbody>
+          <tr>
+            <th colspan="3">2022</th>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th colspan="2" rowspan="2">FIESTA</th>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Colspan</h3>
+      <p>To make a cell span over multiple columns, use the <code>colspan</code> attribute:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:green"> colspan <span style="color:#005cc5">="2"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>Name <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>Age <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>Jill <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>Smith <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>43 <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>Eve <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>Jackson <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>57 <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/table <span style="color:#999">&gt;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> &nbsp; The value of the <code>colspan</code> attribute represents the number of columns to span.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Rowspan</h3>
+      <p>To make a cell span over multiple rows, use the <code>rowspan</code> attribute:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>Name <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>Jill <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:green"> rowspan <span style="color:#005cc5">="2"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>Phone <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>555-1234 <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+            </span>555-8745 <span style="color:#905">
+              <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/table <span style="color:#999">&gt;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> &nbsp; The value of the <code>rowspan</code> attribute represents the number of rows to span.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Styling
+    </h2>
+    <p class="text16 mt-2.5">
+      Use CSS to make your tables look better.
+    </p>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Zebra Stripes</h3>
+      <p>If you add a border to each table cell, the table will look more structured and organized.</p>
+      <table class="" style="width:80%;">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td class="bg-slate-400">5</td>
+            <td class="bg-slate-400">6</td>
+            <td class="bg-slate-400">7</td>
+            <td class="bg-slate-400">8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td class="bg-slate-400">13</td>
+            <td class="bg-slate-400">14</td>
+            <td class="bg-slate-400">15</td>
+            <td class="bg-slate-400">16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> tr:nth-child(even) <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br>&nbsp; background-color <span style="color:#005cc5">
+                  <span style="color:#999">:</span> #D6EEEE <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> &nbsp; If you use <code>(odd)</code> instead of <code>(even)</code>, the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table - Zebra Stripes</h3>
+      <p>To make vertical zebra stripes, style every other column, instead of every other row.</p>
+      <table class="table1" style="width:60%;">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="bg-red-300">2</td>
+            <td>3</td>
+            <td class="bg-red-300">4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="bg-red-300">6</td>
+            <td>7</td>
+            <td class="bg-red-300">8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td class="bg-red-300">10</td>
+            <td>11</td>
+            <td class="bg-red-300">12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td class="bg-red-300">14</td>
+            <td>15</td>
+            <td class="bg-red-300">16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td class="bg-red-300">18</td>
+            <td>19</td>
+            <td class="bg-red-300">20</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Set the :nth-child(even) for table data elements like this:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> td:nth-child(even), th:nth-child(even) <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br>&nbsp; background-color <span style="color:#005cc5">
+                  <span style="color:#999">:</span> #D6EEEE <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> &nbsp; Put the <code>:nth-child()</code> selector on both <code>th</code> and <code>td</code> elements if you want to have the styling on both headers and regular table cells.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Combine Vertical and Horizontal Zebra Stripes</h3>
+      <p>You can combine the styling from the two examples above and you will have stripes on every other row and every other column.</p>
+      <p>If you use a transparent color you will get an overlapping effect.</p>
+      <table class="table1 table2 table4" style="width:100%;">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td class="bg-red-300">&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="bg-red-200">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Use an rgba() color to specify the transparency of the color:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> tr:nth-child(even) <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br>&nbsp; background-color <span style="color:#005cc5">
+                  <span style="color:#999">:</span> rgba(150, 212, 212, 0.4) <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+              <br>
+              <br>th:nth-child(even),td:nth-child(even) <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br>&nbsp; background-color <span style="color:#005cc5">
+                  <span style="color:#999">:</span> rgba(150, 212, 212, 0.4) <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Horizontal Dividers</h3>
+      <table>
+        <thead>
+          <tr>
+            <th class="border-0 border-b">First Name</th>
+            <th class="border-0 border-b">Last Name</th>
+            <th class="border-0 border-b">Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border-0 border-b">Peter</td>
+            <td class="border-0 border-b">Griffin</td>
+            <td class="border-0 border-b">$100</td>
+          </tr>
+          <tr>
+            <td class="border-0 border-b">Lois</td>
+            <td class="border-0 border-b">Griffin</td>
+            <td class="border-0 border-b">$150</td>
+          </tr>
+          <tr>
+            <td class="border-0 border-b">Joe</td>
+            <td class="border-0 border-b">Swanson</td>
+            <td class="border-0 border-b">$300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> tr <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">
+                <br>&nbsp;&nbsp;border-bottom <span style="color:#005cc5">
+                  <span style="color:#999">:</span> 1px solid #ddd <span style="color:#999">;</span>
+                </span>
+                <br>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Hoverable Table</h3>
+      <p>Use the :hover selector on tr to highlight table rows on mouse over:</p>
+      <table>
+        <tbody>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Savings</th>
+          </tr>
+          <tr class="hover:bg-red-200">
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+          </tr>
+          <tr class="hover:bg-red-200">
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+          </tr>
+          <tr class="hover:bg-red-200">
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"> tr:hover <span style="color:#999">&#123;</span>
+              <span style="color:#d73a49">background-color <span style="color:#005cc5">
+                  <span style="color:#999">:</span> #D6EEEE <span style="color:#999">;</span>
+                </span>
+              </span>
+              <span style="color:#999">&#125;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="w-full mt-10">
+    <h2 class="w-full bg-yellow-500 text-22 font-semibold p-2 px-4">
+      HTML Table Colgroup
+    </h2>
+    <p class="text16 mt-2.5">
+      The <code>&lt;colgroup&gt;</code> element is used to style specific columns of a table.
+    </p>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">HTML Table Colgroup</h3>
+      <p>If you want to style the first two columns of a table, use the <code>&lt;colgroup&gt;</code> and <code>&lt;col&gt;</code> elements.</p>
+      <table style="width:100%;">
+        <colgroup>
+          <col span="2" style="background-color:rgba(150, 212, 212,0.4)">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>The <code>&lt;thead&gt;</code> element should be used to group the header content in a table.</p>
+      <p>Each group is specified with a <code>&lt;col&gt;</code> element.</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="2"</span> style <span style="color:#005cc5">="background-color: #D6EEEE"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br> &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>MON <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>TUE <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>WED <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>THU <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>...
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+      <div class="p-3.5 bg-yellow-700/20">
+        <p><b>Note:</b> &nbsp; The <code>&lt;colgroup&gt;</code> tag must be a child of a <code>&lt;table&gt;</code> element and should be placed before any other table elements, like <code>&lt;thead&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code> etc., but after the <code>&lt;caption&gt;</code> element, if present.</p>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Legal CSS Properties</h3>
+      <p>There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:</p>
+      <ul>
+        <li>width property</li>
+        <li>visibility property</li>
+        <li>background properties</li>
+        <li>border properties</li>
+      </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Multiple Col Elements</h3>
+      <p>If you want to style multiple columns with different styles, use more than one <code>&lt;col&gt;</code> element inside the <code>&lt;colgroup&gt;</code>:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="2"</span> style <span style="color:#005cc5">="background-color: #D6EEEE"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="3"</span> style <span style="color:#005cc5">="background-color: pink"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>MON <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>TUE <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>WED <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>THU <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>...
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Empty Colgroups</h3>
+      <p>If you want to style columns in the middle of a table, insert an "empty" <code>&lt;col&gt;</code> element (with no styles) for the columns before:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="3"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="2"</span> style <span style="color:#005cc5">="background-color: pink"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>MON <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>TUE <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>WED <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>THU <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>...
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-normal">Hide Columns</h3>
+      <p>You can hide columns with the visibility: collapse property:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="2"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>col <span style="color:green"> span <span style="color:#005cc5">="3"</span> style <span style="color:#005cc5">="visibility: collapse"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>/colgroup <span style="color:#999">&gt;</span>
+            </span>
+            <br> &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>MON <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>TUE <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>WED <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+            </span>THU <span style="color:#905">
+              <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+            </span>
+            <br>...
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- git config --global user.email "you@example.com"
