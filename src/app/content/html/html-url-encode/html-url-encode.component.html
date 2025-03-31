@@ -1,1 +1,140 @@
-<p>html-url-encode works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Uniform Resource Locators</h3>
+        <p class="text16">A URL is another word for a web address.</p>
+        <p>A URL can be composed of words (e.g. ITschool.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50).</p>
+        <p>Most people enter the name when surfing, because names are easier to remember than numbers.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">URL - Uniform Resource Locator</h3>
+        <p>Web browsers request pages from web servers by using a URL.</p>
+        <p>A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.</p>
+        <p>A web address like https://www.ITschool.com/html/default.asp follows these syntax rules:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div> scheme://prefix.domain:port/path/filename </div>
+            </div>
+        </div>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li><b>scheme</b> - defines the type of Internet service (most common is <b>http or https</b> )</li>
+            <li><b>prefix</b> - defines a domain prefix (default for http is <b>www</b> )</li>
+            <li><b>domain </b> - defines the Internet <b>domain name</b> (like ITschool.com)</li>
+            <li><b>port </b> - defines the <b>port number</b> at the host (default for http is 80)</li>
+            <li><b>path </b> -  defines a <b>path</b> at the server (If omitted: the root directory of the site)</li>
+            <li><b>filename </b> - defines the name of a document or resource</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Common URL Schemes</h3>
+        <p>The table below lists some common schemes:</p>
+        <table>
+            <tbody>
+              <tr>
+                <th style="width:10%">Scheme</th>
+                <th style="width:35%">Short for</th>
+                <th>Used for</th>
+              </tr>
+              <tr>
+                <td>http</td>
+                <td>HyperText Transfer Protocol</td>
+                <td>Common web pages. Not encrypted</td>
+              </tr>
+              <tr>
+                <td>https</td>
+                <td>Secure HyperText Transfer Protocol</td>
+                <td>Secure web pages. Encrypted</td>
+              </tr>
+              <tr>
+                <td>ftp</td>
+                <td>File Transfer Protocol</td>
+                <td>Downloading or uploading files</td>
+              </tr>
+              <tr>
+                <td>file</td>
+                <td>&nbsp;</td>
+                <td>A file on your computer</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">URL Encoding</h3>
+        <p>URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.</p>
+        <p>URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.</p>
+        <p>URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.</p>
+        <p>URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Try It Yourself</h3>
+        <p>If you click "Submit", the browser will URL encode the input before it is sent to the server.</p>
+        <p>A page at the server will display the received input.</p>
+        <form name="input" target="_blank" class="flex items-center space-x-3" method="get">
+            <input type="text" class="bg-transparent border border-red-400 py-2 px-3 rounded-md" value="Hello IT School" name="text" size="30">
+            <input class="py-1.5 px-2.5 rounded bg-yellow-200 text-black text-14 font-medium" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">ASCII Encoding Examples</h3>
+        <p>Your browser will encode input, according to the character-set used in your page.</p>
+        <table class="ws-table-all notranslate">
+            <tbody>
+              <tr>
+                <th style="width:20%">Character</th>
+                <th style="width:40%">From Windows-1252</th>
+                <th style="width:40%">From UTF-8</th>
+              </tr>
+              <tr>
+                <td>€</td>
+                <td>%80</td>
+                <td>%E2%82%AC</td>
+              </tr>
+              <tr>
+                <td>£</td>
+                <td>%A3</td>
+                <td>%C2%A3</td>
+              </tr>
+              <tr>
+                <td>©</td>
+                <td>%A9</td>
+                <td>%C2%A9</td>
+              </tr>
+              <tr>
+                <td>®</td>
+                <td>%AE</td>
+                <td>%C2%AE</td>
+              </tr>
+              <tr>
+                <td>À</td>
+                <td>%C0</td>
+                <td>%C3%80</td>
+              </tr>
+              <tr>
+                <td>Á</td>
+                <td>%C1</td>
+                <td>%C3%81</td>
+              </tr>
+              <tr>
+                <td>Â</td>
+                <td>%C2</td>
+                <td>%C3%82</td>
+              </tr>
+              <tr>
+                <td>Ã</td>
+                <td>%C3</td>
+                <td>%C3%83</td>
+              </tr>
+              <tr>
+                <td>Ä</td>
+                <td>%C4</td>
+                <td>%C3%84</td>
+              </tr>
+              <tr>
+                <td>Å</td>
+                <td>%C5</td>
+                <td>%C3%85</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

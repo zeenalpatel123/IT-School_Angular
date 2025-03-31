@@ -1,1 +1,417 @@
-<p>html-forms works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Forms</h3>
+        <p class="text16">An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <form target="_blank">
+                      <label for="fname">Name:</label>
+                      <br>
+                      <input class="border border-black py-1.5 px-2" type="text" id="fname" name="fname" value="Lisha">
+                      <br>
+                      <label for="lname">Email:</label>
+                      <br>
+                      <input  class="border border-black py-1.5 px-2" type="text" id="lname" name="lname" value="lisha@gmail.com">
+                      <br>
+                      <br>
+                      <input class="py-2 px-3 bg-red-300 rounded-sm" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The &lt;form&gt; Element</h3>
+        <p>The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> . <br>
+                    <i>form elements</i>
+                    <br> . <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>The <code>&lt;form&gt;</code> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The &lt;input&gt; Element</h3>
+        <p>The HTML &lt;input&gt; element is the most used form element.</p>
+        <table>
+            <tbody>
+              <tr>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Displays a single-line text input field</td>
+              </tr>
+              <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Displays a radio button (for selecting one of many choices)</td>
+              </tr>
+              <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+              </tr>
+              <tr>
+                <td>&lt;input type="submit"&gt;</td>
+                <td>Displays a submit button (for submitting the form)</td>
+              </tr>
+              <tr>
+                <td>&lt;input type="button"&gt;</td>
+                <td>Displays a clickable button</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Text Fields</h3>
+        <p>The <code>&lt;input type="text"&gt;</code> defines a single-line input field for 
+            text input.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="name"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span> Name: <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="name"</span> name <span style="color:#005cc5">="name"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="email"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>Email: <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                        <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="email"</span> name <span style="color:#005cc5">="email"</span>
+                        </span>
+                        <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                        <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The &lt;label&gt; Element</h3>
+        <p>Take note of the <code>&lt;label&gt;</code> element used in the example above.</p>
+        <p>The <code>&lt;label&gt;</code> tag is used to define a label for various form elements.</p>
+        <p>The <code>&lt;label&gt;</code> element is beneficial for screen reader users, as it is read aloud when the associated input field gains focus.</p>
+        <p>The <code>&lt;label&gt;</code> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <code>&lt;label&gt;</code> element, it toggles the radio button/checkbox.</p>
+        <p>The for attribute of the <code>&lt;label&gt;</code> tag must match the id of the corresponding <code>&lt;input&gt;</code> element to properly link them.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Radio Buttons</h3>
+        <p>The <code>&lt;input type="radio"&gt;</code> defines a radio button.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Choose your favorite Web language: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="radio"</span> id <span style="color:#005cc5">="html"</span> name <span style="color:#005cc5">="fav_language"</span> value <span style="color:#005cc5">="HTML"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="html"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>HTML <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="radio"</span> id <span style="color:#005cc5">="css"</span> name <span style="color:#005cc5">="fav_language"</span> value <span style="color:#005cc5">="CSS"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="css"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>CSS <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="radio"</span> id <span style="color:#005cc5">="javascript"</span> name <span style="color:#005cc5">="fav_language"</span> value <span style="color:#005cc5">="JavaScript"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="javascript"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>JavaScript <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>Choose your favorite Web language:</p>
+        <div>
+            <div class="flex space-x-2.5">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+            </div>
+            <div class="flex space-x-2.5">
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label>
+            </div>
+            <div class="flex space-x-2.5">
+                <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
+                <label for="JavaScript">JavaScript </label>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">Checkboxes</h3>
+        <p>The <code>&lt;input type="checkbox"&gt;</code> defines a checkbo.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="checkbox"</span> id <span style="color:#005cc5">="food1"</span> name <span style="color:#005cc5">="food1"</span> value <span style="color:#005cc5">="Cake"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="food1"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span> I have a Cake <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="checkbox"</span> id <span style="color:#005cc5">="food2"</span> name <span style="color:#005cc5">="food2"</span> value <span style="color:#005cc5">="Chocolate"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="food2"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span> I have a Chocolate <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="checkbox"</span> id <span style="color:#005cc5">="food3"</span> name <span style="color:#005cc5">="food3"</span> value <span style="color:#005cc5">="Dark Chocolate"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="food3"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span> I have a Dark Chocolate <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>Choose your favorite Food:</p>
+        <div>
+            <div class="flex space-x-2.5">
+                <input type="checkbox" id="cake" name="food" value="cake">
+                <label for="cake">Cake</label>
+            </div>
+            <div class="flex space-x-2.5">
+                <input type="checkbox" id="chocolate" name="food" value="chocolate">
+                <label for="chocolate">chocolate</label>
+            </div>
+            <div class="flex space-x-2.5">
+                <input type="checkbox" id="dark_chocolate" name="food" value="dark chocolate">
+                <label for="dark_chocolate">Dark Chocolate </label>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The Submit Button</h3>
+        <p>The <code>&lt;input type="submit"&gt;</code> defines a button for submitting the form data to a form-handler.</p>
+        <p>The form handler is usually a server-side script that processes and manages the submitted input data.</p>
+        <p>The form handler is defined in the action attribute of the &lt;form&gt; element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span> value <span style="color:#005cc5">="lisha"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span> value <span style="color:#005cc5">="alvaro"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-normal">The Name Attribute for &lt;input&gt;</h3>
+        <p>Notice that each input field must have a <code>name</code> attribute to be submitted.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> value <span style="color:#005cc5">="lish"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>

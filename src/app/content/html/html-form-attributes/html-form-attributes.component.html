@@ -1,1 +1,181 @@
-<p>html-form-attributes works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Form Attributes</h3>
+        <p class="text16">This chapter describes the different attributes for the HTML &lt;form&gt; element.</p>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The Action Attribute</h3>
+        <p>The action attribute specifies what happens when the form is submitted.</p>
+        <p>Typically, when the user clicks the submit button, the form data is sent to a server-side file for processing.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span> value <span style="color:#005cc5">="lisha"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span> value <span style="color:#005cc5">="alvora"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The Action Attribute</h3>
+        <p>The <code>target</code> attribute specifies where to display the response that is received after submitting the form.</p>
+        <table>
+            <tbody>
+              <tr>
+                <th style="width:20%">Value</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>_blank</td>
+                <td>The response is displayed in a new window or tab</td>
+              </tr>
+              <tr>
+                <td>_self</td>
+                <td>The response is displayed in the current window</td>
+              </tr>
+              <tr>
+                <td>_parent</td>
+                <td>The response is displayed in the parent frame</td>
+              </tr>
+              <tr>
+                <td>_top</td>
+                <td>The response is displayed in the full body of the window</td>
+              </tr>
+              <tr>
+                <td>
+                  <i>framename</i>
+                </td>
+                <td>The response is displayed in a named iframe</td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span> target <span style="color:#005cc5">="_blank"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The Method Attribute</h3>
+        <p>The <code>method</code> attribute defines the HTTP method used to submit the form data.</p>
+        <p>Form data can be sent as URL parameters using <code>method="get"</code> or as an HTTP POST request using <code>method="post"</code>.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span> method <span style="color:#005cc5">="get"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div> 
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span> method <span style="color:#005cc5">="post"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p><b>Notes on GET:</b></p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Appends the form data to the URL, in name/value pairs</li>
+            <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+            <li>The length of a URL is limited (2048 characters)</li>
+            <li>Useful for form submissions where a user wants to bookmark the result</li>
+            <li>GET is good for non-secure data, like query strings in Google</li>
+        </ul>
+        <p><b>Notes on POST:</b></p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+            <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+            <li>Form submissions with POST cannot be bookmarked</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The Autocomplete Attribute</h3>
+        <p>The &nbsp; <code>autocomplete</code> &nbsp; attribute specifies whether a form should have autocomplete on or off.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span> autocomplete <span style="color:#005cc5">="on"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>

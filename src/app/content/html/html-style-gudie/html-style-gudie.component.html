@@ -1,1 +1,875 @@
-<p>html-style-gudie works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Style Guide</h3>
+        <p class="text16">Consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.</p>
+        <p>Here are some guidelines and tips for creating good HTML code.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Always Declare Document Type</h3>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+        <p>The correct document type for HTML is:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Use Lowercase Element Names </h3>
+        <p>HTML allows mixing uppercase and lowercase letters in element name</p>
+        <p>However, we recommend using lowercase element names, because:</p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>Mixing uppercase and lowercase names looks bad</li>
+            <li>Developers normally use lowercase names</li>
+            <li>Lowercase looks cleaner</li>
+            <li>Lowercase is easier to type</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>BODY <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>P <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/P <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/BODY <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Close All HTML Elements</h3>
+        <p>In HTML, you do not have to close all elements (for example the &lt;p&gt; element).</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>section <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/section <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>section <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/section <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Use Lowercase Attribute Names</h3>
+        <p>HTML allows mixing uppercase and lowercase letters in attribute names.</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Mixing uppercase and lowercase names looks bad</li>
+            <li>Developers normally use lowercase names </li>
+            <li>Lowercase looks cleaner</li>
+            <li>Lowercase is easier to type</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="https://www.ITschool.com/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Visit our IT School  <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> HREF <span style="color:#005cc5">="https://www.ITschool.com/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                        </span>Visit our IT School <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Always Quote Attribute Values</h3>
+        <p>HTML allows attribute values without quotes.</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Developers normally quote attribute values  </li>
+            <li>Quoted values are easier to read</li>
+            <li>You MUST use quotes if the value contains spaces</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>table <span style="color:green"> class <span style="color:#005cc5">="striped"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>table <span style="color:green"> class <span style="color:#005cc5">=striped</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Very Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>table <span style="color:green"> class <span style="color:#005cc5">=table </span>striped </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Always Specify alt, width, and height for Images</h3>
+        <p>Always specify the <code>alt</code> attribute for images. This attribute is important if the image for some reason cannot be displayed.</p>
+        <p>Also, always define the <code>width</code> and <code>height</code> of images. This reduces flickering, because the browser can reserve space for the image before loading.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="html5.gif"</span> alt <span style="color:#005cc5">="HTML5"</span> style <span style="color:#005cc5">="width:128px;height:128px"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="html5.gif"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Spaces and Equal Signs</h3>
+        <p>HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>link <span style="color:green"> rel <span style="color:#005cc5">="stylesheet"</span> href <span style="color:#005cc5">="styles.css"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Bad:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>link <span style="color:green"> rel <span style="color:#005cc5">= "stylesheet"</span> href <span style="color:#005cc5">= "styles.css"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Avoid Long Code Lines</h3>
+        <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+        <p>Avoid too long code lines.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Blank Lines and Indentation</h3>
+        <p>Avoid using extra blank lines, spaces, or indentations unless they serve a clear purpose.</p>
+        <p>For readability, add blank lines to separate large or logical code blocks.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>Famous Cities <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>London is the capital city of England. It is the most populous city in the United Kingdom. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France. The Paris area is one of the largest population centers in Europe. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>Famous Cities <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>London is the capital city of England. It is the most populous city in the United Kingdom. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h2 <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h2 <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>Paris is the capital of France. The Paris area is one of the largest population centers in Europe. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good Table Example:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>table <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+                    </span>Name <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>th <span style="color:#999">&gt;</span>
+                    </span>Description <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/th <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+                    </span>A <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+                    </span>Description of A <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+                    </span>B <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>td <span style="color:#999">&gt;</span>
+                    </span>Description of B <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/td <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/tr <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/table <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Good Table Example:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>ul <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                    </span>London <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                    </span>Paris <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>li <span style="color:#999">&gt;</span>
+                    </span>Tokyo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/li <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/ul <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Never Skip the &lt;title&gt; Element</h3>
+        <p>The <code>&lt;title&gt;</code> element is required in HTML.</p>
+        <p>The page title plays a crucial role in search engine optimization (SEO). Search engines use it to help determine the ranking and relevance of a page in search results.</p>
+        <p>The <code>&lt;title&gt;</code> element:</p>
+        <ul>
+            <li>defines a title in the browser toolbar</li>
+            <li>provides a title for the page when it is added to favorites</li>
+            <li>displays a title for the page in search-engine results</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>HTML Style Guide and Coding Conventions <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Omitting &lt;html&gt; and &lt;body&gt;?</h3>
+        <p>An HTML page will validate without the &lt;html&gt; and &lt;body&gt; tags:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>Page Title <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>This is a heading <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>However, we strongly recommend to always add the <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> tags!</p>
+        <p>Omitting <code>&lt;body&gt;</code> can produce errors in older browsers.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Omitting &lt;head&gt;?</h3>
+        <p>The HTML <code>&lt;head&gt;</code> tag can also be omitted.</p>
+        <p>Browsers will add all elements before <code>&lt;body&gt;</code>, to a default <code>&lt;head&gt;</code> element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>Page Title <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>This is a heading <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Close Empty HTML Elements?</h3>
+        <p>In HTML, it is optional to close empty elements.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Allowed:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>meta <span style="color:green"> charset <span style="color:#005cc5">="utf-8"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Also Allowed:</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>meta <span style="color:green"> charset <span style="color:#005cc5">="utf-8"</span> / </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Add the lang Attribute</h3>
+        <p>You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:green"> lang <span style="color:#005cc5">="en-us"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>Page Title <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>h1 <span style="color:#999">&gt;</span>
+                    </span>This is a heading <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/h1 <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph. <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Meta Data</h3>
+        <p>To ensure proper interpretation and correct search engine indexing, both the language and 
+            the character encoding <code class="w3-codespan">&lt;meta charset="<em>charset</em>"&gt;</code> should be defined as early as possible in an HTML document:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:green"> lang <span style="color:#005cc5">="en-us"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>meta <span style="color:green"> charset <span style="color:#005cc5">="UTF-8"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>Page Title <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Setting The Viewport</h3>
+        <p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.   </p>
+        <p>You should include the following &lt;meta&gt; element in all your web pages:</p>
+        <div>
+            <div class="border border-black p-3">
+                <span style="color:#905"><span style="color:#999">&lt;</span>meta<span style="color:green"> name<span style="color:#005cc5">="viewport"</span> content<span style="color:#005cc5">="width=device-width, initial-scale=1.0"</span></span><span style="color:#999">&gt;</span></span>
+            </div>
+        </div>
+        <p>This gives the browser instructions on how to control the page's dimensions and scaling.</p>
+        <p>The <code>width=device-width</code> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">HTML Comments</h3>
+        <p>Short comments should be written on one line, like this:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!-- This is a comment --&gt;</span>
+                </div>
+            </div>
+        </div>
+        <p>Comments that spans more than one line, should be written like this:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!-- <br>&nbsp; This is a long comment example. This is a long comment example. <br>&nbsp; This is a long comment example. This is a long comment example. <br>--&gt; </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Using Style Sheets</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>link <span style="color:green"> rel <span style="color:#005cc5">="stylesheet"</span> href <span style="color:#005cc5">="styles.css"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p>Short CSS rules can be written compressed, like this:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905"> p.intro <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">font-family <span style="color:#005cc5">
+                          <span style="color:#999">:</span>Verdana <span style="color:#999">;</span>
+                        </span>font-size <span style="color:#005cc5">
+                          <span style="color:#999">:</span>16em <span style="color:#999">;</span>
+                        </span>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p>Long CSS rules should be written over multiple lines:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905"> body <span style="color:#999">&#123;</span>
+                      <span style="color:#d73a49">
+                        <br>&nbsp; background-color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> lightgrey <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; font-family <span style="color:#005cc5">
+                          <span style="color:#999">:</span> "Arial Black", Helvetica, sans-serif <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; font-size <span style="color:#005cc5">
+                          <span style="color:#999">:</span> 16em <span style="color:#999">;</span>
+                        </span>
+                        <br>&nbsp; color <span style="color:#005cc5">
+                          <span style="color:#999">:</span> black <span style="color:#999">;</span>
+                        </span>
+                        <br>
+                      </span>
+                      <span style="color:#999">&#125;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>Place the opening bracket on the same line as the selector</li>
+            <li>Use one space before the opening bracket</li>
+            <li>Use two spaces of indentation</li>
+            <li>Use semicolon after each property-value pair, including the last</li>
+            <li>Only use quotes around values if the value contains spaces</li>
+            <li>Place the closing bracket on a new line, without leading spaces</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Loading JavaScript in HTML</h3>
+        <p>Use simple syntax for loading external scripts (the type attribute is not necessary):</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>script <span style="color:green"> src <span style="color:#005cc5">="myscript.js"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Accessing HTML Elements with JavaScript</h3>
+        <p>Using "untidy" HTML code can result in JavaScript errors.</p>
+        <p>These two JavaScript statements will produce different results:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:black">
+                      <span style="color:#905"></span> getElementById( <span style="color:green">"Demo"</span>). <span style="color:black">innerHTML</span> = <span style="color:green">"Hello"</span>; <br>
+                      <br>getElementById( <span style="color:green">"demo"</span>). <span style="color:black">innerHTML</span>
+                      <span style="color:#905"></span> = <span style="color:green">"Hello"</span>; <span style="color:#905"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Use Lower Case File Name</h3>
+        <p>Certain web servers, like those running on Apache or Unix systems, are case sensitive with file names. For example, "image.png" and "Image.png" would be treated as two different files.</p>
+        <p>Some web servers, such as those using Microsoft IIS, are not case sensitive. This means a file named "london.jpg" can still be accessed using "London.jpg" or other variations in letter casing.</p>
+        <p>If you use both uppercase and lowercase letters in file names, you need to be mindful of how they’re referenced, especially on case-sensitive servers.</p>
+        <p>Switching from a case-insensitive to a case-sensitive server can cause your website to break, as even minor differences in letter casing can lead to missing files or broken links.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">File Extensions</h3>
+        <p>HTML files should use the <code>.html</code> extension, although <code>.htm</code> is also acceptable and still recognized by most browsers.</p>
+        <p>CSS files must use the <code>.css</code> extension to be properly recognized and applied by web browsers.</p>
+        <p>JavaScript files should use the <code>.js</code> extension so that browsers can correctly identify and execute the script.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Differences Between .htm and .html?</h3>
+        <p>The <code>.htm</code> and <code>.html</code> file extensions are functionally the same—there’s no difference between them in how browsers handle the files.</p>
+        <p>Web browsers and servers recognize both extensions as HTML files, so they will handle <code>.htm</code> and <code>.html</code> in the same way.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Default Filenames</h3>
+        <p>If a URL doesn’t include a specific file name (like "https://www.example.com/"), the server automatically looks for a default file, such as "index.html", "index.htm", "default.html", or "default.htm".</p>
+        <p>If your server is set up to use only "index.html" as the default file, then your homepage must be named "index.html"—naming it "default.html" won't work.</p>
+    </div>
+</div>

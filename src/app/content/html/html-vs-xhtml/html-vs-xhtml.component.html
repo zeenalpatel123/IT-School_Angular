@@ -1,1 +1,332 @@
-<p>html-vs-xhtml works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Versus XHTML</h3>
+        <p class="text16">XHTML is a stricter, more XML-based version of HTML.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">What is XHTML?</h3>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>XHTML stands for EXtensible HyperText Markup Language</li>
+            <li>XHTML is a stricter, more XML-based version of HTML</li>
+            <li>XHTML is HTML defined as an XML application</li>
+            <li>XHTML is supported by all major browsers</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Why XHTML?</h3>
+        <p>XML is a markup language where all documents must be marked up correctly (be "well-formed").</p>
+        <p>XHTML was created to make HTML more adaptable and compatible with other data formats like XML. Unlike HTML, where browsers attempt to display pages despite errors, XHTML enforces stricter rules and error handling to ensure well-formed markup.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The Most Important Differences from HTML</h3>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>&lt;!DOCTYPE&gt; is mandatory</li>
+            <li>The xmlns attribute in &lt;html&gt; is mandatory</li>
+            <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are mandatory</li>
+            <li>Elements must always be properly nested</li>
+            <li>Elements must always be closed</li>
+            <li>Elements must always be in lowercase</li>
+            <li>Attribute names must always be in lowercase</li>
+            <li>Attribute values must always be quoted</li>
+            <li>Attribute minimization is forbidden</li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML - &lt;!DOCTYPE ....&gt; Is Mandatory</h3>
+        <p>An XHTML document must have an XHTML &lt;!DOCTYPE&gt; declaration.</p>
+        <p>The &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; elements must also be present, and the xmlns attribute in &lt;html&gt; must specify the xml namespace for the document.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:slategray">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" <br> "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt; </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>html <span style="color:green"> xmlns <span style="color:#005cc5">="http://www.w3.org/1999/xhtml"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>title <span style="color:#999">&gt;</span>
+                    </span>Title of document <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/title <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>&nbsp; <em>some content here...</em>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Elements Must be Properly Nested</h3>
+        <p>In XHTML, elements must always be properly nested within each other, like this:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>b <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>i <span style="color:#999">&gt;</span>
+                    </span>Some text <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/i <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/b <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>b <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>i <span style="color:#999">&gt;</span>
+                    </span>Some text <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/b <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/i <span style="color:#999">&gt;</span>
+                    </span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Elements Must Always be Closed</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is another paragraph <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is another paragraph
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Empty Elements Must Always be Closed</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div> A break: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>br <span style="color:green"> /</span>
+                    <span style="color:#999">&gt;</span>
+                  </span>
+                  <br> A horizontal rule: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>hr <span style="color:green"> /</span>
+                    <span style="color:#999">&gt;</span>
+                  </span>
+                  <br> An image: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="happy.gif"</span> alt <span style="color:#005cc5">="Happy face"</span> / </span>
+                    <span style="color:#999">&gt;</span>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div> A break: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                  </span>
+                  <br> A horizontal rule: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>hr <span style="color:#999">&gt;</span>
+                  </span>
+                  <br> An image: <span style="color:#905">
+                    <span style="color:#999">&lt;</span>img <span style="color:green"> src <span style="color:#005cc5">="happy.gif"</span> alt <span style="color:#005cc5">="Happy face"</span>
+                    </span>
+                    <span style="color:#999">&gt;</span>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Elements Must be in Lowercase</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>BODY <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>P <span style="color:#999">&gt;</span>
+                    </span>This is a paragraph <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/P <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/BODY <span style="color:#999">&gt;</span>
+                    </span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Elements Must be in Lowercase</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="https://www.ITschool.com/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Visit our HTML tutorial <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> HREF <span style="color:#005cc5">="https://www.ITschool.com/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Visit our HTML tutorial <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Attribute Values Must be Quoted</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">="https://www.ITschool.com/html/"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Visit our HTML tutorial <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>a <span style="color:green"> href <span style="color:#005cc5">=https://www.ITschool.com/html/</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Visit our HTML tutorial <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/a <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">XHTML Attribute Minimization is Forbidden</h3>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Correct:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="checkbox"</span> name <span style="color:#005cc5">="vehicle"</span> value <span style="color:#005cc5">="car"</span> checked <span style="color:#005cc5">="checked"</span> / </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> name <span style="color:#005cc5">="lastname"</span> disabled <span style="color:#005cc5">="disabled"</span> / </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Wrong:</h3>
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="checkbox"</span> name <span style="color:#005cc5">="vehicle"</span> value <span style="color:#005cc5">="car"</span> checked / </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> name <span style="color:#005cc5">="lastname"</span> disabled / </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

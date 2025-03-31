@@ -1,1 +1,46 @@
-<p>html-entities works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Entities</h3>
+        <p class="text16">Reserved characters in HTML must be replaced with entities:</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>&lt; (less than) = <b>&amp;lt;</b></li> 
+            <li>&gt; (greater than) = <b>&amp;gt;</b></li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">HTML Character Entities</h3>
+        <p>Some characters are reserved in HTML.</p>
+        <p>If you use the less than (&lt;) or greater than (&gt;) signs in your HTML text, the browser might mix them with tags.</p>
+        <p>The correct document type for HTML is:</p>
+        <p>Entity names or entity numbers can be used to display reserved HTML characters.  </p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    &amp;<i>entity_name</i>;
+                </div>
+            </div>
+        </div>
+        <p>Entity numbers look like this:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <div class="p-3 border-l-2 border-yellow-600 bg-white">
+                <div> &amp;# <i>entity_number</i>; </div>
+            </div>
+        </div>
+        <p>To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b></p>
+        <div class="p-3 bg-yellow-700/60">
+            <p><b>note: </b> &nbsp;Entity names are easier to remember than entity numbers.</p>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="titel font-medium">Non-breaking Space</h3>
+        <p>A commonly used HTML entity is the non-breaking space: <strong>&amp;nbsp;</strong></p>
+        <p>A non-breaking space is a space that will not break into a new line.</p>
+        <p>Two words joined by a non-breaking space will stay together and won’t split onto a new line. This is useful when separating them could cause readability issues.</p>
+        <p>Example :</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>§ 10</li>
+            <li>10 km/h</li>
+            <li>10 PM</li>
+        </ul>
+    </div>
+</div>

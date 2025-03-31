@@ -1,1 +1,485 @@
-<p>html-form-elements works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Form Elements</h3>
+        <p class="text16">This chapter describes all the different HTML form elements.</p>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The HTML &lt;form&gt; Elements</h3>
+        <p>The HTML <code>&lt;form&gt;</code> element can contain one or more of the following form elements:</p>
+        <ul>
+            <li><code>&lt;form&gt;</code></li>
+            <li><code>&lt;label&gt;</code></li>
+            <li><code>&lt;select&gt;</code></li>
+            <li><code>&lt;textarea&gt;</code></li>
+            <li><code>&lt;button&gt;</code></li>
+            <li><code>&lt;fieldset&gt;</code></li>
+            <li><code>&lt;legend&gt;</code></li>
+            <li><code>&lt;datalist&gt;</code></li>
+            <li><code>&lt;output&gt;</code></li>
+            <li><code>&lt;option&gt;</code></li>
+            <li><code>&lt;optgroup&gt;</code></li>
+        </ul>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;input&gt; Element</h3>
+        <p>One of the most used form elements is the &lt;input&gt; element.</p>
+        <p>The &lt;input&gt; element can be displayed in several ways, depending on the type attribute.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;label&gt; Element</h3>
+        <p>The <code>&lt;label&gt;</code> element provides a descriptive label for various form elements.</p>
+        <p>The <code>&lt;label&gt;</code> element benefits screen reader users by being read aloud when the associated input field gains focus.</p>
+        <p>The <code>&lt;label&gt;</code> element also assists users who struggle to click small elements like radio buttons or checkboxes, as clicking the label text toggles the associated input.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;select &gt; Element</h3>
+        <p>The <code>&lt;select &gt;</code> element defines a drop-down list:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="cars"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Choose a car: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>select <span style="color:green"> id <span style="color:#005cc5">="cars"</span> name <span style="color:#005cc5">="cars"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="volvo"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Volvo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="saab"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Saab <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="fiat"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Fiat <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="audi"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Audi <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/select <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>The<code>&lt;option &gt;</code> element defines an option that can be selected.</p>
+        <p>By default, the first item in the drop-down list is selected.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="fiat"</span> selected </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Fiat <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <h4 class="text-20">Visible Values:</h4>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="cars"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Choose a car: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>select <span style="color:green"> id <span style="color:#005cc5">="cars"</span> name <span style="color:#005cc5">="cars"</span> size <span style="color:#005cc5">="3"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="volvo"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Volvo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="saab"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Saab <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="fiat"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Fiat <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="audi"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Audi <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/select <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <h4 class="text-20">Allow Multiple Selections:</h4>
+        <p>Use the multiple attribute to allow the user to select more than one value:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="cars"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Choose a car: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>select <span style="color:green"> id <span style="color:#005cc5">="cars"</span> name <span style="color:#005cc5">="cars"</span> size <span style="color:#005cc5">="4"</span>
+                        <strong></strong>multiple </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="volvo"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Volvo <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="saab"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Saab <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="fiat"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Fiat <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br> &nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="audi"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Audi <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/option <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/select <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;textarea &gt; Element</h3>
+        <p>The <code>&lt;textarea &gt;</code> element defines a multi-line input field (a text area):</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>textarea <span style="color:green"> name <span style="color:#005cc5">="message"</span> rows <span style="color:#005cc5">="10"</span> cols <span style="color:#005cc5">="30"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>The cat was playing in the garden. <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/textarea <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <p>The <code>rows</code> attribute specifies the visible number of lines in 
+            a text area.</p>
+        <p>The <code>cols</code> attribute specifies the visible width of a text area.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>textarea <span style="color:green"> name <span style="color:#005cc5">="message"</span> style <span style="color:#005cc5">="width:200px; height:600px;"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>The cat was playing in the garden. <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/textarea <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;button &gt; Element</h3>
+        <p>The &lt;button &gt; element defines a clickable button:</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>button <span style="color:green"> type <span style="color:#005cc5">="button"</span> onclick <span style="color:#005cc5">="alert('Hello World!')"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Click Me! <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/button <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+        <button type="button" onclick="alert('Welcome in IT School!')">Click Me!</button>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;fieldset &gt; and &lt;legend &gt; Element</h3>
+        <p>The <code>&lt;fieldset &gt;</code> element is used to group related data in a form.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>fieldset <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>legend <span style="color:#999">&gt;</span>
+                    </span>Personalia: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/legend <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span> value <span style="color:#005cc5">="John"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span> value <span style="color:#005cc5">="Doe"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp;&nbsp;&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/fieldset <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The &lt;datalist &gt;  Element</h3>
+        <p>ChatGPT said:
+            The <code>&lt;datalist &gt;</code> element defines a set of predefined options for an <code>&lt;input &gt;</code> field.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+              <div>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br>&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>input <span style="color:green"> list <span style="color:#005cc5">="browsers"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>datalist <span style="color:green"> id <span style="color:#005cc5">="browsers"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="Edge"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp; &nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="Firefox"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="Chrome"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp; &nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="Opera"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp;&nbsp;&nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>option <span style="color:green"> value <span style="color:#005cc5">="Safari"</span>
+                  </span>
+                  <span style="color:#999">&gt;</span>
+                </span>
+                <br> &nbsp; <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/datalist <span style="color:#999">&gt;</span>
+                </span>
+                <br>
+                <span style="color:#905">
+                  <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                </span>
+              </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+      <h3 class="font-medium">The &lt;output &gt;  Element</h3>
+      <p>The &lt;output &gt; element represents the result of a calculation (like one performed by a script).</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/html_page.php"</span>
+                <br>&nbsp; oninput <span style="color:#005cc5">="x.value=parseInt(a.value)+parseInt(b.value)"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; 0 <br> &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="range"</span>&nbsp; id <span style="color:#005cc5">="a"</span> name <span style="color:#005cc5">="a"</span> value <span style="color:#005cc5">="50"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; 100 + <br> &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="number"</span> id <span style="color:#005cc5">="b"</span> name <span style="color:#005cc5">="b"</span> value <span style="color:#005cc5">="50"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; = <br> &nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>output <span style="color:green"> name <span style="color:#005cc5">="x"</span> for <span style="color:#005cc5">="a b"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/output <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+            </span>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+            </span>
+            <br>&nbsp; <span style="color:#905">
+              <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span>
+              </span>
+              <span style="color:#999">&gt;</span>
+            </span>
+            <br>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+            </span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+    </div>
+    </div>
+</div>
