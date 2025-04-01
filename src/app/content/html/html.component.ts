@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-html',
@@ -7,6 +7,14 @@ import { RouterModule } from '@angular/router';
   templateUrl: './html.component.html',
   styleUrl: './html.component.scss'
 })
-export class HtmlComponent {
+export class HtmlComponent implements OnInit{
+  
+  constructor(private _router: Router) {
+  }
 
+  ngOnInit(): void {
+    this._router.events.subscribe((evt: any) => {
+      window.scrollTo(0, 0)
+    });
+  }
 }
