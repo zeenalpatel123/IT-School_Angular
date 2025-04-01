@@ -1,1 +1,432 @@
-<p>html-input-form-attributes works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML Input form* Attributes</h3>
+        <p class="text16">This chapter describes the different <code>form*</code> attributes for the HTML &lt;input&gt; element.</p>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The form Attribute</h3>
+        <p>The input form attribute specifies the form the &lt;input&gt; element belongs to.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span> id <span style="color:#005cc5">="form1"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span> form <span style="color:#005cc5">="form1"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The formaction Attribute</h3>
+        <p>The input <code>formaction</code> attribute specifies the URL of the file that will process the input when the form is submitted.</p>
+        <p><b>Note:</b> This attribute overrides the <code>action</code> attribute of the &lt;form&gt; element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> formaction <span style="color:#005cc5">="/action_page2.php"</span> value <span style="color:#005cc5">="Submit as Admin"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The formenctype Attribute</h3>
+        <p>The input <code>formenctype</code> attribute specifies how the form-data should be encoded when submitted (only for forms with method="post").</p>
+        <p><b>Note:</b> This attribute overrides the enctype attribute of the &lt;form&gt; element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page_binary.asp"</span> method <span style="color:#005cc5">="post"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> formenctype <span style="color:#005cc5">="multipart/form-data"</span>
+                        <br>&nbsp; value <span style="color:#005cc5">="Submit as Multipart/form-data"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The formmethod Attribute</h3>
+        <p>The input <code>formmethod</code> attribute defines the HTTP method for sending form-data to the action URL.</p>
+        <p><b>Note:</b> This attribute overrides the method attribute of the &lt;form&gt; element.   </p>
+        <p>The <code>formmethod</code> attribute works with the following input types: submit and image.</p>
+        <p>The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").</p>
+        <p><b>Notes on the "get" method:</b></p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>This method appends the form-data to the URL in name/value pairs</li>
+            <li>This method is useful for form submissions where a user want to bookmark the result</li>
+            <li>There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred</li>
+            <li>Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)</li>
+        </ul>
+        <p><b>Notes on the "post" method:</b></p>
+        <ul class="space-y-1.5 list-disc pl-5">
+            <li>This method sends the form-data as an HTTP post transaction</li>
+            <li>Form submissions with the "post" method cannot be bookmarked</li>
+            <li>The "post" method is more robust and secure than "get", and "post" does not have size limitations</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span> method <span style="color:#005cc5">="get"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit using GET"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> formmethod <span style="color:#005cc5">="post"</span> value <span style="color:#005cc5">="Submit using POST"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The formtarget Attribute</h3>
+        <p>The input <code>formtarget</code> attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+        <p><b>Note:</b> This attribute overrides the target attribute of the &lt;form&gt; element.</p>
+        <p>The <code>formtarget</code> attribute works with the following input types: submit and image.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>First name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="fname"</span> name <span style="color:#005cc5">="fname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Last name: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="text"</span> id <span style="color:#005cc5">="lname"</span> name <span style="color:#005cc5">="lname"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> formtarget <span style="color:#005cc5">="_blank"</span> value <span style="color:#005cc5">="Submit to a new window/tab"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The formnovalidate Attribute</h3>
+        <p>The <code>formnovalidate</code> attribute indicates that an &lt;input&gt; element will bypass validation when the form is submitted.</p>
+        <p><b>Note:</b> This attribute takes precedence over the novalidate attribute of the &lt;form&gt; element.</p>
+        <p>The <code>formnovalidate</code> attribute applies to input elements of type <code>submit</code>.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="email"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Enter your email: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="email"</span> id <span style="color:#005cc5">="email"</span> name <span style="color:#005cc5">="email"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> formnovalidate <span style="color:#005cc5">="formnovalidate"</span>
+                        <br>&nbsp; value <span style="color:#005cc5">="Submit without validation"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">The novalidate Attribute</h3>
+        <p>The <code>novalidate</code> attribute is used with the &lt;form&gt; element.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>form <span style="color:green"> action <span style="color:#005cc5">="/action_page.php"</span> novalidate </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>label <span style="color:green"> for <span style="color:#005cc5">="email"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>Enter your email: <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/label <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="email"</span> id <span style="color:#005cc5">="email"</span> name <span style="color:#005cc5">="email"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>br <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>&nbsp; <span style="color:#905">
+                      <span style="color:#999">&lt;</span>input <span style="color:green"> type <span style="color:#005cc5">="submit"</span> value <span style="color:#005cc5">="Submit"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/form <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>

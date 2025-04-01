@@ -1,1 +1,113 @@
-<p>html-youtube works!</p>
+<div class="w-full py-10 px-5">
+    <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+        <h3 class="titel font-medium">HTML YouTube Videos</h3>
+        <p class="text16">The easiest way to play videos in HTML, is to use YouTube.</p>
+    </div> 
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Struggling with Video Formats?</h3>
+        <p>Converting videos to different formats can be difficult and time-consuming.</p>
+        <p>An easier solution is to let YouTube play the videos in your web page.</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">YouTube Video Id</h3>
+        <p>YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video.</p>
+        <p>You can use this id, and refer to your video in the HTML code.</p>
+    </div>  
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">Playing a YouTube Video in HTML</h3>
+        <p>To play your video on a web page, do the following:</p>
+        <ul class="space-y-1.5 list-disc pl-10">
+            <li>Upload the video to YouTube</li>
+            <li>Take a note of the video id</li>
+            <li>Define an <code>&lt;iframe&gt;</code> element in your web page</li>
+            <li>Let the <code>src</code> attribute point to the video URL</li>
+            <li>Use the <code>width</code> and <code>height</code> attributes to specify the dimension of the player</li>
+            <li>Add any other parameters to the URL (see below)</li>
+        </ul>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> width <span style="color:#005cc5">="420"</span> height <span style="color:#005cc5">="315"</span>
+                        <br>src <span style="color:#005cc5">="https://www.youtube.com/embed/tgbNymZ7vqY"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">YouTube Autoplay + Mute</h3>
+        <p>You can let your video start playing automatically when a user visits the page, by adding <code>autoplay=1</code> to the YouTube URL. However, automatically starting a video is annoying for your visitors!</p>
+        <p>Add <code>mute=1</code> after <code>autoplay=1</code> to let your video start playing automatically (but muted).</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905"><span style="color:#999">&lt;</span>iframe<span style="color:green"> width<span style="color:#005cc5">="420"</span> height<span style="color:#005cc5">="315"</span><br>src<span style="color:#005cc5">="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&amp;mute=1"</span></span><span style="color:#999">&gt;</span></span><br>
+                    <span style="color:#905"><span style="color:#999">&lt;</span>/iframe<span style="color:#999">&gt;</span></span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">YouTube Playlist</h3>
+        <p>A comma separated list of videos to play (in addition to the original URL).</p>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">YouTube Loop</h3>
+        <p>Add <code>playlist=videoID</code> and <code>loop=1</code> to let your video loop forever.</p>
+        <p><code>loop=0</code> (default) - The video will play only once.</p>
+        <p><code>loop=1</code> - The video will loop (forever).</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span style="color:green"> width <span style="color:#005cc5">="420"</span> height <span style="color:#005cc5">="315"</span>
+                        <br>src <span style="color:#005cc5">="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+    <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+        <h3 class="font-medium">YouTube Controls</h3>
+        <p>Add <code>controls=0</code> to NOT display controls in the video player.</p>
+        <p><code>controls=0</code> - Player controls does not display.</p>
+        <p><code>controls=1</code> (default) - Player controls is displayed.</p>
+        <div class="p-6 bg-yellow-600/20 space-y-3.5">
+            <h3>Example</h3>
+            <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+                <div>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>iframe <span class="attributecolor" style="color:green"> width <span style="color:#005cc5">="420"</span> height <span style="color:#005cc5">="315"</span>
+                        <br>src <span style="color:#005cc5">="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"</span>
+                      </span>
+                      <span style="color:#999">&gt;</span>
+                    </span>
+                    <br>
+                    <span style="color:#905">
+                      <span style="color:#999">&lt;</span>/iframe <span style="color:#999">&gt;</span>
+                    </span>
+                </div>
+            </div>
+            <a href="" class="btn_primary">Try Now</a>
+        </div>
+    </div>
+</div>
