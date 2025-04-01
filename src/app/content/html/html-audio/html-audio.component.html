@@ -1,1 +1,166 @@
-<p>html-audio works!</p>
+<div class="w-full py-10 px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+      <h3 class="titel font-medium">The HTML &lt;audio&gt; Element</h3>
+      <p class="text16">To play an audio file in HTML, use the <code>&lt;audio&gt;</code> element:</p>
+      <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>Example</h3>
+        <div class="p-6 border-l-2 border-yellow-600 bg-white">
+          <div>
+            <span style="color:#905"><span style="color:#999">&lt;</span>audio<span style="color:green"> controls</span><span style="color:#999">&gt;</span></span><br>
+              &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.ogg"</span> type<span style="color:#005cc5">="audio/ogg"</span></span><span style="color:#999">&gt;</span></span><br>
+              &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.mp3"</span> type<span style="color:#005cc5">="audio/mpeg"</span></span><span style="color:#999">&gt;</span></span><br>
+                Your browser does not support the audio element.<br>
+            <span style="color:#905"><span style="color:#999">&lt;</span>/audio<span style="color:#999">&gt;</span></span>
+          </div>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+      </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">HTML Audio - How It Works</h3>
+    <p class="text16">The <code>controls</code> attribute adds audio controls, like play, pause, and volume.</p>
+    <p class="text16">The <code>&lt;source&gt;</code> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+    <p class="text16">The text between the <code>&lt;audio&gt;</code> and <code>&lt;/audio&gt;</code> tags will only be displayed in browsers that do not support the<code>&lt;audio&gt;</code> element.</p>
+  </div>  
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">HTML &lt;audio&gt; Autoplay</h3>
+    <p class="text16">To start an audio file automatically, use the <code>autoplay</code> attribute:</p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>audio<span style="color:green"> controls autoplay</span><span style="color:#999">&gt;</span></span><br>
+          &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.ogg"</span> type<span style="color:#005cc5">="audio/ogg"</span></span><span style="color:#999">&gt;</span></span><br>
+          &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.mp3"</span> type<span style="color:#005cc5">="audio/mpeg"</span></span><span style="color:#999">&gt;</span></span><br>
+          Your browser does not support the audio element.<br>
+          <span style="color:#905"><span style="color:#999">&lt;</span>/audio<span style="color:#999">&gt;</span></span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <div class="p-3.5 bg-yellow-700/20">
+      <p><b>Note:</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+    </div>
+    <p class="text16">Add <code>muted</code> after <code>autoplay</code> to let your audio file start playing automatically (but muted):</p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>audio<span style="color:green"> controls autoplay muted</span><span style="color:#999">&gt;</span></span><br>
+          &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.ogg"</span> type<span style="color:#005cc5">="audio/ogg"</span></span><span style="color:#999">&gt;</span></span><br>
+          &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>source<span style="color:green"> src<span style="color:#005cc5">="horse.mp3"</span> type<span style="color:#005cc5">="audio/mpeg"</span></span><span style="color:#999">&gt;</span></span><br>
+          Your browser does not support the audio element.<br>
+          <span style="color:#905"><span style="color:#999">&lt;</span>/audio<span style="color:#999">&gt;</span></span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>  
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">Browser Support</h3>
+    <p>The numbers in the table specify the first browser version that fully supports the &lt;audio&gt; element.</p>
+    <table>
+      <tbody>
+          <tr>
+              <th style="width:20%;font-size:16px;text-align:left;">Element</th>
+              <th style="width:16%;" class="bsChrome" title="Chrome">
+                <img src="https://pngimg.com/d/chrome_logo_PNG13.png" alt="Chrome" class="mx-auto max-w-10">
+              </th>
+              <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge">
+                <img src="https://www.bitdefender.com/media/uploads/2017/06/microsoft-edge.png" alt="Internet Explorer" class="mx-auto max-w-10">
+              </th>
+              <th style="width:16%;" class="bsFirefox" title="Firefox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" alt="Firefox" class="mx-auto max-w-10">
+              </th>
+              <th style="width:16%;" class="bsSafari" title="Safari">
+                <img src="https://pngimg.com/d/safari_PNG6.png" alt="Safari" class="mx-auto max-w-11">
+              </th>
+              <th style="width:16%;" class="bsOpera" title="Opera">
+                <img src="https://pngimg.com/d/opers_PNG15.png" alt="Opera" class="mx-auto max-w-8">
+              </th>
+          </tr>
+          <tr>
+              <td style="text-align:left;">&lt;audio&gt;</td>
+              <td class="text-center">4.0</td>
+              <td class="text-center">9.0</td>
+              <td class="text-center">3.5</td>
+              <td class="text-center">4.0</td>
+              <td class="text-center">10.5</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">HTML Audio Formats</h3>
+    <p>There are three supported audio formats: MP3, WAV, and OGG. The browser support for the different formats is: </p>
+    <table class="ws-table-all notranslate">
+      <tbody>
+          <tr>
+              <th style="width:25%">Browser</th>
+              <th style="width:25%">MP3</th>
+              <th style="width:25%">WAV</th>
+              <th style="width:25%">OGG</th>
+          </tr>
+          <tr>
+              <td>Edge/IE</td>
+              <td>YES</td>
+              <td>YES*</td>
+              <td>YES*</td>
+          </tr>
+          <tr>
+              <td>Chrome</td>
+              <td>YES</td>
+              <td>YES</td>
+              <td>YES</td>
+          </tr>
+          <tr>
+              <td>Firefox</td>
+              <td>YES</td>
+              <td>YES</td>
+              <td>YES</td>
+          </tr>
+          <tr>
+              <td>Safari</td>
+              <td>YES</td>
+              <td>YES</td>
+              <td>NO</td>
+          </tr>
+          <tr>
+              <td>Opera</td>
+              <td>YES</td>
+              <td>YES</td>
+              <td>YES</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">HTML Audio - Media Types</h3>
+    <table class="ws-table-all notranslate">
+      <tbody>
+          <tr>
+              <th style="width:50%">File Format</th>
+              <th style="width:50%">Media Type</th>
+          </tr>
+          <tr>
+              <td>MP3</td>
+              <td>audio/mpeg</td>
+          </tr>
+          <tr>
+              <td>OGG</td>
+              <td>audio/ogg</td>
+          </tr>
+          <tr>
+              <td>WAV</td>
+              <td>audio/wav</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 py-6">
+    <h3 class="font-medium">HTML Audio - Methods, Properties, and Events</h3>
+    <p>The HTML DOM defines methods, properties, and events for the &lt;audio&gt; element.</p>
+    <p>This allows you to load, play, and pause audios, as well as set duration and volume.</p>
+    <p>There are also DOM events that can notify you when an audio begins to play, is paused, etc.</p>
+  </div>
+</div>  

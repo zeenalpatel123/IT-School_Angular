@@ -1,1 +1,174 @@
-<p>html-svg works!</p>
+<div class="w-full py-10 px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+      <h3 class="titel font-medium">HTML SVG Graphics</h3>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG (Scalable Vector Graphics)</h3>
+    <p class="text16">SVG graphics are scalable, and do not lose any quality if they are zoomed or resized:</p>
+    <svg height="150" width="400" xmlns="">
+      <defs>
+        <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+    ����� <stop offset="0%" stop-color="blue"></stop>
+    ����� <stop offset="100%" stop-color="red"></stop>
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad4)"></ellipse>
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <p class="text16">SVG is supported by all major browsers.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>Canvas Examples</h3>
+    <ul class="pl-7 list-disc space-y-1.5">
+      <li class="text16">SVG stands for Scalable Vector Graphics</li>
+      <li class="text16">SVG is used to define vector-based graphics for the Web</li>
+      <li class="text16">SVG defines graphics in XML format</li>
+      <li class="text16">Each element and attribute in SVG files can be animated</li>
+      <li class="text16">SVG is a W3C recommendation</li>
+      <li class="text16">SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</li>
+    </ul>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>The &lt;svg&gt; Element</h3>
+    <div class="space-y-1.5">
+      <li class="text16">The HTML <code>&lt;svg&gt;</code> element is a container for SVG graphics.</li>
+      <li class="text16">SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.</li>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG Circle</h3>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+    </svg>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:slategray">&lt;!DOCTYPE html&gt;</span><br><span style="color:#905"><span style="color:#999">&lt;</span>html<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>body<span style="color:#999">&gt;</span></span><br><br><span style="color:#905"><span style="color:#999">&lt;</span>svg<span style="color:green"> 
+           width<span style="color:#005cc5">="100"</span> height<span style="color:#005cc5">="100"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>circle<span style="color:green"> cx<span style="color:#005cc5">="50"</span> cy<span style="color:#005cc5">="50"</span> r<span style="color:#005cc5">="40"</span> stroke<span style="color:#005cc5">="green"</span> 
+           stroke-width<span style="color:#005cc5">="4"</span> fill<span style="color:#005cc5">="yellow"</span> /</span><span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/svg<span style="color:#999">&gt;</span></span><br><br><span style="color:#905"><span style="color:#999">&lt;</span>/body<span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/html<span style="color:#999">&gt;</span></span> 
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG Rectangle</h3>
+    <svg width="400" height="120">
+      <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue"></rect>
+    </svg>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>svg<span style="color:green"> width<span style="color:#005cc5">="400"</span> height<span style="color:#005cc5">="120"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>rect<span style="color:green"> 
+          x<span style="color:#005cc5">="10"</span> y<span style="color:#005cc5">="10"</span> width<span style="color:#005cc5">="200"</span> height<span style="color:#005cc5">="100"</span> 
+          stroke<span style="color:#005cc5">="red"</span> stroke-width<span style="color:#005cc5">="6"</span> fill<span style="color:#005cc5">="blue"</span> 
+         /</span><span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/svg<span style="color:#999">&gt;</span></span><br>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG Rectangle with Opacity and Rounded Corners</h3>
+    <svg width="300" height="180">
+      <rect x="10" y="10" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.3"></rect>
+    </svg>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>svg<span style="color:green"> width<span style="color:#005cc5">="400"</span> height<span style="color:#005cc5">="180"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>rect<span style="color:green"> x<span style="color:#005cc5">="50"</span> y<span style="color:#005cc5">="20"</span> rx<span style="color:#005cc5">="20"</span> ry<span style="color:#005cc5">="20"</span> 
+         width<span style="color:#005cc5">="150"</span> height<span style="color:#005cc5">="150"</span><br>&nbsp; 
+         style<span style="color:#005cc5">="fill:red;stroke:black;stroke-width:5;opacity:0.5"</span> /</span><span style="color:#999">&gt;</span></span><br><span style="color:#905"><span style="color:#999">&lt;</span>/svg<span style="color:#999">&gt;</span></span> 
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG Star</h3>
+    <svg width="300" height="200">
+      <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"></polygon>
+    </svg>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>svg<span style="color:green"> width<span style="color:#005cc5">="300"</span> height<span style="color:#005cc5">="200"</span></span><span style="color:#999">&gt;</span></span><br>
+          &nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>polygon<span style="color:green"> points<span style="color:#005cc5">="100,10 40,198 190,78 10,78 160,198"</span><br>
+           &nbsp; style<span style="color:#005cc5">="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"</span> /</span><span style="color:#999">&gt;</span></span><br>
+          <span style="color:#905"><span style="color:#999">&lt;</span>/svg<span style="color:#999">&gt;</span></span><br>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>SVG Gradient Ellipse and Text</h3>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1">
+   �����  <stop offset="0%" stop-color="blue"></stop>
+   �����  <stop offset="100%" stop-color="red"></stop>
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"></ellipse>
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+   </svg>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>svg<span style="color:green"> height<span style="color:#005cc5">="130"</span> width<span style="color:#005cc5">="500"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>defs<span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>linearGradient<span style="color:green"> id<span style="color:#005cc5">="grad1"</span></span><span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>stop<span style="color:green"> offset<span style="color:#005cc5">="0%"</span> stop-color<span style="color:#005cc5">="yellow"</span> 
+          /</span><span style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>stop<span style="color:green"> offset<span style="color:#005cc5">="100%"</span> stop-color<span style="color:#005cc5">="red"</span> /</span><span style="color:#999">&gt;</span></span><br>
+          &nbsp;&nbsp;&nbsp;
+          <span style="color:#905"><span style="color:#999">&lt;</span>/linearGradient<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>/defs<span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>ellipse<span style="color:green"> cx<span style="color:#005cc5">="100"</span> cy<span style="color:#005cc5">="70"</span> rx<span style="color:#005cc5">="85"</span> ry<span style="color:#005cc5">="55"</span> 
+          fill<span style="color:#005cc5">="url(#grad1)"</span> /</span><span style="color:#999">&gt;</span></span><br>&nbsp; <span style="color:#905"><span style="color:#999">&lt;</span>text<span style="color:green"> fill<span style="color:#005cc5">="#ffffff"</span> font-size<span style="color:#005cc5">="45"</span> 
+          font-family<span style="color:#005cc5">="Verdana"</span> x<span style="color:#005cc5">="50"</span> y<span style="color:#005cc5">="86"</span></span><span style="color:#999">&gt;</span></span>SVG<span style="color:#905"><span style="color:#999">&lt;</span>/text<span style="color:#999">&gt;</span></span><br>&nbsp; Sorry, your browser does not 
+          support inline SVG.<br><span style="color:#905"><span style="color:#999">&lt;</span>/svg<span style="color:#999">&gt;</span></span><br>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>Differences Between SVG and Canvas</h3>
+    <p class="text16">SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on the fly (with JavaScript).</p>
+    <p class="text16">SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers to SVG graphics.</p>
+    <p class="text16">In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.</p>
+    <p class="text16">Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>Comparison of SVG and Canvas</h3>
+    <p class="text16">The table below shows some important differences between Canvas and SVG:</p>
+    <table>
+      <tr>
+        <th style="width:50%">SVG</th>
+        <th style="width:50%">Canvas</th>
+      </tr>
+      <tr>
+        <td>
+          <ul class="list-disc pl-5">
+            <li>Resolution independent</li>
+            <li>Support for event handlers</li>
+            <li>Good text rendering capabilities</li>
+            <li>Slow rendering if complex</li>
+            <li>Not suited for game applications</li>
+          </ul>
+        </td>
+        <td>
+          <ul class="list-disc pl-5">
+            <li>Resolution dependent</li>
+            <li>No support for event handlers</li>
+            <li>Poor text rendering capabilities</li>
+            <li>You can save the resulting image as .png or .jpg</li>
+            <li>Well suited for graphic-intensive games</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>  

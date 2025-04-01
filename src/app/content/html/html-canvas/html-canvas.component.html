@@ -1,1 +1,159 @@
-<p>html-canvas works!</p>
+<div class="w-full py-10 px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+      <h3 class="titel font-medium">HTML Canvas Graphics</h3>
+      <p class="text16">The HTML <code>&lt;canvas&gt;</code> element is used to draw graphics on a web page.</p>
+      <p class="text16">The graphic to the left is created with <code>&lt;canvas&gt;</code>. It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+        <h3>What is HTML Canvas?</h3>
+        <div class="space-y-1.5">
+          <p class="text16">The HTML <code>&lt;canvas&gt;</code> element is used to draw graphics, on the fly, via JavaScript.</p>
+          <p class="text16">The <code>&lt;canvas&gt;</code> element is only a container for graphics. You must use JavaScript to actually draw the graphics.</p>
+          <p class="text16">Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+          <p class="text16">Canvas is supported by all major browsers.</p>
+        </div>
+        <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>Canvas Examples</h3>
+    <div class="space-y-1.5">
+      <p class="text16">A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+      <p class="text16">The markup looks like this:</p>
+      <p class="text16"><b>Note:</b> Always specify an <code>id</code> attribute (to be referred to in a script), and a <code>width</code> and <code>height</code> attribute to define the size of the canvas. To add a border, use the <code>style</code> attribute.</p>
+      <p class="text16">Here is an example of a basic, empty canvas:</p>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">.</canvas>
+    </div>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905"><span style="color:#999">&lt;</span>canvas<span style="color:green"> id<span style="color:#005cc5">="myCanvas"</span> width<span style="color:#005cc5">="200"</span> height<span style="color:#005cc5">="100"</span>
+          style<span style="color:#005cc5">="border:1px solid 
+          #000000;"</span></span><span style="color:#999">&gt;</span></span>
+          <span style="color:#905"><span style="color:#999">&lt;</span>/canvas<span style="color:#999">&gt;</span></span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3>Add a JavaScript</h3>
+    <div class="space-y-1.5">
+      <p class="text16">After creating the rectangular canvas area, you must add a JavaScript to do the drawing.</p>
+      <p class="text16">Here are some examples:</p>
+      <div class="space-y-1.5">
+        <p class="text-18 md:text-22 2xl:text-26">Draw a Line</p>
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+      </div>
+    </div>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>  &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> ctx.<span style="color:black">moveTo</span>(<span style="color:#905">0</span>, <span style="color:#905">0</span>);<br>ctx.<span style="color:black">lineTo</span>(<span style="color:#905">200</span>, <span style="color:#905">100</span>);<br><span style="color:#905">
+          </span> ctx.<span style="color:black">stroke</span>();<br>&lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <p class="text-18 md:text-22 2xl:text-26">Draw a Circle</p>
+    <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>  &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> ctx.<span style="color:black">beginPath</span>();<br>ctx.<span style="color:black">arc</span>(<span style="color:#905">95</span>, <span style="color:#905">50</span>, <span style="color:#905">40</span>, <span style="color:#905">0</span>, <span style="color:#905">2</span> * Math.<span style="color:black">PI</span>);<br>ctx.<span style="color:black">stroke</span>();<br><span style="color:#905">
+          </span>  &lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <p class="text-18 md:text-22 2xl:text-26">Draw a Text</p>
+    <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>  &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> ctx.<span style="color:black">font</span> = <span style="color:green">"30px Arial"</span>;<br>ctx.<span style="color:black">strokeText</span>(<span style="color:green">"Hello World"</span>, <span style="color:#905">10</span>, <span style="color:#905">50</span>);<br><span style="color:#905">
+          </span>  &lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <p class="text-18 md:text-22 2xl:text-26">Draw Linear Gradient</p>
+    <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>   &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> <br><span style="color:#905">
+          </span> <span style="color:slategray">// Create gradient<br></span><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> grd = ctx.<span style="color:black">createLinearGradient</span>(<span style="color:#905">0</span>, <span style="color:#905">0</span>, <span style="color:#905">200</span>, <span style="color:#905">0</span>);<br><span style="color:#905">
+          </span> grd.<span style="color:black">addColorStop</span>(<span style="color:#905">0</span>, <span style="color:green">"red"</span>);<br><span style="color:#905">
+          </span> grd.<span style="color:black">addColorStop</span>(<span style="color:#905">1</span>, <span style="color:green">"white"</span>);<br><span style="color:#905">
+          </span> <br><span style="color:#905">
+          </span> <span style="color:slategray">// Fill with gradient<br></span><span style="color:#905">
+          </span> ctx.<span style="color:black">fillStyle</span> = grd;<br><span style="color:#905">
+          </span> ctx.<span style="color:black">fillRect</span>(<span style="color:#905">10</span>, <span style="color:#905">10</span>, <span style="color:#905">150</span>, <span style="color:#905">80</span>);<br>&lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <p class="text-18 md:text-22 2xl:text-26">Draw Circular Gradient</p>
+    <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>   &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> <br><span style="color:#905">
+          </span> <span style="color:slategray">// Create gradient<br></span><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> grd = ctx.<span style="color:black">createRadialGradient</span>(<span style="color:#905">75</span>, <span style="color:#905">50</span>, <span style="color:#905">5</span>, <span style="color:#905">90</span>, <span style="color:#905">60</span>, <span style="color:#905">100</span>);<br><span style="color:#905">
+          </span> grd.<span style="color:black">addColorStop</span>(<span style="color:#905">0</span>, <span style="color:green">"red"</span>);<br><span style="color:#905">
+          </span> grd.<span style="color:black">addColorStop</span>(<span style="color:#905">1</span>, <span style="color:green">"white"</span>);<br><span style="color:#905">
+          </span> <br><span style="color:#905">
+          </span> <span style="color:slategray">// Fill with gradient<br></span><span style="color:#905">
+          </span>  ctx.<span style="color:black">fillStyle</span> = grd;<br>ctx.<span style="color:black">fillRect</span>(<span style="color:#905">10</span>, <span style="color:#905">10</span>, <span style="color:#905">150</span>, <span style="color:#905">80</span>);<br>&lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <p class="text-18 md:text-22 2xl:text-26">Draw Image</p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black"><span style="color:#905">
+          </span>  &lt;script&gt;<br><span style="color:#005cc5">var</span> c = document.<span style="color:black">getElementById</span>(<span style="color:green">"myCanvas"</span>);<br><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> ctx = c.<span style="color:black">getContext</span>(<span style="color:green">"2d"</span>);<br><span style="color:#905">
+          </span> <span style="color:#005cc5">var</span> img = document.<span style="color:black">getElementById</span>(<span style="color:green">"scream"</span>);<br><span style="color:#905">
+          </span> ctx.<span style="color:black">drawImage</span>(img, <span style="color:#905">10</span>, <span style="color:#905">10</span>);<br>&lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+</div>
