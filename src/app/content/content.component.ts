@@ -4,10 +4,11 @@ import { HtmlComponent } from "./html/html.component";
 import {MatTabsModule} from '@angular/material/tabs';
 import { CssComponent } from "./css/css.component";
 import { ViewportScroller } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-content',
-  imports: [RouterModule, HtmlComponent, MatTabsModule, CssComponent,],
+  imports: [RouterModule, HtmlComponent, MatTabsModule, CssComponent, HeaderComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })

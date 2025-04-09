@@ -1,1 +1,36 @@
-<p>header works!</p>
+<header class="bg-yellow-600/30">
+    <div class="wrapper flex items-center justify-between">
+      <div class="flex items-center justify-between w-full lg:w-auto py-3.5">
+        <a href="#">
+          <img src="assets/images/logo.webp" alt="logo" class="mx-auto max-w-38 md:max-w-44 lg:max-w-52 xl:max-w-[250px]">
+        </a>
+        <span onclick="toggleActive('#open','-translate-x-full');" class="icon-menu text-dark text-24 block lg:hidden"></span>
+      </div>
+      <div class="flex items-center space-x-3.5 md:space-x-6 lg:space-x-10 xl:space-x-12">
+        <ul class="hidden lg:flex items-center space-x-5 xl:space-x-7 2xl:space-x-9">
+          <li>
+            <a class="inline-block text-dark text-16 2xl:text-18 font-medium hover:text-dark/70 anim py-4" href="/">Home</a>
+          </li>
+          <li>
+            <a class="inline-block text-dark text-16 2xl:text-18 font-medium hover:text-dark/70 anim py-4" href="/membership">Tutorials</a>
+          </li>
+          <li>
+            <a class="inline-block text-dark text-16 2xl:text-18 font-medium hover:text-dark/70 anim py-4" href="/gallery">Services</a>
+          </li>
+          <li>
+            <a class="inline-block text-dark text-16 2xl:text-18 font-medium hover:text-dark/70 anim py-4 whitespace-nowrap" href="">About Us</a>
+          </li>
+          <li>
+            <a class="inline-block text-dark text-16 2xl:text-18 font-medium hover:text-dark/70 anim py-4 whitespace-nowrap" href="/contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <div class="w-full relative group">
+          <span class="block cursor-pointer xs:hidden">
+            <svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark w-6 h-6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4906 4.70691H7.40112C7.1007 4.70691 6.812 4.83113 6.59966 5.05208C6.38732 5.27303 6.26792 5.57341 6.26792 5.886C6.26792 6.33504 5.91662 6.70057 5.48505 6.70057C5.0525 6.70057 4.70217 6.33504 4.70217 5.886C4.70217 5.14066 4.98694 4.42688 5.49286 3.90047C5.99879 3.37406 6.68576 3.07776 7.40112 3.07776H11.5475C11.6835 2.40064 12.0563 1.79175 12.6054 1.37735C13.3051 0.848904 14.2063 0.702281 15.0284 0.981269L20.6465 2.89042C21.7563 3.26818 22.5078 4.34443 22.5078 5.56014V18.0149C22.5078 19.2124 21.7778 20.2784 20.6896 20.6695L15.0714 22.6887C14.2465 22.9849 13.3344 22.8485 12.624 22.3211C12.0789 21.9168 11.7031 21.3212 11.5583 20.6563H7.40115C6.68579 20.6563 5.99881 20.36 5.49289 19.8336C4.98696 19.3072 4.7022 18.5924 4.7022 17.848C4.7022 17.398 5.05252 17.0335 5.48507 17.0335C5.91664 17.0335 6.26795 17.398 6.26795 17.848C6.26795 18.1606 6.38733 18.461 6.59969 18.682C6.81204 18.9029 7.10072 19.0271 7.40115 19.0271H11.4906L11.4906 4.70691ZM13.0564 3.65101V20.035C13.0564 20.4169 13.2335 20.7743 13.532 20.9952C13.8304 21.2162 14.2131 21.2742 14.5595 21.15L20.1777 19.1309C20.6346 18.9669 20.941 18.5189 20.941 18.0159V5.56115C20.941 5.05103 20.6259 4.59893 20.16 4.44008L14.5419 2.53093C14.1964 2.41383 13.8187 2.47493 13.5241 2.6969C13.2306 2.91887 13.0564 3.27323 13.0564 3.65101ZM6.19737 12.6796H1.29069C0.85814 12.6796 0.507812 12.3151 0.507812 11.8651C0.507812 11.415 0.85814 11.0505 1.29069 11.0505H6.19737L4.75395 9.5476C4.44862 9.2299 4.44862 8.71368 4.75395 8.39598C5.05929 8.07829 5.55542 8.07829 5.86075 8.39598L8.64102 11.2888C8.78879 11.4426 8.87001 11.6483 8.87001 11.8651C8.87001 12.082 8.78781 12.2877 8.64102 12.4414L5.86075 15.3343C5.55542 15.652 5.05929 15.652 4.75395 15.3343C4.44862 15.0166 4.44862 14.5004 4.75395 14.1817L6.19737 12.6796Z"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+</header>
