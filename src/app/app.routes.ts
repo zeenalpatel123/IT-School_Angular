@@ -68,7 +68,7 @@ export const routes: Routes = [
             {
                 path:'',
                 pathMatch:'full',
-                redirectTo:'home'
+                redirectTo:'htmlhome'
             },
             {
                 path:'html',
