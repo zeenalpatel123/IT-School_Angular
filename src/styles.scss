@@ -38,6 +38,8 @@ code{@apply text-red-700 bg-gray-50;}
 .code{@apply text-blue-700;}
 h3.titel{@apply text-20 lg:text-24 xl:text-30 2xl:text-36;}
 
+#toggle_nav.active{@apply translate-x-0;}
+
 table{@apply w-full border-collapse;}
 table th, table td{@apply py-2 px-3.5 text-left border border-gray-200;}
 table tr th{@apply bg-gray-200;}
