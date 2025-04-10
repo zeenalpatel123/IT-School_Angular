@@ -59,6 +59,8 @@ import { HtmlDragDropComponent } from './html-drag-drop/html-drag-drop.component
 import { HtmlWebStorageComponent } from './html-web-storage/html-web-storage.component';
 import { HtmlWebWorkersComponent } from './html-web-workers/html-web-workers.component';
 import { HtmlSseComponent } from './html-sse/html-sse.component';
+import { PrivacyPolicyComponent } from './content/privacy-policy/privacy-policy.component';
+import { ContactUsComponent } from './content/contact-us/contact-us.component';
 
 export const routes: Routes = [
     {
@@ -305,7 +307,16 @@ export const routes: Routes = [
             {
                 path:'htmlsse',
                 component:HtmlSseComponent
-            },
+            },           
         ]
-    }
+    },
+    {
+        path:'privacypolicy',
+        component:PrivacyPolicyComponent
+    },
+    {
+        path:'contactus',
+        component:ContactUsComponent
+    },
+   
 ];

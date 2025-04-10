@@ -1,1 +1,18 @@
+<app-header></app-header>
 <router-outlet></router-outlet>
+   <footer class="bg-yellow-600/30">
+      <div class="wrapper flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between py-3">
+        <span class="inline-block text-dark text-14 font-normal">© 2024 All rights reserved</span>
+        <ul class="flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 p-2 sm:p-0 text-dark group font-normal text-14">
+          <!-- <li>
+            <a class="inline-block hover:text-primary anim" href="/terms">Terms</a>
+          </li> -->
+          <li>
+            <a class="inline-block hover:text-primary anim" [routerLink]="'privacypolicy'">Privacy Policy</a>
+          </li>
+          <!-- <li>
+            <a class="inline-block hover:text-primary anim" href="/career">Career</a>
+          </li> -->
+        </ul>
+      </div>
+   </footer>

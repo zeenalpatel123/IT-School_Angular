@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-content',
-  imports: [RouterModule, HtmlComponent, MatTabsModule, CssComponent, HeaderComponent],
+  imports: [RouterModule, HtmlComponent, MatTabsModule, CssComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })
