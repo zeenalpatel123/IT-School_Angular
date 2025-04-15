@@ -1,1 +1,221 @@
-<p>html-web-workers works!</p>
+<div class="w-full py-10 md:px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+    <h3 class="titel font-medium">HTML Web Workers API</h3>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">What is a Web Worker?</h3>
+    <p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
+    <p>A web worker is an external JavaScript file that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+    <p>Web workers are useful for heavy code that can't be run on the main thread, without causing long tasks that make the page unresponsive.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Browser Support</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+          <th title="Chrome" class="bsChrome" style="width: 16%;">
+            <img src="https://pngimg.com/d/chrome_logo_PNG13.png" alt="Chrome" class="mx-auto max-w-10">
+          </th>
+          <th title="Internet Explorer / Edge" class="bsEdge" style="width: 16%;">
+            <img src="https://www.bitdefender.com/media/uploads/2017/06/microsoft-edge.png" alt="Internet Explorer" class="mx-auto max-w-10">
+          </th>
+          <th title="Firefox" class="bsFirefox" style="width: 16%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" alt="Firefox" class="mx-auto max-w-10">
+          </th>
+          <th title="Safari" class="bsSafari" style="width: 16%;">
+            <img src="https://pngimg.com/d/safari_PNG6.png" alt="Safari" class="mx-auto max-w-11">
+          </th>
+          <th title="Opera" class="bsOpera" style="width: 16%;">
+            <img src="https://pngimg.com/d/opers_PNG15.png" alt="Opera" class="mx-auto max-w-8">
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Web Workers</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">10.0</td>
+          <td class="text-center">3.5</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">11.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Check Web Worker API Support</h3>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black">
+            <span style="color:#905"></span> &lt;script&gt; <br>
+            <span style="color:#005cc5">const</span> x = document. <span style="color:black">getElementById</span>( <span style="color:green">"result"</span>); <br>
+            <span style="color:#905"></span>
+            <span style="color:#005cc5">if</span>( <span style="color:#005cc5">typeof</span>(Worker) !== <span style="color:green">"undefined"</span>) &#123; <br>&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Your browser support Web Workers!"</span>; <br>&#125; <span style="color:#005cc5">else</span> &#123; <br>&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Sorry, your browser does not support Web Workers."</span>; <br>&#125; <br>
+            <span style="color:#905"></span> &lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Create a .js Web Worker File</h3>
+    <div>
+      <span style="color:black">
+        <span style="color:#905"></span>
+        <div>
+          <span style="color:#005cc5">var</span> i = <span style="color:#905">0</span>; <br>
+          <span style="color:#905"></span>
+          <br>
+          <span style="color:#005cc5">function</span> timedCount() <span style="color:#905"></span>&#123; <br>
+          <span style="color:#905"></span> &nbsp; i = i + <span style="color:#905">1</span>; <br>
+          <span style="color:#905"></span> &nbsp; postMessage(i); <br>
+          <span style="color:#905"></span>&nbsp;&nbsp;setTimeout( <span style="color:green">"timedCount()"</span>, <span style="color:#905">500</span>); <br>
+          <span style="color:#905"></span>&#125; <br>
+          <span style="color:#905"></span>
+          <br> timedCount();
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Create a Web Worker Object</h3>
+    <p>Once we have created the .js web worker file, we can call it from an HTML page.</p>
+    <p>The following lines checks if a worker already exists, if not - it creates a new web worker object and points to the .js file: "demo_workers.js":</p>
+    <div>
+      <span style="color:black">
+        <div>
+          <span style="color:#005cc5">if</span> ( <span style="color:#005cc5">typeof</span> == <span style="color:green">"undefined"</span>) &#123; <br>
+          <span style="color:#905"></span> &nbsp; w = <span style="color:#005cc5">new</span> Worker( <span style="color:green">"demo_workers.js"</span>); <br>
+          <span style="color:#905"></span> &#125;
+        </div>
+      </span>
+    </div>
+    <p>Data is sent between web workers and the main thread via a system of messages - both sides send their messages using the postMessage() method, and respond to messages via the onmessage event handler.</p>
+    <div>
+      <span style="color:black">
+        <div> w. <span style="color:black">onmessage</span> = <span style="color:#005cc5">function</span>( <span style="color:#005cc5">event</span>)&#123; <br>
+          <span style="color:#905"></span>&nbsp;&nbsp;document. <span style="color:black">getElementById</span>( <span style="color:green">"result"</span>). <span style="color:black">innerHTML</span> = <span style="color:#005cc5">event</span>. <span style="color:black">data</span>; <br>
+          <span style="color:#905"></span> &#125;;
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Terminate a Web Worker</h3>
+    <p>When a web worker object is created, it will continue to listen for messages until it is terminated.</p>
+    <p>To terminate a web worker object, and free browser/computer resources, use the terminate() method:</p>
+    <div>
+      <div> w.terminate();</div>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Reuse the Web Worker</h3>
+    <p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:</p>
+    <div>
+      <div> w = undefined;</div>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Full Web Worker Example</h3>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:slategray">&lt;!DOCTYPE html&gt;</span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>p <span style="color:#999">&gt;</span>
+          </span>Count numbers: <span style="color:#905">
+            <span style="color:#999">&lt;</span>output <span style="color:green"> id <span style="color:#005cc5">="result"</span>
+            </span>
+            <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/output <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>button <span style="color:green"> onclick <span style="color:#005cc5">="startWorker()"</span>
+            </span>
+            <span style="color:#999">&gt;</span>
+          </span>Start Worker <span style="color:#905">
+            <span style="color:#999">&lt;</span>/button <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>button <span style="color:green"> onclick <span style="color:#005cc5">="stopWorker()"</span>
+            </span>
+            <span style="color:#999">&gt;</span>
+          </span>Stop Worker <span style="color:#905">
+            <span style="color:#999">&lt;</span>/button <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:black">
+            <br>
+            <span style="color:#905"></span>
+            <span style="color:#005cc5">let</span> w; <br>
+            <span style="color:#905"></span>
+            <br>
+            <span style="color:#005cc5">function</span> startWorker() <span style="color:#905"></span>&#123; <br>&nbsp; <span style="color:#005cc5">const</span> x = document. <span style="color:black">getElementById</span>( <span style="color:green">"result"</span>); <br>
+            <span style="color:#905"></span> &nbsp; <span style="color:#005cc5">if</span> ( <span style="color:#005cc5">typeof</span>(Worker) !== <span style="color:green">"undefined"</span>) <span style="color:#905"></span>&#123; <br>
+            <span style="color:#905"></span>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">if</span> ( <span style="color:#005cc5">typeof</span> == <span style="color:green">"undefined"</span>) &#123; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w = <span style="color:#005cc5">new</span> Worker( <span style="color:green">"demo_workers.js"</span>); <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp; &#125; <br>
+            <span style="color:#905"></span>&nbsp;&nbsp;&nbsp;&nbsp;w. <span style="color:black">onmessage</span> = <span style="color:#005cc5">function</span>( <span style="color:#005cc5">event</span>) &#123; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:#005cc5">event</span>. <span style="color:black">data</span>; <br>
+            <span style="color:#905"></span>&nbsp;&nbsp;&nbsp;&nbsp;&#125;; <br>
+            <span style="color:#905"></span>&nbsp;&nbsp;&#125; <span style="color:#005cc5">else</span>
+            <span style="color:#905"></span>&#123; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp; <span style="color:#905"></span> x. <span style="color:black">innerHTML</span> = <span style="color:green">"Sorry! No Web Worker support."</span>; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&#125; <br>
+            <span style="color:#905"></span>&#125; <br>
+            <span style="color:#905"></span>
+            <br>
+            <span style="color:#005cc5">function</span> stopWorker() <span style="color:#905"></span>&#123; <br>
+            <span style="color:#905"></span>&nbsp;&nbsp;w. <span style="color:black">terminate</span>(); <br>&nbsp;&nbsp;w = undefined; <br>
+            <span style="color:#905"></span>&#125; <br>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Web Workers and the DOM</h3>
+    <p>Since web workers are in external .js files, they do not have access to the following JavaScript objects:</p>
+    <ul class="space-y-1.5 list-disc pl-5">
+      <li>The window object</li>
+      <li>The document object</li>
+      <li>The parent object</li>
+    </ul>
+  </div>
+</div>

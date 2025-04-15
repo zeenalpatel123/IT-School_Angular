@@ -1,1 +1,104 @@
-<p>html-sse works!</p>
+<div class="w-full py-10 md:px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+    <h3 class="titel font-medium">HTML Server-Sent Events API</h3>
+    <p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to the web page via HTTP connection.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Server-Sent Events - One Way Messaging</h3>
+    <p>A server-sent event is when a web page automatically gets messages/updates from a server.</p>
+    <p>Normally, a web page has to request data from the server, but with server-sent events, the updates are pushed automatically.</p>
+    <p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Browser Support</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+          <th title="Chrome" class="bsChrome" style="width: 16%;">
+            <img src="https://pngimg.com/d/chrome_logo_PNG13.png" alt="Chrome" class="mx-auto max-w-10">
+          </th>
+          <th title="Internet Explorer / Edge" class="bsEdge" style="width: 16%;">
+            <img src="https://www.bitdefender.com/media/uploads/2017/06/microsoft-edge.png" alt="Internet Explorer" class="mx-auto max-w-10">
+          </th>
+          <th title="Firefox" class="bsFirefox" style="width: 16%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" alt="Firefox" class="mx-auto max-w-10">
+          </th>
+          <th title="Safari" class="bsSafari" style="width: 16%;">
+            <img src="https://pngimg.com/d/safari_PNG6.png" alt="Safari" class="mx-auto max-w-11">
+          </th>
+          <th title="Opera" class="bsOpera" style="width: 16%;">
+            <img src="https://pngimg.com/d/opers_PNG15.png" alt="Opera" class="mx-auto max-w-8">
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: left;">SSE</td>
+          <td class="text-center">6.0</td>
+          <td class="text-center">79.0</td>
+          <td class="text-center">6.0</td>
+          <td class="text-center">5.0</td>
+          <td class="text-center">11.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Receive Server-Sent Event Notifications</h3>
+    <p>The <code>EventSource</code> object is used to receive server-sent event notifications: </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black">
+            <span style="color:#905"></span> &lt;script&gt; <br>
+            <span style="color:#005cc5">const</span> x = document. <span style="color:black">getElementById</span>( <span style="color:green">"result"</span>); <br>
+            <span style="color:#905"></span>
+            <span style="color:slategray">// Check browser support for SSE <br>
+            </span>
+            <span style="color:#005cc5">if</span>( <span style="color:#005cc5">typeof</span>(EventSource) <span style="color:#905"></span> !== <span style="color:green">"undefined"</span>) &#123; <br>&nbsp; <span style="color:#005cc5">var</span> source = <span style="color:#005cc5">new</span> EventSource( <span style="color:green">"demo_sse.php"</span>); <br>&nbsp; <span style="color:#905"></span> source. <span style="color:black">onmessage</span> = <span style="color:#005cc5">function</span>( <span style="color:#005cc5">event</span>) &#123; <br>&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> += <span style="color:#905"></span>
+            <span style="color:#005cc5">event</span>. <span style="color:black">data</span> + <span style="color:green">"&lt;br&gt;"</span>; <br>&nbsp; &#125;; <br>&#125; <span style="color:#005cc5">else</span> &#123; <br>&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Sorry, no support for server-sent events."</span>; <br>&#125; <br>&lt;/script&gt; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Check Browser Support</h3>
+    <div>
+      <span style="color:black">
+        <div>
+          <span style="color:#005cc5">if</span>( <span style="color:#005cc5">typeof</span>(EventSource) !== <span style="color:green">"undefined"</span>) &#123; <br>
+          <span style="color:#905"></span> &nbsp; <span style="color:slategray">// Yes! Server-sent events support! <br>
+          </span>
+          <span style="color:#905"></span> &nbsp; <span style="color:slategray">// <i>Some code.....</i>
+            <br>
+          </span>
+          <span style="color:#905"></span> &#125; <span style="color:#905"></span>
+          <span style="color:#005cc5">else</span> &#123; <br>
+          <span style="color:#905"></span> &nbsp; <span style="color:slategray">// Sorry! No server-sent events support.. <br>
+          </span>
+          <span style="color:#905"></span> &#125;
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Server-Side Code Example</h3>
+    <p>For the example above to work, you need a server capable of sending data updates (like PHP or ASP).</p>
+    <p>The server-side event stream syntax is simple. Set the "Content-Type" header to "text/event-stream". Now you can start sending event streams.</p>
+    <p>Code in PHP (demo_sse.php):</p>
+    <div>
+      <div>
+        <span style="color:black">
+          <span style="color:#d73a49">&lt;?php</span>
+          <br>header( <span style="color:green">'Content-Type: text/event-stream'</span>); <br>
+          <span style="color:#905"></span> header( <span style="color:green">'Cache-Control: no-cache'</span>); <br>
+          <br>$time = date( <span style="color:green">'r'</span>); <br>
+          <span style="color:#005cc5">echo</span>
+          <span style="color:green">"data: The server time is: &#123;$time&#125;\n\n"</span>; <br>flush(); <br>
+          <span style="color:#d73a49">?&gt;</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

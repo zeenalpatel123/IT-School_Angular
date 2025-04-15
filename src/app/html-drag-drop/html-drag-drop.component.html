@@ -1,1 +1,180 @@
-<p>html-drag-drop works!</p>
+<div class="w-full py-10 md:px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+    <h3 class="titel font-medium">HTML Drag and Drop API</h3>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Drag and Drop</h3>
+    <p>Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+          <th title="Chrome" class="bsChrome" style="width: 16%;">
+            <img src="https://pngimg.com/d/chrome_logo_PNG13.png" alt="Chrome" class="mx-auto max-w-10">
+          </th>
+          <th title="Internet Explorer / Edge" class="bsEdge" style="width: 16%;">
+            <img src="https://www.bitdefender.com/media/uploads/2017/06/microsoft-edge.png" alt="Internet Explorer" class="mx-auto max-w-10">
+          </th>
+          <th title="Firefox" class="bsFirefox" style="width: 16%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" alt="Firefox" class="mx-auto max-w-10">
+          </th>
+          <th title="Safari" class="bsSafari" style="width: 16%;">
+            <img src="https://pngimg.com/d/safari_PNG6.png" alt="Safari" class="mx-auto max-w-11">
+          </th>
+          <th title="Opera" class="bsOpera" style="width: 16%;">
+            <img src="https://pngimg.com/d/opers_PNG15.png" alt="Opera" class="mx-auto max-w-8">
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Drag and Drop</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">9.0</td>
+          <td class="text-center">3.5</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">10.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">HTML Drag and Drop API Example</h3>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:slategray">&lt;!DOCTYPE HTML&gt;</span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>html <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>head <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:black">
+            <br>
+            <span style="color:#005cc5">function</span> dragstartHandler(ev) &#123; <br>&nbsp; ev. <span style="color:black">dataTransfer</span>. <span style="color:black">setData</span>( <span style="color:green">"text"</span>, <span style="color:#905"></span> ev. <span style="color:black">target</span>. <span style="color:black">id</span>); <br>&#125; <br>
+            <br>
+            <span style="color:#005cc5">function</span> dragoverHandler(ev) &#123; <br>&nbsp; <span style="color:#905"></span> ev. <span style="color:black">preventDefault</span>(); <br>&#125; <br>
+            <br>
+            <span style="color:#005cc5">function</span> dropHandler(ev) &#123; <br>&nbsp; ev. <span style="color:black">preventDefault</span>(); <br>&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">const</span> data = ev. <span style="color:black">dataTransfer</span>. <span style="color:black">getData</span>( <span style="color:green">"text"</span>); <br>&nbsp; ev. <span style="color:black">target</span>. <span style="color:black">appendChild</span>(document. <span style="color:black">getElementById</span>(data)); <br>
+            <span style="color:#905"></span> &#125; <br>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/head <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>body <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>div <span style="color:green"> id <span style="color:#005cc5">="div1"</span> ondrop <span style="color:#005cc5">="dropHandler(event)"</span> ondragover <span style="color:#005cc5">="dragoverHandler(event)"</span>
+            </span>
+            <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/div <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>img <span style="color:green"> id <span style="color:#005cc5">="img1"</span> src <span style="color:#005cc5">="img_logo.gif"</span> draggable <span style="color:#005cc5">="true"</span> ondragstart <span style="color:#005cc5">="dragstartHandler(event)"</span> width <span style="color:#005cc5">="336"</span> height <span style="color:#005cc5">="69"</span>
+            </span>
+            <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/body <span style="color:#999">&gt;</span>
+          </span>
+          <br>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/html <span style="color:#999">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Make an Element Draggable </h3>
+    <p>First of all: To make an element draggable, set the draggable attribute to true: </p>
+    <div>
+      <div>
+        <span style="color:#905">
+          <span style="color:#999">&lt;</span>img <span style="color:green"> id <span style="color:#005cc5">="img1"</span> draggable <span style="color:#005cc5">="true"</span>
+          </span>
+          <span style="color:#999">&gt;</span>
+        </span>
+      </div>
+    </div>
+    <p>or:</p>
+    <div>
+      <div>
+        <span style="color:#905">
+          <span style="color:#999">&lt;</span>p <span style="color:green"> id <span style="color:#005cc5">="p1"</span> draggable <span style="color:#005cc5">="true"</span>
+          </span>
+          <span style="color:#999">&gt;</span>
+        </span>Draggable text <span style="color:#905">
+          <span style="color:#999">&lt;</span>/p <span style="color:#999">&gt;</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">What to Drag - ondragstart and setData()</h3>
+    <p>Then, specify what should happen when the element is dragged.</p>
+    <p>In the example above, the ondragstart attribute of the &lt;img&gt; element triggers the <code>dragstartHandler(ev)</code> function, which defines the data to be dragged. </p>
+    <div>
+      <span style="color:black">
+        <div>
+          <span style="color:#005cc5">function</span> dragstartHandler(ev) &#123; <br>&nbsp; ev. <span style="color:black">dataTransfer</span>. <span style="color:black">setData</span>( <span style="color:green">"text"</span>, <span style="color:#905"></span> ev. <span style="color:black">target</span>. <span style="color:black">id</span>); <br>&#125;
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Where to Drop - ondragover</h3>
+    <p>The <code>ondragover</code> attrribute of the &lt;div&gt; element calls a function (dragoverHandler(ev)), that specifies where the dragged data can be dropped. </p>
+    <p>This is done by calling the <code>preventDefault()</code> method for the ondragover event: </p>
+    <div>
+      <span style="color:black">
+        <span style="color:#905"></span>
+        <div>
+          <span style="color:#005cc5">function</span> dragoverHandler(ev) &#123; <br>&nbsp; ev. <span style="color:black">preventDefault</span>(); <br>&#125;
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Do the Drop - ondrop</h3>
+    <p>When the dragged data is dropped, a drop event occurs.</p>
+    <div>
+      <span style="color:black">
+        <span style="color:#905"></span>
+        <div>
+          <span style="color:#005cc5">function</span> dropHandler(ev) &#123; <br>&nbsp; ev. <span style="color:black">preventDefault</span>(); <br>&nbsp; <span style="color:#005cc5">const</span>
+          <span style="color:#905"></span> data = ev. <span style="color:black">dataTransfer</span>. <span style="color:black">getData</span>( <span style="color:green">"text"</span>); <br>&nbsp; ev. <span style="color:black">target</span>. <span style="color:black">appendChild</span>(document. <span style="color:black">getElementById</span>(data)); <br>
+          <span style="color:#905"></span> &#125;
+        </div>
+      </span>
+    </div>
+    <ul class="space-y-1.5 list-disc pl-5">
+      <li>Calling <code>preventDefault()</code> prevents the default action of the browser, such as opening the data as a link when it's dropped. </li>
+      <li>The <code>dataTransfer.getData()</code> function fetches the data that was assigned during the drag operation using <code>setData()</code> with the same type. </li>
+      <li>The dragged data is the id of the dragged element ("img1")</li>
+      <li>Append the dragged element into the drop element</li>
+    </ul>
+  </div>
+</div>

@@ -1,1 +1,212 @@
-<p>html-geolocation works!</p>
+<div class="w-full py-10 md:px-5">
+  <div class="w-full space-y-3.5 xl:space-y-5 border-b border-dark/20 pb-6">
+    <h3 class="titel font-medium">HTML Geolocation API</h3>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Locate the User's Position</h3>
+    <p>The <b>Geolocation API</b> allows you to retrieve the user’s current location. </p>
+    <p>A <b>Web API</b> is a type of application programming interface that allows communication between systems over the internet using standard web protocols like HTTP. </p>
+    <p>A <b>Web API</b> enables different applications or services to interact and exchange data through the web, typically using requests and responses over HTTP. </p>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Browser Support</h3>
+    <p>The numbers in the table specify the first browser version that fully supports Geolocation.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th style="width: 20%; font-size: 16px; text-align: left;">Element</th>
+          <th title="Chrome" class="bsChrome" style="width: 16%;">
+            <img src="https://pngimg.com/d/chrome_logo_PNG13.png" alt="Chrome" class="mx-auto max-w-10">
+          </th>
+          <th title="Internet Explorer / Edge" class="bsEdge" style="width: 16%;">
+            <img src="https://www.bitdefender.com/media/uploads/2017/06/microsoft-edge.png" alt="Internet Explorer" class="mx-auto max-w-10">
+          </th>
+          <th title="Firefox" class="bsFirefox" style="width: 16%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" alt="Firefox" class="mx-auto max-w-10">
+          </th>
+          <th title="Safari" class="bsSafari" style="width: 16%;">
+            <img src="https://pngimg.com/d/safari_PNG6.png" alt="Safari" class="mx-auto max-w-11">
+          </th>
+          <th title="Opera" class="bsOpera" style="width: 16%;">
+            <img src="https://pngimg.com/d/opers_PNG15.png" alt="Opera" class="mx-auto max-w-8">
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: left;">&lt;Geolocation&gt;</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">9.0</td>
+          <td class="text-center">3.5</td>
+          <td class="text-center">4.0</td>
+          <td class="text-center">10.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Using HTML Geolocation API</h3>
+    <p>The Geolocation API is accessed using navigator.geolocation. When called, the browser prompts the user for permission to access their location. If the user grants access, the browser uses the most accurate method available on the device—such as GPS, Wi-Fi, or cellular data—to determine the user’s position.</p>
+    <p>The &nbsp; <code>getCurrentPosition()</code> &nbsp; method is used to return the user's current location. </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <div>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+            </span>
+            <span style="color:black">
+              <br>
+              <span style="color:#005cc5">const</span> x = document. <span style="color:black">getElementById</span>( <span style="color:green">"demo"</span>); <br>
+              <br>
+              <span style="color:#005cc5">function</span> getLocation() &#123; <br>&nbsp;&nbsp; <span style="color:#005cc5">if</span> (navigator. <span style="color:black">geolocation</span>) &#123; <br>
+              <span style="color:#905"></span> &nbsp;&nbsp;&nbsp; navigator. <span style="color:black">geolocation</span>. <span style="color:black">getCurrentPosition</span>(success, error); <br>&nbsp;&nbsp;&#125; <span style="color:#005cc5">else</span> &#123; <br>
+              <span style="color:#905"></span> &nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Geolocation is not supported by this browser."</span>; <br>
+              <span style="color:#905"></span> &nbsp;&nbsp;&#125; <br>&#125; <br>
+              <br>
+              <span style="color:#905"></span>
+              <span style="color:#005cc5">function</span> success(position) &#123; <br>&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Latitude: "</span> + position. <span style="color:black">coords</span>. <span style="color:black">latitude</span> + <br>&nbsp;&nbsp; <span style="color:green">"&lt;br&gt;Longitude: "</span> + position. <span style="color:black">coords</span>. <span style="color:black">longitude</span>; <br>
+              <span style="color:#905"></span> &#125; <br>
+              <br>
+              <span style="color:#005cc5">function</span> error() &#123; <br>&nbsp; alert( <span style="color:green">"Sorry, no position available."</span>); <br>
+              <span style="color:#905"></span> &#125; <br>
+            </span>
+            <span style="color:#905">
+              <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+            </span>
+          </div>
+          <a href="" target="_blank">Try it Yourself »</a>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+    <ul class="space-y-1.5 list-disc pl-5">
+      <li>Check if Geolocation is supported</li>
+      <li>If the Geolocation API is supported by the browser, use the <code>getCurrentPosition()</code> method; otherwise, show a message informing the user that geolocation is not available. </li>
+      <li>The success() function displays the user's location using latitude and longitude coordinates.</li>
+    </ul>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Error Handling and Rejections</h3>
+    <p>The second parameter of the <code>getCurrentPosition()</code> method is an error handler—it defines a function to run if the location retrieval fails. </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:black">
+            <span style="color:#905"></span>
+            <span style="color:#005cc5">function</span> error(error) &#123; <br>&nbsp;&nbsp; <span style="color:#005cc5">switch</span>(error. <span style="color:black">code</span>) &#123; <br>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">PERMISSION_DENIED</span>: <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"User denied the request for Geolocation."</span>
+            <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">POSITION_UNAVAILABLE</span>: <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"Location information is unavailable."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">TIMEOUT</span>: <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:green">"The request to get user location timed out."</span>
+            <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">UNKNOWN_ERROR</span>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x. <span style="color:black">innerHTML</span> = <span style="color:green">"An unknown error occurred."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">break</span>; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&#125; <br>
+            <span style="color:#905"></span> &#125; </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Location-specific Information</h3>
+    <p>Geolocation is also very useful for location-specific information, like:</p>
+    <ul class="space-y-1.5 list-disc pl-5">
+      <li>Up-to-date local information</li>
+      <li>Showing Points-of-interest near the user</li>
+      <li>Turn-by-turn navigation (GPS)</li>
+    </ul>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Location-specific Information</h3>
+    <p>When the <code>getCurrentPosition()</code> method succeeds, it returns an object containing latitude, longitude, and accuracy as standard properties. Other properties may also be present depending on availability. </p>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width:150px">Property</th>
+          <th>Returns</th>
+        </tr>
+        <tr>
+          <td>coords.latitude</td>
+          <td>The latitude as a decimal number (always returned)</td>
+        </tr>
+        <tr>
+          <td>coords.longitude</td>
+          <td>The longitude as a decimal number (always returned)</td>
+        </tr>
+        <tr>
+          <td>coords.accuracy</td>
+          <td>The accuracy of position (always returned)</td>
+        </tr>
+        <tr>
+          <td>coords.altitude</td>
+          <td>The altitude in meters above the mean sea level (returned if available)</td>
+        </tr>
+        <tr>
+          <td>coords.altitudeAccuracy</td>
+          <td>The altitude accuracy of position (returned if available)</td>
+        </tr>
+        <tr>
+          <td>coords.heading</td>
+          <td>The heading as degrees clockwise from North (returned if available)</td>
+        </tr>
+        <tr>
+          <td>coords.speed</td>
+          <td>The speed in meters per second (returned if available)</td>
+        </tr>
+        <tr>
+          <td>timestamp</td>
+          <td>The date/time of the response (returned if available)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="w-full space-y-3.5 xl:space-y-5 py-6 border-b border-dark/20">
+    <h3 class="font-medium">Geolocation Object - Other interesting Methods </h3>
+    <p>The Geolocation object also has other interesting methods:</p>
+    <p>The <code>watchPosition()</code> method retrieves the user's current location and keeps updating it as the user moves, similar to how a GPS system works. </p>
+    <p>The <code>clearWatch()</code> method is used to stop the location tracking started by watchPosition(). </p>
+    <div class="p-6 bg-yellow-600/20 space-y-3.5">
+      <h3>Example</h3>
+      <div class="p-6 py-3 border-l-2 border-yellow-600 bg-white">
+        <div>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>script <span style="color:#999">&gt;</span>
+          </span>
+          <span style="color:black">
+            <br>
+            <span style="color:#005cc5">const</span> x = document. <span style="color:black">getElementById</span>( <span class="jsstringcolor" style="color:green">"demo"</span>); <br>
+            <br>
+            <span style="color:#005cc5">function</span> getLocation() &#123; <br>
+            <span style="color:#905"></span> &nbsp; <span style="color:#005cc5">if</span> (navigator. <span style="color:black">geolocation</span>) &#123; <br>&nbsp;&nbsp;&nbsp; navigator. <span style="color:black">geolocation</span>. <span style="color:black">watchPosition</span>(success, <span style="color:#905"></span> error); <br>&nbsp;&nbsp;&#125; <span style="color:#005cc5">else</span> &#123; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:green">"Geolocation is not supported by this browser."</span>; <br>
+            <span style="color:#905"></span> &nbsp;&nbsp;&#125; <br>&#125; <br>
+            <br>
+            <span style="color:#905"></span>
+            <span style="color:#005cc5">function</span> success(position) &#123; <br>&nbsp; x. <span style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:green">"Latitude: "</span> + position. <span style="color:black">coords</span>. <span style="color:black">latitude</span> + <br>&nbsp;&nbsp; <span class="jsstringcolor" style="color:green">"&lt;br&gt;Longitude: "</span> + position. <span style="color:black">coords</span>. <span style="color:black">longitude</span>; <br>
+            <span style="color:#905"></span> &#125; <br>
+            <br>
+            <span style="color:#005cc5">function</span> error(error) &#123; <br>&nbsp; <span style="color:#005cc5">switch</span>(error. <span style="color:black">code</span>) &#123; <br>&nbsp;&nbsp;&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">case</span> error. <span style="color:black">PERMISSION_DENIED</span>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x. <span style="color:black">innerHTML</span> = <span style="color:#905"></span>
+            <span class="jsstringcolor" style="color:green">"User denied the request for Geolocation."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">POSITION_UNAVAILABLE</span>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span> x. <span style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:green">"Location information is unavailable."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">TIMEOUT</span>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span> x. <span style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:green">"The request to get user location timed out."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">break</span>; <br>&nbsp;&nbsp;&nbsp; <span style="color:#005cc5">case</span> error. <span style="color:black">UNKNOWN_ERROR</span>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span> x. <span style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:green">"An unknown error occurred."</span>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#905"></span>
+            <span style="color:#005cc5">break</span>; <br>&nbsp; &#125; <br>&#125; <br>
+          </span>
+          <span style="color:#905">
+            <span style="color:#999">&lt;</span>/script <span style="color:#999">&gt;</span>
+          </span>
+        </div>
+      </div>
+      <a href="" class="btn_primary">Try Now</a>
+    </div>
+  </div>
+</div>
